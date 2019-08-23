@@ -1,0 +1,128 @@
+.Form {
+  width: 100%;
+  margin: auto;
+
+  @media screen and (min-width: $M) {
+    width: 90%;
+  }
+
+  @media screen and (min-width: $L) {
+    width: 80%;
+  }
+
+  &__group {
+    padding: $tiny-spacing;
+    margin: $base-spacing $tiny-spacing;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $black;
+    border-radius: $base-border-radius;
+
+    label {
+      display: block;
+      font-family: $heading-semibold-font-family;
+      text-transform: uppercase;
+      text-align: center;
+      width: $super-spacing * 2;
+      background-color: white;
+
+      margin-top: (-2 * $small-spacing);
+
+      &.field_with_errors {
+        color: darken(map-get($semantic-colors, danger), 25%);
+      }
+    }
+
+    fieldset {
+      background-color: transparent;
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    legend {
+      font-weight: 600;
+      padding: 0;
+    }
+
+    input,
+    select {
+      @include basic-form-field-styling;
+
+      display: block;
+      width: 95%;
+      margin: $mid-spacing auto;
+
+      @media screen and (min-width: $M) {
+        width: 70%;
+      }
+
+      &.field_with_errors {
+        color: darken(map-get($semantic-colors, danger), 25%);
+        border: $base-border;
+        border-color: darken(map-get($semantic-colors, danger), 25%);
+      }
+    }
+
+    textarea {
+      @include basic-form-field-styling;
+
+      display: block;
+      width: 95%;
+      margin: $mid-spacing auto;
+
+      &.field_with_errors {
+        color: darken(map-get($semantic-colors, danger), 40%);
+        border: $base-border;
+        border-color: darken(map-get($semantic-colors, danger), 40%);
+      }
+    }
+
+    [type="checkbox"],
+    [type="radio"],
+    [type="file"],
+    select {
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea {
+      height: 30vh;
+    }
+
+    small {
+      display: block;
+      width: 95%;
+      text-align: right;
+      margin: $small-spacing;
+    }
+  }
+
+  &__time-field-group {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin: $mid-spacing auto;
+
+    @media screen and (min-width: $M) {
+      width: 100%;
+    }
+
+    select {
+      flex: 100%;
+      margin: $small-spacing auto;
+
+      @media screen and (min-width: $S) {
+        flex: 30%;
+        margin: auto $tiny-spacing;
+      }
+    }
+  }
+
+  &__action {
+    text-align: center;
+    margin-top: ($mid-spacing - ($base-spacing / 6));
+  }
+}

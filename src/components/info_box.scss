@@ -1,0 +1,36 @@
+.InfoBox {
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $M) {
+    width: 75%;
+  }
+
+  &__group {
+    padding: $tiny-spacing;
+    margin: $base-spacing $tiny-spacing;
+    border: 2px solid $black;
+    border-radius: $base-border-radius;
+  }
+
+  &__label {
+    display: block;
+    font-family: $heading-semibold-font-family;
+    text-transform: uppercase;
+    text-align: center;
+    width: $super-spacing * 2;
+    background-color: white;
+    margin-top: (-2 * $small-spacing);
+  }
+
+  &__content {
+    text-align: center;
+    padding-top: $small-spacing;
+    padding-bottom: $small-spacing;
+
+    p {
+      margin: 0;
+    }
+  }
+}

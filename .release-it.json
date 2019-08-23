@@ -1,0 +1,9 @@
+{
+  "git": {
+    "tagName": "v${version}",
+    "commitMessage": "Release v${version}"
+  },
+  "gitlab": {
+    "release": true
+  }
+}

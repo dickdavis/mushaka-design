@@ -1,0 +1,10 @@
+@mixin basic-icon-link($_link_color) {
+  text-decoration: none;
+  cursor: pointer;
+
+  @include basic-link($_link_color);
+
+  &:hover {
+    text-decoration: none;
+  }
+}

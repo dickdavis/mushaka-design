@@ -1,0 +1,19 @@
+@mixin basic-box-link($_link_color) {
+  color: $_link_color;
+  border-color: darken($_link_color, 10%);
+
+  &:hover {
+    color: lighten($_link_color, 20%);
+    border-color: lighten($_link_color, 25%);
+  }
+}
+
+@mixin basic-box-link-inverted($_link_color) {
+  color: $_link_color;
+  border-color: darken($_link_color, 10%);
+
+  &:hover {
+    color: darken($_link_color, 20%);
+    border-color: darken($_link_color, 25%);
+  }
+}

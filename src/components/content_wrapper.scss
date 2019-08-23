@@ -1,0 +1,73 @@
+.ContentWrapper {
+  max-width: ($L - 20px);
+  margin: $mid-spacing $small-spacing;
+
+  @media screen and (min-width: ($L + 20px)) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  ul {
+    margin: auto $large-spacing $base-spacing $large-spacing;
+
+    li {
+      list-style-type: circle;
+    }
+  }
+
+  ol {
+    margin: auto $large-spacing $base-spacing $large-spacing;
+
+    li {
+      list-style-type: upper-roman;
+    }
+  }
+
+  blockquote {
+    background-color: $gray-20;
+    text-align: center;
+    font-style: italic;
+    font-size: 110%;
+    margin: $tiny-spacing auto;
+    padding: $base-spacing;
+    border-radius: $base-border-radius;
+
+    @media screen and (min-width: $M) {
+      padding: $mid-spacing;
+    }
+
+    @media screen and (min-width: $L) {
+      padding: $small-spacing;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  code {
+    background-color: $gray-20;
+    display: inline-block;
+
+    padding: $tiny-spacing $small-spacing;
+    border-radius: $base-border-radius;
+
+    @media screen and (min-width: $M) {
+      padding: $mid-spacing;
+    }
+
+    @media screen and (min-width: $L) {
+      padding: $small-spacing;
+    }
+  }
+}

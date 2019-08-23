@@ -1,0 +1,142 @@
+.Button {
+  appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: 16px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  padding: $mid-spacing $base-spacing;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: $base-border-radius;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &--solid {
+    &-light {
+      @extend .Button;
+      @include button-solid-color($white, $black);
+    }
+
+    &-dark {
+      @extend .Button;
+      @include button-solid-color($black, $white);
+    }
+
+    &-primary {
+      @extend .Button;
+      @include button-solid-color(map-get($theme-colors, primary), $white);
+
+      &-variant {
+        @extend .Button;
+        @include button-solid-color(map-get($theme-colors, primary-variant), $white);
+      }
+    }
+
+    &-secondary {
+      @extend .Button;
+      @include button-solid-color(map-get($theme-colors, secondary), $white);
+
+      &-variant {
+        @extend .Button;
+        @include button-solid-color(map-get($theme-colors, secondary-variant), $white);
+      }
+    }
+
+    &-accent {
+      @extend .Button;
+      @include button-solid-color(map-get($theme-colors, accent), $white);
+
+      &-variant {
+        @extend .Button;
+        @include button-solid-color(map-get($theme-colors, accent-variant), $white);
+      }
+    }
+
+    &-safe {
+      @extend .Button;
+      @include button-solid-color(map-get($semantic-colors, safe), $white);
+    }
+
+    &-caution {
+      @extend .Button;
+      @include button-solid-color(map-get($semantic-colors, caution), $white);
+    }
+
+    &-danger {
+      @extend .Button;
+      @include button-solid-color(map-get($semantic-colors, danger), $white);
+    }
+  }
+
+  &--outline {
+    &-light {
+      @extend .Button;
+      @include button-outline-color($white, $black);
+    }
+
+    &-dark {
+      @extend .Button;
+      @include button-outline-color($black, $white);
+    }
+
+    &-primary {
+      @extend .Button;
+      @include button-outline-color(map-get($theme-colors, primary), $white);
+
+      &-variant {
+        @extend .Button;
+        @include button-outline-color(map-get($theme-colors, primary-variant), $white);
+      }
+    }
+
+    &-secondary {
+      @extend .Button;
+      @include button-outline-color(map-get($theme-colors, secondary), $white);
+
+      &-variant {
+        @extend .Button;
+        @include button-outline-color(map-get($theme-colors, secondary-variant), $white);
+      }
+    }
+
+    &-accent {
+      @extend .Button;
+      @include button-outline-color(map-get($theme-colors, accent), $white);
+
+      &-variant {
+        @extend .Button;
+        @include button-outline-color(map-get($theme-colors, accent-variant), $white);
+      }
+    }
+
+    &-safe {
+      @extend .Button;
+      @include button-outline-color(map-get($semantic-colors, safe), $white);
+    }
+
+    &-caution {
+      @extend .Button;
+      @include button-outline-color(map-get($semantic-colors, caution), $white);
+    }
+
+    &-danger {
+      @extend .Button;
+      @include button-outline-color(map-get($semantic-colors, danger), $white);
+    }
+  }
+}

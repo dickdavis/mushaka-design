@@ -1,0 +1,20 @@
+.ButtonGroup {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $S) {
+    flex-flow: row wrap;
+  }
+
+  a,
+  input,
+  button {
+    margin-top: $tiny-spacing;
+    margin-bottom: $tiny-spacing;
+
+    @media screen and (min-width: $S) {
+      margin-left: $tiny-spacing;
+      margin-right: $tiny-spacing;
+    }
+  }
+}

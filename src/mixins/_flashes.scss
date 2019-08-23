@@ -1,0 +1,5 @@
+@mixin basic-flash($_flash_color) {
+  background-color: lighten($_flash_color, 25%);
+  color: darken($_flash_color, 40%);
+  border-color: darken($_flash_color, 20%);
+}

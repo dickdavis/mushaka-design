@@ -1,0 +1,65 @@
+.u-Text--muted {
+  color: $gray-70;
+}
+
+.u-Text--loud {
+  font-family: $heading-semibold-font-family;
+  text-transform: uppercase;
+}
+
+.u-Text--left {
+  text-align: left;
+}
+
+.u-Text--center {
+  text-align: center;
+}
+
+.u-Text--right {
+  text-align: right;
+}
+
+.u-Text--color {
+  &-dark {
+    color: $black;
+  }
+
+  &-safe {
+    color: $white;
+  }
+
+  &-primary {
+    color: map-get($theme-colors, primary);
+
+    &-variant {
+      color: map-get($theme-colors, primary-variant);
+    }
+  }
+
+  &-secondary {
+    color: map-get($theme-colors, secondary);
+
+    &-variant {
+      color: map-get($theme-colors, secondary-variant);
+    }
+  }
+  &-accent {
+    color: map-get($theme-colors, accent);
+
+    &-variant {
+      color: map-get($theme-colors, accent-variant);
+    }
+  }
+
+  &-safe {
+    color: map-get($semantic-colors, safe);
+  }
+
+  &-caution {
+    color: map-get($theme-colors, caution);
+  }
+
+  &-danger {
+    color: map-get($theme-colors, danger);
+  }
+}

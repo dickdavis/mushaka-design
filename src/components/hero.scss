@@ -1,0 +1,30 @@
+.Hero {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: $black;
+  background-color: $white;
+  padding: $base-spacing;
+
+  @media screen and (min-width: $M) {
+    padding: $super-spacing;
+  }
+
+  &--inverted {
+    @extend .Hero;
+
+    color: $white;
+    background-color: $black;
+  }
+
+  &__headline {
+    flex: 100%;
+    font-size: 300%;
+  }
+
+  &__lede {
+    flex: 100%;
+    font-size: 125%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "mushaka-design",
+  "version": "0.1.0",
+  "description": "Design framework used by Mushaka Solutions Inc.",
+  "main": "index.js",
+  "repository": "https://gitlab.com/d3d1rty/mushaka-design",
+  "author": "Richard Davis",
+  "license": "GPL-3.0-or-later",
+  "private": false,
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "release-it": "^12.3.5"
+  },
+  "scripts": {
+    "build": "node-sass -o ./dist/ ./src/main.scss",
+    "release": "release-it"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
