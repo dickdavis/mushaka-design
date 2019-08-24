@@ -1,0 +1,45 @@
+/// Provides styles for Link text and border color.
+/// @group links
+/// @author Richard Davis
+/// @param {color} $_link_color - The desired display color
+/// @example
+///   @include link-color-scheme($black);
+@mixin link-color-scheme($_link_color) {
+  color: $_link_color;
+
+  &:hover {
+    color: lighten($_link_color, 20%);
+  }
+}
+
+/// Provides darkened styles for BoxLink text and border color.
+/// @group links
+/// @author Richard Davis
+/// @param {color} $_link_color - The desired display color
+/// @example
+///   @include box-link-darken-color-scheme($black);
+@mixin box-link-darken-color-scheme($_link_color) {
+  color: $_link_color;
+  border-color: darken($_link_color, 10%);
+
+  &:hover {
+    color: lighten($_link_color, 20%);
+    border-color: lighten($_link_color, 25%);
+  }
+}
+
+/// Provides lightened styles for BoxLink text and border color.
+/// @group links
+/// @author Richard Davis
+/// @param {color} $_link_color - The desired display color
+/// @example
+///   @include box-link-lighten-color-scheme($gray-20);
+@mixin box-link-lighten-color-scheme($_link_color) {
+  color: $_link_color;
+  border-color: darken($_link_color, 10%);
+
+  &:hover {
+    color: darken($_link_color, 20%);
+    border-color: darken($_link_color, 25%);
+  }
+}

@@ -1,0 +1,17 @@
+/// Provides utility classes for lists.
+/// @group utilities
+/// @author Richard Davis
+/// @example
+///   // Resets a list's style.
+///   <ul class="u-List--unstyled">
+///     <li>Foo</li>
+///     <li>Bar</li>
+///     <li>Baz</li>
+///   </ul>
+.u-List {
+  &--unstyled {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}

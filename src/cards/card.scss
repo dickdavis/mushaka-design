@@ -1,0 +1,211 @@
+/// Provides styles for the Card element.
+/// @group cards
+/// @author Richard Davis
+/// @example
+///   // A plain card
+///   <div class="Card">
+///   </div>
+///
+///   // A medium-sized card
+///   <div class="Card Card--medium">
+///   </div>
+///
+///   // A small-sized card
+///   <div class="Card Card--small">
+///   </div>
+///
+///   // A card with a thick top border
+///   <div class="Card--topBorder">
+///   </div>
+///
+///   // A card with a thick right border
+///   <div class="Card--rightBorder">
+///   </div>
+///
+///   // A card with a thick bottom border
+///   <div class="Card--bottomBorder">
+///   </div>
+///
+///   // A card with a thick left border
+///   <div class="Card--leftBorder">
+///   </div>
+///
+///   // A card with a card header
+///   <div class="Card">
+///     <div class="Card__header">
+///     </div>
+///   </div>
+///
+///   // A card with a card header and header text
+///   <div class="Card">
+///     <div class="Card__header">
+///       <p class="Card__header-text">Lorem Ipsum</p>
+///     </div>
+///   </div>
+///
+///   // A card with a card body
+///   <div class="Card">
+///     <div class="Card__body">
+///     </div>
+///   </div>
+///
+///   // A card with a card body and title
+///   <div class="Card">
+///     <div class="Card__body">
+///       <h2 class="Card__title">Lorem Ipsum</p>
+///     </div>
+///   </div>
+///
+///   // A card with a card body and spaced title
+///   <div class="Card">
+///     <div class="Card__body">
+///       <h2 class="Card__title--spaced">Lorem Ipsum</p>
+///     </div>
+///   </div>
+///
+///   // A card with a card footer
+///   <div class="Card">
+///     <div class="Card__footer">
+///     </div>
+///   </div>
+///
+///   // A card with a card footer and footer text
+///   <div class="Card">
+///     <div class="Card__footer">
+///       <p class="Card__footer-text">Lorem Ipsum</p>
+///     </div>
+///   </div>
+///
+///   // A card with a card header, body, and footer
+///   <div class="Card">
+///     <div class="Card__header">
+///     </div>
+///     <div class="Card__body">
+///     </div>
+///     <div class="Card__footer">
+///     </div>
+///   </div>
+.Card {
+  @extend %default-border-styling;
+
+  width: 97%;
+  word-wrap: break-word;
+  padding: 0;
+  margin: spacing-size("small") auto;
+
+  @media screen and (min-width: viewport-size("S")) {
+    width: 75%;
+  }
+
+  @media screen and (min-width: viewport-size("M")) {
+    width: 65%;
+  }
+
+  @media screen and (min-width: viewport-size("L")) {
+    width: 55%;
+  }
+
+  &--topBorder {
+    @extend .Card;
+
+    border-width: 5px 1px 1px 1px;
+    border-color: $black grayscale-color(30) grayscale-color(30) grayscale-color(30);
+  }
+
+  &--rightBorder {
+    @extend .Card;
+
+    border-width: 1px 5px 1px 1px;
+    border-color: grayscale-color(30) $black grayscale-color(30) grayscale-color(30);
+  }
+
+  &--bottomBorder {
+    @extend .Card;
+
+    border-width: 1px 1px 5px 1px;
+    border-color: grayscale-color(30) grayscale-color(30) $black grayscale-color(30);
+  }
+
+  &--leftBorder {
+    @extend .Card;
+
+    border-width: 1px 1px 1px 5px;
+    border-color: grayscale-color(30) grayscale-color(30) grayscale-color(30) $black;
+  }
+
+  &--medium {
+    width: 97%;
+
+    @media screen and (min-width: viewport-size("S")) {
+      width: 75%;
+    }
+
+    @media screen and (min-width: viewport-size("M")) {
+      width: 65%;
+    }
+
+    @media screen and (min-width: viewport-size("L")) {
+      width: 55%;
+    }
+  }
+
+  &--small {
+    width: 97%;
+
+    @media screen and (min-width: viewport-size("S")) {
+      width: 66%;
+    }
+
+    @media screen and (min-width: viewport-size("M")) {
+      width: 55%;
+    }
+
+    @media screen and (min-width: viewport-size("L")) {
+      width: 33%;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 85%;
+    line-height: 1.5;
+    margin: 0;
+    padding: spacing-size("small");
+
+    &-text {
+      margin: 0;
+    }
+  }
+
+  &__body {
+    padding: spacing-size("mid");
+
+    @media screen and (min-width: viewport-size("M")) {
+      padding: spacing-size("base");
+    }
+  }
+
+  &__title {
+    color: $black;
+    text-transform: uppercase;
+    text-align: center;
+    margin: spacing-size("mid") 0 spacing-size("tiny");
+
+    &--spaced {
+      margin: spacing-size("mid") 0 spacing-size("base");
+    }
+  }
+
+  &__footer {
+    font-size: 85%;
+    line-height: 1.5;
+    margin: 0;
+    padding: spacing-size("small");
+
+    &-text {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+/// Provides utility classes for text.
+/// @group utilities
+/// @author Richard Davis
+/// @example
+///   // Subdues a text element's color.
+///   <p class="u-Text--muted">Foo</p>
+///   // Makes a text element stand out.
+///   <p class="u-Text--loud">Foo</p>
+///   // Aligns a text element to the left.
+///   <p class="u-Text--left">Foo</p>
+///   // Aligns a text element to the right.
+///   <p class="u-Text--right">Foo</p>
+///   // Aligns a text element to the center.
+///   <p class="u-Text--center">Foo</p>
+///   // Changes a text element's color to the light theme color.
+///   <p class="u-Text--color-light">Foo</p>
+///   // Changes a text element's color to the dark theme color.
+///   <p class="u-Text--color-dark">Foo</p>
+///   // Changes a text element's color to the primary theme color.
+///   <p class="u-Text--color-primary">Foo</p>
+///   // Changes a text element's color to the primary-variant theme color.
+///   <p class="u-Text--color-primary-variant">Foo</p>
+///   // Changes a text element's color to the secondary theme color.
+///   <p class="u-Text--color-secondary">Foo</p>
+///   // Changes a text element's color to the secondary-variant theme color.
+///   <p class="u-Text--color-secondary-variant">Foo</p>
+///   // Changes a text element's color to the accent theme color.
+///   <p class="u-Text--color-accent">Foo</p>
+///   // Changes a text element's color to the accent-variant theme color.
+///   <p class="u-Text--color-accent-variant">Foo</p>
+///   // Changes a text element's color to the safe semantic color.
+///   <p class="u-Text--color-safe">Foo</p>
+///   // Changes a text element's color to the caution semantic color.
+///   <p class="u-Text--color-caution">Foo</p>
+///   // Changes a text element's color to the danger semantic color.
+///   <p class="u-Text--color-danger">Foo</p>
+.u-Text {
+  &--muted {
+    color: grayscale-color(70);
+  }
+
+  &--loud {
+    font-family: $heading-semibold-font-family;
+    text-transform: uppercase;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--color {
+    &-dark {
+      color: $black;
+    }
+
+    &-light {
+      color: $white;
+    }
+
+    &-primary {
+      color: theme-color("primary");
+
+      &-variant {
+        color: theme-color("primary-variant");
+      }
+    }
+
+    &-secondary {
+      color: theme-color("secondary");
+
+      &-variant {
+        color: theme-color("secondary-variant");
+      }
+    }
+
+    &-accent {
+      color: theme-color("accent");
+
+      &-variant {
+        color: theme-color("accent-variant");
+      }
+    }
+
+    &-safe {
+      color: semantic-color("safe");
+    }
+
+    &-caution {
+      color: semantic-color("caution");
+    }
+
+    &-danger {
+      color: semantic-color("danger");
+    }
+  }
+}

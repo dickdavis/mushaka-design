@@ -1,0 +1,103 @@
+/// Provides styles for the IconLink element.
+/// @group links
+/// @author Richard Davis
+/// @example
+///   // An icon link with a light text and border color
+///   <a class="IconLink--light" href="#">Lorem Ipsum</a>
+///
+///   // An icon link with a dark text and border color
+///   <a class="IconLink--dark" href="#">Lorem Ipsum</a>
+///
+///   // An icon link with a text and border color corresponding to the primary theme color
+///   <a class="IconLink--primary" href="#">Lorem Ipsum</a>
+///
+///   // An icon link with a text and border color corresponding to the primary variant theme color
+///   <a class="IconLink--primary-variant" href="#">Lorem Ipsum</a>
+///
+///   // An icon link with a text and border color corresponding to the secondary theme color
+///   <a class="IconLink--secondary" href="#">Lorem Ipsum</a>
+///
+///   // An icon link with a text and border color corresponding to the secondary variant theme color
+///   <a class="IconLink--secondary-variant" href="#">Lorem Ipsum</a>
+///
+///   // An icon link with a text and border color corresponding to the accent theme color
+///   <a class="IconLink--accent" href="#">Lorem Ipsum</a>
+///
+///   // An icon link with a text and border color corresponding to the accent variant theme color
+///   <a class="IconLink--accent-variant" href="#">Lorem Ipsum</a>
+///
+///   // An icon link with a text and border color corresponding to the safe semantic color
+///   <a class="IconLink--safe" href="#">Lorem Ipsum</a>
+///
+///   // An icon link with a text and border color corresponding to the caution semantic color
+///   <a class="IconLink--caution" href="#">Lorem Ipsum</a>
+///
+///   // An icon link with a text and border color corresponding to the danger semantic color
+///   <a class="IconLink--danger" href="#">Lorem Ipsum</a>
+.IconLink {
+  &--light {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme($white);
+  }
+
+  &--dark {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme($black);
+  }
+
+  &--primary {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme(theme-color("primary"));
+
+    &-variant {
+      @extend %default-icon-link-styling;
+
+      @include link-color-scheme(theme-color("primary-variant"));
+    }
+  }
+
+  &--secondary {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme(theme-color("secondary"));
+
+    &-variant {
+      @extend %default-icon-link-styling;
+
+      @include link-color-scheme(theme-color("secondary-variant"));
+    }
+  }
+
+  &--accent {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme(theme-color("accent"));
+
+    &-variant {
+      @extend %default-icon-link-styling;
+
+      @include link-color-scheme(theme-color("accent-variant"));
+    }
+  }
+
+  &--safe {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme(semantic-color("safe"));
+  }
+
+  &--caution {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme(semantic-color("caution"));
+  }
+
+  &--danger {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme(semantic-color("danger"));
+  }
+}

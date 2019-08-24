@@ -1,0 +1,49 @@
+/// Provides styles for the InlineForm element.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   // A form with form groups enclosing inputs
+///   <div class="InlineForm">
+///     <input type="text" />
+///     <input type="submit" class="Button--solid-safe">Lorem Ipsum</input>
+///   </div>
+.InlineForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+
+  @media screen and (min-width: viewport-size("S")) {
+    flex-flow: row wrap;
+  }
+
+  @media screen and (min-width: viewport-size("M")) {
+    width: 70%;
+  }
+
+  button,
+  input[type="submit"] {
+    flex: 1;
+    margin-top: spacing-size("tiny");
+    margin-bottom: spacing-size("tiny");
+
+    @media screen and (min-width: viewport-size("S")) {
+      flex: 0;
+      margin-left: spacing-size("tiny");
+      margin-right: spacing-size("tiny");
+    }
+  }
+
+  input[type="text"] {
+    @extend %basic-form-field-styling;
+
+    border-width: 1px 1px 5px 1px;
+    border-color: grayscale-color(20) grayscale-color(20) $black grayscale-color(20);
+    padding: spacing-size("small");
+
+    @media screen and (min-width: viewport-size("S")) {
+      width: 50%;
+      margin: spacing-size("tiny");
+    }
+  }
+}

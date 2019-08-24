@@ -1,0 +1,79 @@
+/// Provides styles for the ContentWrapper element.
+/// @group layout
+/// @author Richard Davis
+/// @example
+///   // A content wrapper to apply styles to child elements.
+///   <div class="ContentWrapper">
+///   </div>
+.ContentWrapper {
+  max-width: (viewport-size("L") - 20px);
+  margin: spacing-size("mid") spacing-size("small");
+
+  @media screen and (min-width: (viewport-size("L") + 20px)) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  ul {
+    margin: auto spacing-size("large") spacing-size("base") spacing-size("large");
+
+    li {
+      list-style-type: circle;
+    }
+  }
+
+  ol {
+    margin: auto spacing-size("large") spacing-size("base") spacing-size("large");
+
+    li {
+      list-style-type: upper-roman;
+    }
+  }
+
+  blockquote {
+    background-color: grayscale-color(20);
+    text-align: center;
+    font-style: italic;
+    font-size: 110%;
+    margin: spacing-size("tiny") auto;
+    padding: spacing-size("base");
+    border-radius: $base-border-radius;
+
+    @media screen and (min-width: viewport-size("M")) {
+      padding: spacing-size("mid");
+    }
+
+    @media screen and (min-width: viewport-size("L")) {
+      padding: spacing-size("small");
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  code {
+    background-color: grayscale-color(20);
+    display: inline-block;
+    padding: spacing-size("tiny") spacing-size("small");
+    border-radius: $base-border-radius;
+
+    @media screen and (min-width: viewport-size("M")) {
+      padding: spacing-size("mid");
+    }
+
+    @media screen and (min-width: viewport-size("L")) {
+      padding: spacing-size("small");
+    }
+  }
+}

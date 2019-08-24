@@ -1,0 +1,9 @@
+////
+/// @group forms
+/// @author Richard Davis
+
+/// Box shadow for form inputs
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+
+/// Box shadow for form inputs with focus
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(theme-color("primary"), 0.7);

@@ -1,0 +1,56 @@
+/// Provides styles for the Flash element.
+/// @group layout
+/// @author Richard Davis
+/// @example
+///   // A flash with colors corresponding to the safe semantic color.
+///   <div class="Flash--safe">
+///     <p class="Flash__text">Lorem Ipsum</p>
+///   </div>
+///   // A flash with colors corresponding to the caution semantic color.
+///   <div class="Flash--caution">
+///     <p class="Flash__text">Lorem Ipsum</p>
+///   </div>
+///   // A flash with colors corresponding to the danger semantic color.
+///   <div class="Flash--danger">
+///     <ul class="Flash__list">
+///       <li>Error One</li>
+///       <li>Error Two</li>
+///       <li>Error Three</li>
+///     </ul>
+///   </div>
+.Flash {
+  &--safe {
+    @extend %default-flash-styling;
+
+    @include flash-color-scheme(semantic-color("safe"));
+  }
+
+  &--caution {
+    @extend %default-flash-styling;
+
+    @include flash-color-scheme(semantic-color("caution"));
+  }
+
+  &--danger {
+    @extend %default-flash-styling;
+
+    @include flash-color-scheme(semantic-color("danger"));
+  }
+
+  &--info {
+    @extend %default-flash-styling;
+
+    @include flash-color-scheme(semantic-color("info"));
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

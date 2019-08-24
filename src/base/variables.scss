@@ -1,0 +1,121 @@
+////
+/// Provides base level variables and maps.
+/// @group base
+/// @author Richard Davis
+
+/// Viewport sizes
+$viewport-sizes: (
+  XL: 1200px,
+  L: 992px,
+  M: 768px,
+  S: 576px
+);
+
+/// Spacing sizes
+$spacing-sizes: (
+  tiny: 0.3em,
+  small: 0.5em,
+  mid: 0.75em,
+  base: 1.5em,
+  large: 3em,
+  super: 4.5em
+);
+
+/// Black color value
+$black: hsla(0, 0%, 20%, 1);
+
+/// White color value
+$white: white;
+
+/// Theme color scheme
+$theme-colors: (
+  primary: hsla(218, 100%, 58%, 1),
+  primary-variant: hsla(188, 100%, 58%, 1),
+  secondary: hsla(38, 100%, 58%, 1),
+  secondary-variant: hsla(68, 100%, 58%, 1),
+  accent: hsla(278, 100%, 58%, 1),
+  accent-variant: hsla(308, 100%, 58%, 1)
+);
+
+/// Semantic color scheme
+$semantic-colors: (
+  info: hsla(218, 100%, 57.8%, 1),
+  safe: hsla(115, 100%, 60%, 1),
+  caution: hsla(49, 100%, 56.9%, 1),
+  danger: hsla(0, 100%, 61%, 1)
+);
+
+/// Grayscale color scheme
+$grayscale-colors: (
+  90: lighten($black, 10%),
+  80: lighten($black, 20%),
+  70: lighten($black, 30%),
+  60: lighten($black, 40%),
+  50: lighten($black, 50%),
+  40: lighten($black, 60%),
+  30: lighten($black, 70%),
+  20: lighten($black, 75%),
+  10: lighten($black, 79%)
+);
+
+/// Font face declaration for system font stack (light weight)
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+/// Font face declaration for system font stack (semibold weight)
+@font-face {
+  font-family: systemsemibold;
+  font-style: normal;
+  font-weight: 600;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+/// Font face declaration for system font stack (bold weight)
+@font-face {
+  font-family: systembold;
+  font-style: normal;
+  font-weight: 900;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+/// Font face declaration for system font stack (regular weight)
+@font-face {
+  font-family: systemregular;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+/// Base font color
+$base-font-color: $black;
+
+/// Base font family
+$base-font-family: 'system';
+
+/// Base heading font family (bold)
+$heading-bold-font-family: 'systembold';
+
+/// Base heading font family (semibold)
+$heading-semibold-font-family: 'systemsemibold';
+
+/// Base heading font family (regular)
+$heading-regular-font-family: 'systemregular';
+
+/// Base line height
+$base-line-height: 1.5;
+
+/// Base heading line height
+$heading-line-height: 1.2;
+
+/// Base border radius
+$base-border-radius: 5px;
+
+/// Base animation duration
+$base-duration: 150ms;
+
+/// Base animation style
+$base-timing: ease;

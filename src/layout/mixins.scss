@@ -1,0 +1,10 @@
+/// Defines color scheme for Flash modifier classes to use.
+/// @group layout
+/// @author Richard Davis
+/// @example
+///   @include flash-color-scheme($gray-50);
+@mixin flash-color-scheme($_flash_color) {
+  background-color: lighten($_flash_color, 25%);
+  color: darken($_flash_color, 40%);
+  border-color: darken($_flash_color, 20%);
+}

@@ -1,0 +1,14 @@
+/// Provides styles for the Flash modifier classes to use.
+/// @group layout
+/// @author Richard Davis
+/// @example
+///   @extend %default-flash-styling;
+%default-flash-styling {
+  text-align: center;
+  max-width: 1200px;
+  margin: spacing-size("small") auto;
+  padding: spacing-size("base");
+  border-width: 1px;
+  border-style: solid;
+  border-radius: $base_border_radius;
+}

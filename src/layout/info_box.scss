@@ -1,0 +1,47 @@
+/// Provides styles for the InfoBox element.
+/// @group layout
+/// @author Richard Davis
+/// @example
+///   // An informational box that presents labelled content.
+///   <div class="InfoBox">
+///     <div class="InfoBox__group">
+///       <p class="InfoBox__label">Lorem</p>
+///       <p class="InfoBox__content">This is example info box content.</p>
+///     </div>
+///   </div>
+.InfoBox {
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: viewport-size("M")) {
+    width: 75%;
+  }
+
+  &__group {
+    padding: spacing-size("tiny");
+    margin: spacing-size("base") spacing-size("tiny");
+    border: 2px solid $black;
+    border-radius: $base-border-radius;
+  }
+
+  &__label {
+    display: block;
+    font-family: $heading-semibold-font-family;
+    text-transform: uppercase;
+    text-align: center;
+    width: spacing-size("super") * 2;
+    background-color: white;
+    margin-top: (-2 * spacing-size("small"));
+  }
+
+  &__content {
+    text-align: center;
+    padding-top: spacing-size("small");
+    padding-bottom: spacing-size("small");
+
+    p {
+      margin: 0;
+    }
+  }
+}

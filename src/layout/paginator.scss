@@ -1,0 +1,37 @@
+/// Provides styles for the Paginator element.
+/// @group layout
+/// @author Richard Davis
+/// @example
+///   // A wrapper around pagination controls to apply styles to child elements.
+///   <div class="Paginator">
+///     <a href="#">Prev</a>
+///     <a href="#">Next</a>
+///     <p>Displaying records 11-20</p>
+///   </div>
+.Paginator {
+  font-family: $heading-semibold-font-family;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: spacing-size("super");
+  margin-bottom: spacing-size("super");
+
+  a {
+    color: $black;
+    margin-left: spacing-size("base");
+    margin-right: spacing-size("base");
+
+    @media screen and (min-width: viewport-size("M")) {
+      margin-left: spacing-size("super");
+      margin-right: spacing-size("super");
+    }
+
+    &:hover {
+      color: theme-color("primary");
+    }
+  }
+
+  p {
+    margin-top: spacing-size("base");
+    margin-bottom: spacing-size("base");
+  }
+}

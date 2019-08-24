@@ -1,0 +1,29 @@
+/// Provides styles for the ButtonGroup element.
+/// @group buttons
+/// @author Richard Davis
+/// @example
+///   // A button group with several buttons
+///   <div class="ButtonGroup">
+///     <button class="Button--solid-safe">Lorem Ipsum</button>
+///     <button class="Button--solid-danger">Lorem Ipsum</button>
+///   </div>
+.ButtonGroup {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: viewport-size("S")) {
+    flex-flow: row wrap;
+  }
+
+  a,
+  input,
+  button {
+    margin-top: spacing-size("tiny");
+    margin-bottom: spacing-size("tiny");
+
+    @media screen and (min-width: viewport-size("S")) {
+      margin-left: spacing-size("tiny");
+      margin-right: spacing-size("tiny");
+    }
+  }
+}

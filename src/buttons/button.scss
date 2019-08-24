@@ -1,0 +1,206 @@
+/// Provides styles for the Button element.
+/// @group buttons
+/// @author Richard Davis
+/// @example
+///   // A button with a light background color
+///   <button class="Button--solid-light">Lorem Ipsum</button>
+///
+///   // A button with a dark background color
+///   <button class="Button--solid-dark">Lorem Ipsum</button>
+///
+///   // A button with a background color corresponding to the primary theme color
+///   <button class="Button--solid-primary">Lorem Ipsum</button>
+///
+///   // A button with a background color corresponding to the primary variant theme color
+///   <button class="Button--solid-primary-variant">Lorem Ipsum</button>
+///
+///   // A button with a background color corresponding to the secondary theme color
+///   <button class="Button--solid-secondary">Lorem Ipsum</button>
+///
+///   // A button with a background color corresponding to the secondary variant theme color
+///   <button class="Button--solid-secondary-variant">Lorem Ipsum</button>
+///
+///   // A button with a background color corresponding to the accent theme color
+///   <button class="Button--solid-accent">Lorem Ipsum</button>
+///
+///   // A button with a background color corresponding to the accent variant theme color
+///   <button class="Button--solid-accent-variant">Lorem Ipsum</button>
+///
+///   // A button with a background color corresponding to the safe semantic color
+///   <button class="Button--solid-safe">Lorem Ipsum</button>
+///
+///   // A button with a background color corresponding to the caution semantic color
+///   <button class="Button--solid-caution">Lorem Ipsum</button>
+///
+///   // A button with a background color corresponding to the danger semantic color
+///   <button class="Button--solid-danger">Lorem Ipsum</button>
+///
+///   // A button with a light text and border color
+///   <button class="Button--outline-light">Lorem Ipsum</button>
+///
+///   // A button with a dark text and border color
+///   <button class="Button--outline-dark">Lorem Ipsum</button>
+///
+///   // A button with a text and border color corresponding to the primary theme color
+///   <button class="Button--outline-primary">Lorem Ipsum</button>
+///
+///   // A button with a text and border color corresponding to the primary variant theme color
+///   <button class="Button--outline-primary-variant">Lorem Ipsum</button>
+///
+///   // A button with a text and border color corresponding to the secondary theme color
+///   <button class="Button--outline-secondary">Lorem Ipsum</button>
+///
+///   // A button with a text and border color corresponding to the secondary variant theme color
+///   <button class="Button--outline-secondary-variant">Lorem Ipsum</button>
+///
+///   // A button with a text and border color corresponding to the accent theme color
+///   <button class="Button--outline-accent">Lorem Ipsum</button>
+///
+///   // A button with a text and border color corresponding to the accent variant theme color
+///   <button class="Button--outline-accent-variant">Lorem Ipsum</button>
+///
+///   // A button with a text and border color corresponding to the safe semantic color
+///   <button class="Button--outline-safe">Lorem Ipsum</button>
+///
+///   // A button with a text and border color corresponding to the caution semantic color
+///   <button class="Button--outline-caution">Lorem Ipsum</button>
+///
+///   // A button with a text and border color corresponding to the danger semantic color
+///   <button class="Button--outline-danger">Lorem Ipsum</button>
+.Button {
+  &--solid {
+    &-light {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme($white, $black);
+    }
+
+    &-dark {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme($black, $white);
+    }
+
+    &-primary {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme(theme-color("primary"), $white);
+
+      &-variant {
+        @extend %default-button-styling;
+
+        @include button-solid-color-scheme(theme-color("primary-variant"), $white);
+      }
+    }
+
+    &-secondary {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme(theme-color("secondary"), $white);
+
+      &-variant {
+        @extend %default-button-styling;
+
+        @include button-solid-color-scheme(theme-color("secondary-variant"), $white);
+      }
+    }
+
+    &-accent {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme(theme-color("accent"), $white);
+
+      &-variant {
+        @extend %default-button-styling;
+
+        @include button-solid-color-scheme(theme-color("accent-variant"), $white);
+      }
+    }
+
+    &-safe {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme(semantic-color("safe"), $white);
+    }
+
+    &-caution {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme(semantic-color("caution"), $white);
+    }
+
+    &-danger {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme(semantic-color("danger"), $white);
+    }
+  }
+
+  &--outline {
+    &-light {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme($white, $black);
+    }
+
+    &-dark {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme($black, $white);
+    }
+
+    &-primary {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme(theme-color("primary"), $white);
+
+      &-variant {
+        @extend %default-button-styling;
+
+        @include button-outline-color-scheme(theme-color("primary-variant"), $white);
+      }
+    }
+
+    &-secondary {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme(theme-color("secondary"), $white);
+
+      &-variant {
+        @extend %default-button-styling;
+
+        @include button-outline-color-scheme(theme-color("secondary-variant"), $white);
+      }
+    }
+
+    &-accent {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme(theme-color("accent"), $white);
+
+      &-variant {
+        @extend %default-button-styling;
+
+        @include button-outline-color-scheme(theme-color("accent-variant"), $white);
+      }
+    }
+
+    &-safe {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme(semantic-color("safe"), $white);
+    }
+
+    &-caution {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme(semantic-color("caution"), $white);
+    }
+
+    &-danger {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme(semantic-color("danger"), $white);
+    }
+  }
+}

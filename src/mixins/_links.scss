@@ -1,7 +1,0 @@
-@mixin basic-link($_link_color) {
-  color: $_link_color;
-
-  &:hover {
-    color: lighten($_link_color, 20%);
-  }
-}

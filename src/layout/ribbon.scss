@@ -1,0 +1,13 @@
+/// Provides styles for the Ribbon element.
+/// @group layout
+/// @author Richard Davis
+/// @example
+///   // A wrapper that applies flex box spacing and positioning to child elements.
+///   <div class="Ribbon">
+///   </div>
+.Ribbon {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: spacing-size("base") auto spacing-size("large") auto;
+}

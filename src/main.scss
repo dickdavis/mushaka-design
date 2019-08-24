@@ -1,5 +1,8 @@
 @import "node_modules/normalize.css/normalize";
-@import "base/base";
-@import "mixins/index";
-@import "components/index";
+@import "base/index";
+@import "buttons/index";
+@import "cards/index";
+@import "forms/index";
+@import "layout/index";
+@import "links/index";
 @import "utilities/index";

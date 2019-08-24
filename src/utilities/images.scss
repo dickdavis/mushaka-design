@@ -1,0 +1,18 @@
+/// Provides utility classes for images.
+/// @group utilities
+/// @author Richard Davis
+/// @example
+///   // Rounds an image.
+///   <img src="foobar.png" class="u-Image--rounded" />
+///   // Makes an image responsive.
+///   <img src="foobar.png" class="u-Image--responsive" />
+.u-Image {
+  &--rounded {
+    border-radius: 50%;
+  }
+
+  &--responsive {
+    width: 100%;
+    height: auto;
+  }
+}

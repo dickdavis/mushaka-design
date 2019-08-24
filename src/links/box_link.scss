@@ -1,0 +1,103 @@
+/// Provides styles for the BoxLink element.
+/// @group links
+/// @author Richard Davis
+/// @example
+///   // A box link with a light text and border color
+///   <a class="BoxLink--light" href="#">Lorem Ipsum</a>
+///
+///   // A box link with a dark text and border color
+///   <a class="BoxLink--dark" href="#">Lorem Ipsum</a>
+///
+///   // A box link with a text and border color corresponding to the primary theme color
+///   <a class="BoxLink--primary" href="#">Lorem Ipsum</a>
+///
+///   // A box link with a text and border color corresponding to the primary variant theme color
+///   <a class="BoxLink--primary-variant" href="#">Lorem Ipsum</a>
+///
+///   // A box link with a text and border color corresponding to the secondary theme color
+///   <a class="BoxLink--secondary" href="#">Lorem Ipsum</a>
+///
+///   // A box link with a text and border color corresponding to the secondary variant theme color
+///   <a class="BoxLink--secondary-variant" href="#">Lorem Ipsum</a>
+///
+///   // A box link with a text and border color corresponding to the accent theme color
+///   <a class="BoxLink--accent" href="#">Lorem Ipsum</a>
+///
+///   // A box link with a text and border color corresponding to the accent variant theme color
+///   <a class="BoxLink--accent-variant" href="#">Lorem Ipsum</a>
+///
+///   // A box link with a text and border color corresponding to the safe semantic color
+///   <a class="BoxLink--safe" href="#">Lorem Ipsum</a>
+///
+///   // A box link with a text and border color corresponding to the caution semantic color
+///   <a class="BoxLink--caution" href="#">Lorem Ipsum</a>
+///
+///   // A box link with a text and border color corresponding to the danger semantic color
+///   <a class="BoxLink--danger" href="#">Lorem Ipsum</a>
+.BoxLink {
+  &--light {
+    @extend %default-box-link-styling;
+
+    @include box-link-darken-color-scheme(grayscale-color(20));
+  }
+
+  &--dark {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme($black);
+  }
+
+  &--primary {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme(theme-color("primary"));
+
+    &-variant {
+      @extend %default-box-link-styling;
+
+      @include box-link-lighten-color-scheme(theme-color("primary-variant"));
+    }
+  }
+
+  &--secondary {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme(theme-color("secondary"));
+
+    &-variant {
+      @extend %default-box-link-styling;
+
+      @include box-link-lighten-color-scheme(theme-color("secondary-variant"));
+    }
+  }
+
+  &--accent {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme(theme-color("accent"));
+
+    &-variant {
+      @extend %default-box-link-styling;
+
+      @include box-link-lighten-color-scheme(theme-color("accent-variant"));
+    }
+  }
+
+  &--safe {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme(semantic-color("safe"));
+  }
+
+  &--caution {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme(semantic-color("caution"));
+  }
+
+  &--danger {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme(semantic-color("danger"));
+  }
+}

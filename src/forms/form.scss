@@ -1,0 +1,140 @@
+/// Provides styles for the Form element.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   // A form with form groups enclosing inputs
+///   <div class="Form">
+///     <div class="Form__group">
+///       <label>Lorem Ipsum</label>
+///       <input type="text" />
+///      </div>
+///     <div class="Form__group">
+///       <label>Lorem Ipsum</label>
+///       <input type="text" />
+///      </div>
+///     <div class="Form__action">
+///       <input type="submit" class="Button--solid-safe">Lorem Ipsum</input>
+///     </div>
+///   </div>
+.Form {
+  width: 100%;
+  margin: auto;
+
+  @media screen and (min-width: viewport-size("M")) {
+    width: 90%;
+  }
+
+  @media screen and (min-width: viewport-size("L")) {
+    width: 80%;
+  }
+
+  &__group {
+    padding: spacing-size("tiny");
+    margin: spacing-size("base") spacing-size("tiny");
+    border-width: 2px;
+    border-style: solid;
+    border-color: $black;
+    border-radius: $base-border-radius;
+
+    label {
+      display: block;
+      font-family: $heading-semibold-font-family;
+      text-transform: uppercase;
+      text-align: center;
+      width: spacing-size("super") * 2;
+      background-color: white;
+      margin-top: (-2 * spacing-size("small"));
+
+      &.field_with_errors {
+        color: darken(semantic-color("danger"), 25%);
+      }
+    }
+
+    fieldset {
+      background-color: transparent;
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    legend {
+      font-weight: 600;
+      padding: 0;
+    }
+
+    input,
+    select {
+      @extend %basic-form-field-styling;
+
+      display: block;
+      width: 95%;
+      margin: spacing-size("mid") auto;
+
+      @media screen and (min-width: viewport-size("M")) {
+        width: 70%;
+      }
+
+      &.field_with_errors {
+        color: darken(semantic-color("danger"), 25%);
+        border-color: darken(semantic-color("danger"), 25%);
+      }
+    }
+
+    textarea {
+      @extend %basic-form-field-styling;
+
+      display: block;
+      width: 95%;
+      height: 30vh;
+      margin: spacing-size("mid") auto;
+
+      &.field_with_errors {
+        color: darken(semantic-color("danger"), 40%);
+        border-color: darken(semantic-color("danger"), 40%);
+      }
+    }
+
+    [type="checkbox"],
+    [type="radio"],
+    [type="file"],
+    select {
+      &:focus {
+        outline: none;
+      }
+    }
+
+    small {
+      display: block;
+      width: 95%;
+      text-align: right;
+      margin: spacing-size("small");
+    }
+  }
+
+  &__time-field-group {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin: spacing-size("mid") auto;
+
+    @media screen and (min-width: viewport-size("M")) {
+      width: 100%;
+    }
+
+    select {
+      flex: 100%;
+      margin: spacing-size("small") auto;
+
+      @media screen and (min-width: viewport-size("S")) {
+        flex: 30%;
+        margin: auto spacing-size("tiny");
+      }
+    }
+  }
+
+  &__action {
+    text-align: center;
+    margin-top: (spacing-size("mid") - (spacing-size("base") / 6));
+  }
+}

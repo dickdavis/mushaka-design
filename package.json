@@ -14,6 +14,7 @@
     "@release-it/conventional-changelog": "^1.1.0",
     "node-sass": "^4.12.0",
     "release-it": "^12.3.5",
+    "sassdoc": "^2.7.0",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-scss": "^3.9.4"
@@ -21,7 +22,8 @@
   "scripts": {
     "build": "node-sass -o ./dist/ ./src/main.scss",
     "release": "release-it",
-    "lint": "stylelint './src/**/*.scss' --syntax scss --fix"
+    "lint": "stylelint './src/**/*.scss' --syntax scss --fix",
+    "docs": "sassdoc './src/**/*.scss' --dest './docs'"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

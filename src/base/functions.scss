@@ -1,0 +1,93 @@
+/// Returns viewport size from $viewport-sizes map for provided key.
+/// @group base
+/// @author Richard Davis
+/// @param {String} $_key - The key to return an associated viewport size for.
+/// @example
+///   viewport-size("M");
+@function viewport-size($_key) {
+  @if map-has-key($viewport-sizes, $_key) {
+    @return map-get($viewport-sizes, $_key);
+  }
+
+  @else {
+    @error "Key provided not found in $viewport-sizes map."; }
+}
+
+/// Returns spacing size from $spacing-sizes map for provided key.
+/// @group base
+/// @author Richard Davis
+/// @param {String} $_key - The key to return an associated spacing size for.
+/// @example
+///   spacing-size("base");
+@function spacing-size($_key) {
+  @if map-has-key($spacing-sizes, $_key) {
+    @return map-get($spacing-sizes, $_key);
+  }
+
+  @else {
+    @error "Key provided not found in $spacing-sizes map."; }
+}
+
+/// Returns theme color from $theme-colors map for provided key.
+/// @group base
+/// @author Richard Davis
+/// @param {String} $_key - The key to return an associated color for.
+/// @example
+///   theme-color("primary");
+@function theme-color($_key) {
+  @if map-has-key($theme-colors, $_key) {
+    @return map-get($theme-colors, $_key);
+  }
+
+  @else {
+    @error "Key provided not found in $theme-colors map."; }
+}
+
+/// Returns semantic color from $semantic-colors map for provided key.
+/// @group base
+/// @author Richard Davis
+/// @param {String} $_key - The key to return an associated color for.
+/// @example
+///   semantic-color("safe");
+@function semantic-color($_key) {
+  @if map-has-key($semantic-colors, $_key) {
+    @return map-get($semantic-colors, $_key);
+  }
+
+  @else {
+    @error "Key provided not found in $semantic-colors map."; }
+}
+
+/// Returns grayscale color from $grayscale-colors map for provided key.
+/// @group base
+/// @author Richard Davis
+/// @param {Number} $_key - The token to return an associated color for.
+/// @example
+///   grayscale-color(10);
+@function grayscale-color($_key) {
+  @if map-has-key($grayscale-colors, $_key) {
+    @return map-get($grayscale-colors, $_key);
+  }
+
+  @else {
+    @error "Key provided not found in $grayscale-colors map."; }
+}
+
+/// Returns scaled font size
+/// @group base
+/// @author Richard Davis
+/// @param {Number} $_key - The factor by which to scale the font size
+/// @example
+///   font-scale(2);
+@function font-scale($_factor) {
+  $_ratio: 1.333;
+  $_value: $_ratio * 100%;
+
+  @if ($_factor > 1) {
+    @for $_i from 1 through ($_factor - 1) {
+      $_value: $_value * $_i;
+    }
+  }
+
+  @return $_value;
+}

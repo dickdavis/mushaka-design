@@ -1,0 +1,9 @@
+/// Provides styles for borders.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @extend %default-border-styling;
+%default-border-styling {
+  border: 1px solid grayscale-color(30);
+  border-radius: $base-border-radius;
+}

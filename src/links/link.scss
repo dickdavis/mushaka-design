@@ -1,0 +1,103 @@
+/// Provides styles for the Link element.
+/// @group links
+/// @author Richard Davis
+/// @example
+///   // A link with a light text and hover color
+///   <a class="Link--light" href="#">Lorem Ipsum</a>
+///
+///   // A link with a dark text and hover color
+///   <a class="Link--dark" href="#">Lorem Ipsum</a>
+///
+///   // A link with a text and hover color corresponding to the primary theme color
+///   <a class="Link--primary" href="#">Lorem Ipsum</a>
+///
+///   // A link with a text and hover color corresponding to the primary variant theme color
+///   <a class="Link--primary-variant" href="#">Lorem Ipsum</a>
+///
+///   // A link with a text and hover color corresponding to the secondary theme color
+///   <a class="Link--secondary" href="#">Lorem Ipsum</a>
+///
+///   // A link with a text and hover color corresponding to the secondary variant theme color
+///   <a class="Link--secondary-variant" href="#">Lorem Ipsum</a>
+///
+///   // A link with a text and hover color corresponding to the accent theme color
+///   <a class="Link--accent" href="#">Lorem Ipsum</a>
+///
+///   // A link with a text and hover color corresponding to the accent variant theme color
+///   <a class="Link--accent-variant" href="#">Lorem Ipsum</a>
+///
+///   // A link with a text and hover color corresponding to the safe semantic color
+///   <a class="Link--safe" href="#">Lorem Ipsum</a>
+///
+///   // A link with a text and hover color corresponding to the caution semantic color
+///   <a class="Link--caution" href="#">Lorem Ipsum</a>
+///
+///   // A link with a text and hover color corresponding to the danger semantic color
+///   <a class="Link--danger" href="#">Lorem Ipsum</a>
+.Link {
+  &--light {
+    @extend %default-link-styling;
+
+    @include link-color-scheme($white);
+  }
+
+  &--dark {
+    @extend %default-link-styling;
+
+    @include link-color-scheme($black);
+  }
+
+  &--primary {
+    @extend %default-link-styling;
+
+    @include link-color-scheme(theme-color("primary"));
+
+    &-variant {
+      @extend %default-link-styling;
+
+      @include link-color-scheme(theme-color("primary-variant"));
+    }
+  }
+
+  &--secondary {
+    @extend %default-link-styling;
+
+    @include link-color-scheme(theme-color("secondary"));
+
+    &-variant {
+      @extend %default-link-styling;
+
+      @include link-color-scheme(theme-color("secondary-variant"));
+    }
+  }
+
+  &--accent {
+    @extend %default-link-styling;
+
+    @include link-color-scheme(theme-color("accent"));
+
+    &-variant {
+      @extend %default-link-styling;
+
+      @include link-color-scheme(theme-color("accent-variant"));
+    }
+  }
+
+  &--safe {
+    @extend %default-link-styling;
+
+    @include link-color-scheme(semantic-color("safe"));
+  }
+
+  &--caution {
+    @extend %default-link-styling;
+
+    @include link-color-scheme(semantic-color("caution"));
+  }
+
+  &--danger {
+    @extend %default-link-styling;
+
+    @include link-color-scheme(semantic-color("danger"));
+  }
+}

@@ -1,0 +1,34 @@
+/// Provides styles for Button text, background, and border color (solid).
+/// @group buttons
+/// @author Richard Davis
+/// @param {color} $_btn_background_color - The desired background color
+/// @param {color} $_btn_text_color - The desired text color
+/// @example
+///   @include button-solid-color-scheme($black, $white);
+@mixin button-solid-color-scheme($_btn_background_color, $_btn_text_color) {
+  background-color: $_btn_background_color;
+  color: $_btn_text_color;
+  border-color: $_btn_background_color;
+
+  &:hover {
+    background-color: darken($_btn_background_color, 20%);
+  }
+}
+
+/// Provides styles for Button text, background, and border color (outline).
+/// @group buttons
+/// @author Richard Davis
+/// @param {color} $_btn_text_color - The desired text color
+/// @param {color} $_btn_hover_text_color - The desired text color when hovered
+/// @example
+///   @include button-outline-color-scheme($black, $white);
+@mixin button-outline-color-scheme($_btn_text_color, $_btn_hover_text_color) {
+  background-color: transparent;
+  color: $_btn_text_color;
+  border-color: $_btn_text_color;
+
+  &:hover {
+    background-color: $_btn_text_color;
+    color: $_btn_hover_text_color;
+  }
+}

@@ -1,0 +1,1513 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Mushaka-design - v0.1.2</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Mushaka-design - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>Design framework used by Mushaka Solutions Inc.</p>
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Mushaka-design - 0.1.2</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="base"><a href="#base">Base</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="base-function"><a href="#base-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="base" data-name="viewport-size" data-type="function"><a href="#base-function-viewport-size">viewport-size</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="spacing-size" data-type="function"><a href="#base-function-spacing-size">spacing-size</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="theme-color" data-type="function"><a href="#base-function-theme-color">theme-color</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="semantic-color" data-type="function"><a href="#base-function-semantic-color">semantic-color</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="grayscale-color" data-type="function"><a href="#base-function-grayscale-color">grayscale-color</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="font-scale" data-type="function"><a href="#base-function-font-scale">font-scale</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="base-placeholder"><a href="#base-placeholder">placeholders</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="base" data-name="default-border-styling" data-type="placeholder"><a href="#base-placeholder-default-border-styling">default-border-styling</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="base-variable"><a href="#base-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="base" data-name="viewport-sizes" data-type="variable"><a href="#base-variable-viewport-sizes">viewport-sizes</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="spacing-sizes" data-type="variable"><a href="#base-variable-spacing-sizes">spacing-sizes</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="black" data-type="variable"><a href="#base-variable-black">black</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="white" data-type="variable"><a href="#base-variable-white">white</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="theme-colors" data-type="variable"><a href="#base-variable-theme-colors">theme-colors</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="semantic-colors" data-type="variable"><a href="#base-variable-semantic-colors">semantic-colors</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="grayscale-colors" data-type="variable"><a href="#base-variable-grayscale-colors">grayscale-colors</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="base-font-color" data-type="variable"><a href="#base-variable-base-font-color">base-font-color</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="base-font-family" data-type="variable"><a href="#base-variable-base-font-family">base-font-family</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="heading-bold-font-family" data-type="variable"><a href="#base-variable-heading-bold-font-family">heading-bold-font-family</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="heading-semibold-font-family" data-type="variable"><a href="#base-variable-heading-semibold-font-family">heading-semibold-font-family</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="heading-regular-font-family" data-type="variable"><a href="#base-variable-heading-regular-font-family">heading-regular-font-family</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="base-line-height" data-type="variable"><a href="#base-variable-base-line-height">base-line-height</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="heading-line-height" data-type="variable"><a href="#base-variable-heading-line-height">heading-line-height</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="base-border-radius" data-type="variable"><a href="#base-variable-base-border-radius">base-border-radius</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="base-duration" data-type="variable"><a href="#base-variable-base-duration">base-duration</a></li><li class="sidebar__item sassdoc__item" data-group="base" data-name="base-timing" data-type="variable"><a href="#base-variable-base-timing">base-timing</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="buttons"><a href="#buttons">Buttons</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="buttons-css"><a href="#buttons-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="buttons" data-name=".Button" data-type="css"><a href="#buttons-css-.Button">.Button</a></li><li class="sidebar__item sassdoc__item" data-group="buttons" data-name=".ButtonGroup" data-type="css"><a href="#buttons-css-.ButtonGroup">.ButtonGroup</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="buttons-mixin"><a href="#buttons-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="buttons" data-name="button-solid-color-scheme" data-type="mixin"><a href="#buttons-mixin-button-solid-color-scheme">button-solid-color-scheme</a></li><li class="sidebar__item sassdoc__item" data-group="buttons" data-name="button-outline-color-scheme" data-type="mixin"><a href="#buttons-mixin-button-outline-color-scheme">button-outline-color-scheme</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="buttons-placeholder"><a href="#buttons-placeholder">placeholders</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="buttons" data-name="default-button-styling" data-type="placeholder"><a href="#buttons-placeholder-default-button-styling">default-button-styling</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="cards"><a href="#cards">Cards</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="cards-css"><a href="#cards-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="cards" data-name=".Card" data-type="css"><a href="#cards-css-.Card">.Card</a></li><li class="sidebar__item sassdoc__item" data-group="cards" data-name=".CardDeck" data-type="css"><a href="#cards-css-.CardDeck">.CardDeck</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="forms"><a href="#forms">Forms</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="forms-css"><a href="#forms-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="forms" data-name=".Form" data-type="css"><a href="#forms-css-.Form">.Form</a></li><li class="sidebar__item sassdoc__item" data-group="forms" data-name=".InlineForm" data-type="css"><a href="#forms-css-.InlineForm">.InlineForm</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="forms-placeholder"><a href="#forms-placeholder">placeholders</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="forms" data-name="basic-form-field-styling" data-type="placeholder"><a href="#forms-placeholder-basic-form-field-styling">basic-form-field-styling</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="forms-variable"><a href="#forms-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="forms" data-name="form-box-shadow" data-type="variable"><a href="#forms-variable-form-box-shadow">form-box-shadow</a></li><li class="sidebar__item sassdoc__item" data-group="forms" data-name="form-box-shadow-focus" data-type="variable"><a href="#forms-variable-form-box-shadow-focus">form-box-shadow-focus</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="layout"><a href="#layout">Layout</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="layout-css"><a href="#layout-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="layout" data-name=".ContentWrapper" data-type="css"><a href="#layout-css-.ContentWrapper">.ContentWrapper</a></li><li class="sidebar__item sassdoc__item" data-group="layout" data-name=".Flash" data-type="css"><a href="#layout-css-.Flash">.Flash</a></li><li class="sidebar__item sassdoc__item" data-group="layout" data-name=".Hero" data-type="css"><a href="#layout-css-.Hero">.Hero</a></li><li class="sidebar__item sassdoc__item" data-group="layout" data-name=".InfoBox" data-type="css"><a href="#layout-css-.InfoBox">.InfoBox</a></li><li class="sidebar__item sassdoc__item" data-group="layout" data-name=".Paginator" data-type="css"><a href="#layout-css-.Paginator">.Paginator</a></li><li class="sidebar__item sassdoc__item" data-group="layout" data-name=".Ribbon" data-type="css"><a href="#layout-css-.Ribbon">.Ribbon</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="layout-mixin"><a href="#layout-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="layout" data-name="flash-color-scheme" data-type="mixin"><a href="#layout-mixin-flash-color-scheme">flash-color-scheme</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="layout-placeholder"><a href="#layout-placeholder">placeholders</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="layout" data-name="default-flash-styling" data-type="placeholder"><a href="#layout-placeholder-default-flash-styling">default-flash-styling</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="links"><a href="#links">Links</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="links-css"><a href="#links-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="links" data-name=".BoxLink" data-type="css"><a href="#links-css-.BoxLink">.BoxLink</a></li><li class="sidebar__item sassdoc__item" data-group="links" data-name=".IconLink" data-type="css"><a href="#links-css-.IconLink">.IconLink</a></li><li class="sidebar__item sassdoc__item" data-group="links" data-name=".Link" data-type="css"><a href="#links-css-.Link">.Link</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="links-mixin"><a href="#links-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="links" data-name="link-color-scheme" data-type="mixin"><a href="#links-mixin-link-color-scheme">link-color-scheme</a></li><li class="sidebar__item sassdoc__item" data-group="links" data-name="box-link-darken-color-scheme" data-type="mixin"><a href="#links-mixin-box-link-darken-color-scheme">box-link-darken-color-scheme</a></li><li class="sidebar__item sassdoc__item" data-group="links" data-name="box-link-lighten-color-scheme" data-type="mixin"><a href="#links-mixin-box-link-lighten-color-scheme">box-link-lighten-color-scheme</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="links-placeholder"><a href="#links-placeholder">placeholders</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="links" data-name="default-link-styling" data-type="placeholder"><a href="#links-placeholder-default-link-styling">default-link-styling</a></li><li class="sidebar__item sassdoc__item" data-group="links" data-name="default-box-link-styling" data-type="placeholder"><a href="#links-placeholder-default-box-link-styling">default-box-link-styling</a></li><li class="sidebar__item sassdoc__item" data-group="links" data-name="default-icon-link-styling" data-type="placeholder"><a href="#links-placeholder-default-icon-link-styling">default-icon-link-styling</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="utilities"><a href="#utilities">Utilities</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="utilities-css"><a href="#utilities-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="utilities" data-name=".u-Image" data-type="css"><a href="#utilities-css-.u-Image">.u-Image</a></li><li class="sidebar__item sassdoc__item" data-group="utilities" data-name=".u-List" data-type="css"><a href="#utilities-css-.u-List">.u-List</a></li><li class="sidebar__item sassdoc__item" data-group="utilities" data-name=".u-Text" data-type="css"><a href="#utilities-css-.u-Text">.u-Text</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="base"><div class="container">Base</div></h1><section class="main__sub-section" id="base-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="base-function-viewport-size"><h3 class="item__heading"><a class="item__name" href="#function-viewport-size">viewport-size</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function viewport-size($_key) { 
+  @if map-has-key($viewport-sizes, $_key) {
+    @return map-get($viewport-sizes, $_key);
+  }
+
+  @else {
+    @error &quot;Key provided not found in $viewport-sizes map.&quot;; }
+ }" data-collapsed="@function viewport-size($_key) { ... }"><code>@function viewport-size($_key) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Returns viewport size from $viewport-sizes map for provided key.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$_key</code></th><td data-label="desc"><p>The key to return an associated viewport size for.</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>viewport-size(&quot;M&quot;);</code></pre></div><h3 class="item__sub-heading">Throws</h3><ul class="list-unstyled"><li><p>Key provided not found in $viewport-sizes map.</p></li></ul><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-viewport-sizes"><code>viewport-sizes</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-viewport-sizes"><code>viewport-sizes</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-viewport-sizes"><code>viewport-sizes</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#links-placeholder-default-box-link-styling"><code>default-box-link-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#links-placeholder-default-box-link-styling"><code>default-box-link-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-function-spacing-size"><h3 class="item__heading"><a class="item__name" href="#function-spacing-size">spacing-size</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function spacing-size($_key) { 
+  @if map-has-key($spacing-sizes, $_key) {
+    @return map-get($spacing-sizes, $_key);
+  }
+
+  @else {
+    @error &quot;Key provided not found in $spacing-sizes map.&quot;; }
+ }" data-collapsed="@function spacing-size($_key) { ... }"><code>@function spacing-size($_key) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Returns spacing size from $spacing-sizes map for provided key.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$_key</code></th><td data-label="desc"><p>The key to return an associated spacing size for.</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>spacing-size(&quot;base&quot;);</code></pre></div><h3 class="item__sub-heading">Throws</h3><ul class="list-unstyled"><li><p>Key provided not found in $spacing-sizes map.</p></li></ul><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-spacing-sizes"><code>spacing-sizes</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-spacing-sizes"><code>spacing-sizes</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-spacing-sizes"><code>spacing-sizes</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#buttons-placeholder-default-button-styling"><code>default-button-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#buttons-placeholder-default-button-styling"><code>default-button-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#layout-placeholder-default-flash-styling"><code>default-flash-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#layout-placeholder-default-flash-styling"><code>default-flash-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#links-placeholder-default-box-link-styling"><code>default-box-link-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#links-placeholder-default-box-link-styling"><code>default-box-link-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#links-placeholder-default-box-link-styling"><code>default-box-link-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#links-placeholder-default-box-link-styling"><code>default-box-link-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#links-placeholder-default-box-link-styling"><code>default-box-link-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#links-placeholder-default-box-link-styling"><code>default-box-link-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#links-placeholder-default-box-link-styling"><code>default-box-link-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-function-theme-color"><h3 class="item__heading"><a class="item__name" href="#function-theme-color">theme-color</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function theme-color($_key) { 
+  @if map-has-key($theme-colors, $_key) {
+    @return map-get($theme-colors, $_key);
+  }
+
+  @else {
+    @error &quot;Key provided not found in $theme-colors map.&quot;; }
+ }" data-collapsed="@function theme-color($_key) { ... }"><code>@function theme-color($_key) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Returns theme color from $theme-colors map for provided key.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$_key</code></th><td data-label="desc"><p>The key to return an associated color for.</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>theme-color(&quot;primary&quot;);</code></pre></div><h3 class="item__sub-heading">Throws</h3><ul class="list-unstyled"><li><p>Key provided not found in $theme-colors map.</p></li></ul><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-theme-colors"><code>theme-colors</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-theme-colors"><code>theme-colors</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-theme-colors"><code>theme-colors</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-function-semantic-color"><h3 class="item__heading"><a class="item__name" href="#function-semantic-color">semantic-color</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function semantic-color($_key) { 
+  @if map-has-key($semantic-colors, $_key) {
+    @return map-get($semantic-colors, $_key);
+  }
+
+  @else {
+    @error &quot;Key provided not found in $semantic-colors map.&quot;; }
+ }" data-collapsed="@function semantic-color($_key) { ... }"><code>@function semantic-color($_key) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Returns semantic color from $semantic-colors map for provided key.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$_key</code></th><td data-label="desc"><p>The key to return an associated color for.</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>semantic-color(&quot;safe&quot;);</code></pre></div><h3 class="item__sub-heading">Throws</h3><ul class="list-unstyled"><li><p>Key provided not found in $semantic-colors map.</p></li></ul><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-semantic-colors"><code>semantic-colors</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-semantic-colors"><code>semantic-colors</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-semantic-colors"><code>semantic-colors</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-function-grayscale-color"><h3 class="item__heading"><a class="item__name" href="#function-grayscale-color">grayscale-color</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function grayscale-color($_key) { 
+  @if map-has-key($grayscale-colors, $_key) {
+    @return map-get($grayscale-colors, $_key);
+  }
+
+  @else {
+    @error &quot;Key provided not found in $grayscale-colors map.&quot;; }
+ }" data-collapsed="@function grayscale-color($_key) { ... }"><code>@function grayscale-color($_key) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Returns grayscale color from $grayscale-colors map for provided key.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$_key</code></th><td data-label="desc"><p>The token to return an associated color for.</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>grayscale-color(10);</code></pre></div><h3 class="item__sub-heading">Throws</h3><ul class="list-unstyled"><li><p>Key provided not found in $grayscale-colors map.</p></li></ul><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-grayscale-colors"><code>grayscale-colors</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-grayscale-colors"><code>grayscale-colors</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-grayscale-colors"><code>grayscale-colors</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#base-placeholder-default-border-styling"><code>default-border-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-function-font-scale"><h3 class="item__heading"><a class="item__name" href="#function-font-scale">font-scale</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function font-scale($_key) { 
+  $_ratio: 1.333;
+  $_value: $_ratio * 100%;
+
+  @if ($_factor &gt; 1) {
+    @for $_i from 1 through ($_factor - 1) {
+      $_value: $_value * $_i;
+    }
+  }
+
+  @return $_value;
+ }" data-collapsed="@function font-scale($_key) { ... }"><code>@function font-scale($_key) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Returns scaled font size</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$_key</code></th><td data-label="desc"><p>The factor by which to scale the font size</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>font-scale(2);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section><section class="main__sub-section" id="base-placeholder"><h2 class="main__heading--secondary"><div class="container">placeholders</div></h2><section class="main__item container item" id="base-placeholder-default-border-styling"><h3 class="item__heading"><a class="item__name" href="#placeholder-default-border-styling">default-border-styling</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%default-border-styling { 
+  border: 1px solid grayscale-color(30);
+  border-radius: $base-border-radius;
+ }" data-collapsed="%default-border-styling { ... }"><code>%default-border-styling { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for borders.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@extend %default-border-styling;</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-grayscale-color"><code>grayscale-color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-base-border-radius"><code>base-border-radius</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section><section class="main__sub-section" id="base-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="base-variable-viewport-sizes"><h3 class="item__heading"><a class="item__name" href="#variable-viewport-sizes">viewport-sizes</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$viewport-sizes: (
+  XL: 1200px,
+  L: 992px,
+  M: 768px,
+  S: 576px
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Viewport sizes</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#base-function-viewport-size"><code>viewport-size</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#base-function-viewport-size"><code>viewport-size</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#base-function-viewport-size"><code>viewport-size</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-spacing-sizes"><h3 class="item__heading"><a class="item__name" href="#variable-spacing-sizes">spacing-sizes</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$spacing-sizes: (
+  tiny: 0.3em,
+  small: 0.5em,
+  mid: 0.75em,
+  base: 1.5em,
+  large: 3em,
+  super: 4.5em
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Spacing sizes</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-black"><h3 class="item__heading"><a class="item__name" href="#variable-black">black</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$black: hsla(0, 0%, 20%, 1);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Black color value</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-white"><h3 class="item__heading"><a class="item__name" href="#variable-white">white</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$white: white;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>White color value</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-theme-colors"><h3 class="item__heading"><a class="item__name" href="#variable-theme-colors">theme-colors</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$theme-colors: (
+  primary: hsla(218, 100%, 58%, 1),
+  primary-variant: hsla(188, 100%, 58%, 1),
+  secondary: hsla(38, 100%, 58%, 1),
+  secondary-variant: hsla(68, 100%, 58%, 1),
+  accent: hsla(278, 100%, 58%, 1),
+  accent-variant: hsla(308, 100%, 58%, 1)
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Theme color scheme</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#base-function-theme-color"><code>theme-color</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#base-function-theme-color"><code>theme-color</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#base-function-theme-color"><code>theme-color</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-semantic-colors"><h3 class="item__heading"><a class="item__name" href="#variable-semantic-colors">semantic-colors</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$semantic-colors: (
+  info: hsla(218, 100%, 57.8%, 1),
+  safe: hsla(115, 100%, 60%, 1),
+  caution: hsla(49, 100%, 56.9%, 1),
+  danger: hsla(0, 100%, 61%, 1)
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Semantic color scheme</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#base-function-semantic-color"><code>semantic-color</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#base-function-semantic-color"><code>semantic-color</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#base-function-semantic-color"><code>semantic-color</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-grayscale-colors"><h3 class="item__heading"><a class="item__name" href="#variable-grayscale-colors">grayscale-colors</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$grayscale-colors: (
+  90: lighten($black, 10%),
+  80: lighten($black, 20%),
+  70: lighten($black, 30%),
+  60: lighten($black, 40%),
+  50: lighten($black, 50%),
+  40: lighten($black, 60%),
+  30: lighten($black, 70%),
+  20: lighten($black, 75%),
+  10: lighten($black, 79%)
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Grayscale color scheme</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#base-function-grayscale-color"><code>grayscale-color</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#base-function-grayscale-color"><code>grayscale-color</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#base-function-grayscale-color"><code>grayscale-color</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-base-font-color"><h3 class="item__heading"><a class="item__name" href="#variable-base-font-color">base-font-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$base-font-color: $black;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Base font color</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-base-font-family"><h3 class="item__heading"><a class="item__name" href="#variable-base-font-family">base-font-family</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$base-font-family: &#39;system&#39;;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Base font family</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#buttons-placeholder-default-button-styling"><code>default-button-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-heading-bold-font-family"><h3 class="item__heading"><a class="item__name" href="#variable-heading-bold-font-family">heading-bold-font-family</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$heading-bold-font-family: &#39;systembold&#39;;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Base heading font family (bold)</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-heading-semibold-font-family"><h3 class="item__heading"><a class="item__name" href="#variable-heading-semibold-font-family">heading-semibold-font-family</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$heading-semibold-font-family: &#39;systemsemibold&#39;;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Base heading font family (semibold)</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#links-placeholder-default-box-link-styling"><code>default-box-link-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-heading-regular-font-family"><h3 class="item__heading"><a class="item__name" href="#variable-heading-regular-font-family">heading-regular-font-family</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$heading-regular-font-family: &#39;systemregular&#39;;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Base heading font family (regular)</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-base-line-height"><h3 class="item__heading"><a class="item__name" href="#variable-base-line-height">base-line-height</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$base-line-height: 1.5;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Base line height</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-heading-line-height"><h3 class="item__heading"><a class="item__name" href="#variable-heading-line-height">heading-line-height</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$heading-line-height: 1.2;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Base heading line height</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-base-border-radius"><h3 class="item__heading"><a class="item__name" href="#variable-base-border-radius">base-border-radius</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$base-border-radius: 5px;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Base border radius</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#base-placeholder-default-border-styling"><code>default-border-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#buttons-placeholder-default-button-styling"><code>default-button-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#links-placeholder-default-box-link-styling"><code>default-box-link-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-base-duration"><h3 class="item__heading"><a class="item__name" href="#variable-base-duration">base-duration</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$base-duration: 150ms;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Base animation duration</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#buttons-placeholder-default-button-styling"><code>default-button-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#links-placeholder-default-link-styling"><code>default-link-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="base-variable-base-timing"><h3 class="item__heading"><a class="item__name" href="#variable-base-timing">base-timing</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$base-timing: ease;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Base animation style</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#buttons-placeholder-default-button-styling"><code>default-button-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#links-placeholder-default-link-styling"><code>default-link-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="buttons"><div class="container">Buttons</div></h1><section class="main__sub-section" id="buttons-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="buttons-css-.Button"><h3 class="item__heading"><a class="item__name" href="#css-.Button">.Button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.Button {
+  &amp;--solid {
+    &amp;-light {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme($white, $black);
+    }
+
+    &amp;-dark {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme($black, $white);
+    }
+
+    &amp;-primary {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme(theme-color(&quot;primary&quot;), $white);
+
+      &amp;-variant {
+        @extend %default-button-styling;
+
+        @include button-solid-color-scheme(theme-color(&quot;primary-variant&quot;), $white);
+      }
+    }
+
+    &amp;-secondary {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme(theme-color(&quot;secondary&quot;), $white);
+
+      &amp;-variant {
+        @extend %default-button-styling;
+
+        @include button-solid-color-scheme(theme-color(&quot;secondary-variant&quot;), $white);
+      }
+    }
+
+    &amp;-accent {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme(theme-color(&quot;accent&quot;), $white);
+
+      &amp;-variant {
+        @extend %default-button-styling;
+
+        @include button-solid-color-scheme(theme-color(&quot;accent-variant&quot;), $white);
+      }
+    }
+
+    &amp;-safe {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme(semantic-color(&quot;safe&quot;), $white);
+    }
+
+    &amp;-caution {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme(semantic-color(&quot;caution&quot;), $white);
+    }
+
+    &amp;-danger {
+      @extend %default-button-styling;
+
+      @include button-solid-color-scheme(semantic-color(&quot;danger&quot;), $white);
+    }
+  }
+
+  &amp;--outline {
+    &amp;-light {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme($white, $black);
+    }
+
+    &amp;-dark {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme($black, $white);
+    }
+
+    &amp;-primary {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme(theme-color(&quot;primary&quot;), $white);
+
+      &amp;-variant {
+        @extend %default-button-styling;
+
+        @include button-outline-color-scheme(theme-color(&quot;primary-variant&quot;), $white);
+      }
+    }
+
+    &amp;-secondary {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme(theme-color(&quot;secondary&quot;), $white);
+
+      &amp;-variant {
+        @extend %default-button-styling;
+
+        @include button-outline-color-scheme(theme-color(&quot;secondary-variant&quot;), $white);
+      }
+    }
+
+    &amp;-accent {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme(theme-color(&quot;accent&quot;), $white);
+
+      &amp;-variant {
+        @extend %default-button-styling;
+
+        @include button-outline-color-scheme(theme-color(&quot;accent-variant&quot;), $white);
+      }
+    }
+
+    &amp;-safe {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme(semantic-color(&quot;safe&quot;), $white);
+    }
+
+    &amp;-caution {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme(semantic-color(&quot;caution&quot;), $white);
+    }
+
+    &amp;-danger {
+      @extend %default-button-styling;
+
+      @include button-outline-color-scheme(semantic-color(&quot;danger&quot;), $white);
+    }
+  }
+}</code>" data-collapsed=".Button { ... }"><code>.Button { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the Button element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// A button with a light background color
+&lt;button class=&quot;Button--solid-light&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a dark background color
+&lt;button class=&quot;Button--solid-dark&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a background color corresponding to the primary theme color
+&lt;button class=&quot;Button--solid-primary&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a background color corresponding to the primary variant theme color
+&lt;button class=&quot;Button--solid-primary-variant&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a background color corresponding to the secondary theme color
+&lt;button class=&quot;Button--solid-secondary&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a background color corresponding to the secondary variant theme color
+&lt;button class=&quot;Button--solid-secondary-variant&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a background color corresponding to the accent theme color
+&lt;button class=&quot;Button--solid-accent&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a background color corresponding to the accent variant theme color
+&lt;button class=&quot;Button--solid-accent-variant&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a background color corresponding to the safe semantic color
+&lt;button class=&quot;Button--solid-safe&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a background color corresponding to the caution semantic color
+&lt;button class=&quot;Button--solid-caution&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a background color corresponding to the danger semantic color
+&lt;button class=&quot;Button--solid-danger&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a light text and border color
+&lt;button class=&quot;Button--outline-light&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a dark text and border color
+&lt;button class=&quot;Button--outline-dark&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a text and border color corresponding to the primary theme color
+&lt;button class=&quot;Button--outline-primary&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a text and border color corresponding to the primary variant theme color
+&lt;button class=&quot;Button--outline-primary-variant&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a text and border color corresponding to the secondary theme color
+&lt;button class=&quot;Button--outline-secondary&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a text and border color corresponding to the secondary variant theme color
+&lt;button class=&quot;Button--outline-secondary-variant&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a text and border color corresponding to the accent theme color
+&lt;button class=&quot;Button--outline-accent&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a text and border color corresponding to the accent variant theme color
+&lt;button class=&quot;Button--outline-accent-variant&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a text and border color corresponding to the safe semantic color
+&lt;button class=&quot;Button--outline-safe&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a text and border color corresponding to the caution semantic color
+&lt;button class=&quot;Button--outline-caution&quot;&gt;Lorem Ipsum&lt;/button&gt;
+
+// A button with a text and border color corresponding to the danger semantic color
+&lt;button class=&quot;Button--outline-danger&quot;&gt;Lorem Ipsum&lt;/button&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="buttons-css-.ButtonGroup"><h3 class="item__heading"><a class="item__name" href="#css-.ButtonGroup">.ButtonGroup</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.ButtonGroup {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: viewport-size(&quot;S&quot;)) {
+    flex-flow: row wrap;
+  }
+
+  a,
+  input,
+  button {
+    margin-top: spacing-size(&quot;tiny&quot;);
+    margin-bottom: spacing-size(&quot;tiny&quot;);
+
+    @media screen and (min-width: viewport-size(&quot;S&quot;)) {
+      margin-left: spacing-size(&quot;tiny&quot;);
+      margin-right: spacing-size(&quot;tiny&quot;);
+    }
+  }
+}</code>" data-collapsed=".ButtonGroup { ... }"><code>.ButtonGroup { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the ButtonGroup element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// A button group with several buttons
+&lt;div class=&quot;ButtonGroup&quot;&gt;
+  &lt;button class=&quot;Button--solid-safe&quot;&gt;Lorem Ipsum&lt;/button&gt;
+  &lt;button class=&quot;Button--solid-danger&quot;&gt;Lorem Ipsum&lt;/button&gt;
+&lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section><section class="main__sub-section" id="buttons-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="buttons-mixin-button-solid-color-scheme"><h3 class="item__heading"><a class="item__name" href="#mixin-button-solid-color-scheme">button-solid-color-scheme</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button-solid-color-scheme($_btn_background_color, $_btn_text_color) { 
+  background-color: $_btn_background_color;
+  color: $_btn_text_color;
+  border-color: $_btn_background_color;
+
+  &amp;:hover {
+    background-color: darken($_btn_background_color, 20%);
+  }
+ }" data-collapsed="@mixin button-solid-color-scheme($_btn_background_color, $_btn_text_color) { ... }"><code>@mixin button-solid-color-scheme($_btn_background_color, $_btn_text_color) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for Button text, background, and border color (solid).</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$_btn_background_color</code></th><td data-label="desc"><p>The desired background color</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$_btn_text_color</code></th><td data-label="desc"><p>The desired text color</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include button-solid-color-scheme($black, $white);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="buttons-mixin-button-outline-color-scheme"><h3 class="item__heading"><a class="item__name" href="#mixin-button-outline-color-scheme">button-outline-color-scheme</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button-outline-color-scheme($_btn_text_color, $_btn_hover_text_color) { 
+  background-color: transparent;
+  color: $_btn_text_color;
+  border-color: $_btn_text_color;
+
+  &amp;:hover {
+    background-color: $_btn_text_color;
+    color: $_btn_hover_text_color;
+  }
+ }" data-collapsed="@mixin button-outline-color-scheme($_btn_text_color, $_btn_hover_text_color) { ... }"><code>@mixin button-outline-color-scheme($_btn_text_color, $_btn_hover_text_color) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for Button text, background, and border color (outline).</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$_btn_text_color</code></th><td data-label="desc"><p>The desired text color</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$_btn_hover_text_color</code></th><td data-label="desc"><p>The desired text color when hovered</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include button-outline-color-scheme($black, $white);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section><section class="main__sub-section" id="buttons-placeholder"><h2 class="main__heading--secondary"><div class="container">placeholders</div></h2><section class="main__item container item" id="buttons-placeholder-default-button-styling"><h3 class="item__heading"><a class="item__name" href="#placeholder-default-button-styling">default-button-styling</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%default-button-styling { 
+  appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: 16px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  padding: spacing-size(&quot;mid&quot;) spacing-size(&quot;base&quot;);
+  text-align: center;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: $base-border-radius;
+
+  &amp;:focus {
+    outline: none;
+  }
+
+  &amp;:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+ }" data-collapsed="%default-button-styling { ... }"><code>%default-button-styling { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides default styles for Button elements.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@extend %default-button-styling;</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-base-font-family"><code>base-font-family</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-base-duration"><code>base-duration</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-base-timing"><code>base-timing</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-base-border-radius"><code>base-border-radius</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="cards"><div class="container">Cards</div></h1><section class="main__sub-section" id="cards-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="cards-css-.Card"><h3 class="item__heading"><a class="item__name" href="#css-.Card">.Card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.Card {
+  @extend %default-border-styling;
+
+  width: 97%;
+  word-wrap: break-word;
+  padding: 0;
+  margin: spacing-size(&quot;small&quot;) auto;
+
+  @media screen and (min-width: viewport-size(&quot;S&quot;)) {
+    width: 75%;
+  }
+
+  @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+    width: 65%;
+  }
+
+  @media screen and (min-width: viewport-size(&quot;L&quot;)) {
+    width: 55%;
+  }
+
+  &amp;--topBorder {
+    @extend .Card;
+
+    border-width: 5px 1px 1px 1px;
+    border-color: $black grayscale-color(30) grayscale-color(30) grayscale-color(30);
+  }
+
+  &amp;--rightBorder {
+    @extend .Card;
+
+    border-width: 1px 5px 1px 1px;
+    border-color: grayscale-color(30) $black grayscale-color(30) grayscale-color(30);
+  }
+
+  &amp;--bottomBorder {
+    @extend .Card;
+
+    border-width: 1px 1px 5px 1px;
+    border-color: grayscale-color(30) grayscale-color(30) $black grayscale-color(30);
+  }
+
+  &amp;--leftBorder {
+    @extend .Card;
+
+    border-width: 1px 1px 1px 5px;
+    border-color: grayscale-color(30) grayscale-color(30) grayscale-color(30) $black;
+  }
+
+  &amp;--medium {
+    width: 97%;
+
+    @media screen and (min-width: viewport-size(&quot;S&quot;)) {
+      width: 75%;
+    }
+
+    @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+      width: 65%;
+    }
+
+    @media screen and (min-width: viewport-size(&quot;L&quot;)) {
+      width: 55%;
+    }
+  }
+
+  &amp;--small {
+    width: 97%;
+
+    @media screen and (min-width: viewport-size(&quot;S&quot;)) {
+      width: 66%;
+    }
+
+    @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+      width: 55%;
+    }
+
+    @media screen and (min-width: viewport-size(&quot;L&quot;)) {
+      width: 33%;
+    }
+  }
+
+  &amp;__header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 85%;
+    line-height: 1.5;
+    margin: 0;
+    padding: spacing-size(&quot;small&quot;);
+
+    &amp;-text {
+      margin: 0;
+    }
+  }
+
+  &amp;__body {
+    padding: spacing-size(&quot;mid&quot;);
+
+    @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+      padding: spacing-size(&quot;base&quot;);
+    }
+  }
+
+  &amp;__title {
+    color: $black;
+    text-transform: uppercase;
+    text-align: center;
+    margin: spacing-size(&quot;mid&quot;) 0 spacing-size(&quot;tiny&quot;);
+
+    &amp;--spaced {
+      margin: spacing-size(&quot;mid&quot;) 0 spacing-size(&quot;base&quot;);
+    }
+  }
+
+  &amp;__footer {
+    font-size: 85%;
+    line-height: 1.5;
+    margin: 0;
+    padding: spacing-size(&quot;small&quot;);
+
+    &amp;-text {
+      margin: 0;
+    }
+  }
+}</code>" data-collapsed=".Card { ... }"><code>.Card { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the Card element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// A plain card
+&lt;div class=&quot;Card&quot;&gt;
+&lt;/div&gt;
+
+// A medium-sized card
+&lt;div class=&quot;Card Card--medium&quot;&gt;
+&lt;/div&gt;
+
+// A small-sized card
+&lt;div class=&quot;Card Card--small&quot;&gt;
+&lt;/div&gt;
+
+// A card with a thick top border
+&lt;div class=&quot;Card--topBorder&quot;&gt;
+&lt;/div&gt;
+
+// A card with a thick right border
+&lt;div class=&quot;Card--rightBorder&quot;&gt;
+&lt;/div&gt;
+
+// A card with a thick bottom border
+&lt;div class=&quot;Card--bottomBorder&quot;&gt;
+&lt;/div&gt;
+
+// A card with a thick left border
+&lt;div class=&quot;Card--leftBorder&quot;&gt;
+&lt;/div&gt;
+
+// A card with a card header
+&lt;div class=&quot;Card&quot;&gt;
+  &lt;div class=&quot;Card__header&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+// A card with a card header and header text
+&lt;div class=&quot;Card&quot;&gt;
+  &lt;div class=&quot;Card__header&quot;&gt;
+    &lt;p class=&quot;Card__header-text&quot;&gt;Lorem Ipsum&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+// A card with a card body
+&lt;div class=&quot;Card&quot;&gt;
+  &lt;div class=&quot;Card__body&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+// A card with a card body and title
+&lt;div class=&quot;Card&quot;&gt;
+  &lt;div class=&quot;Card__body&quot;&gt;
+    &lt;h2 class=&quot;Card__title&quot;&gt;Lorem Ipsum&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+// A card with a card body and spaced title
+&lt;div class=&quot;Card&quot;&gt;
+  &lt;div class=&quot;Card__body&quot;&gt;
+    &lt;h2 class=&quot;Card__title--spaced&quot;&gt;Lorem Ipsum&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+// A card with a card footer
+&lt;div class=&quot;Card&quot;&gt;
+  &lt;div class=&quot;Card__footer&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+// A card with a card footer and footer text
+&lt;div class=&quot;Card&quot;&gt;
+  &lt;div class=&quot;Card__footer&quot;&gt;
+    &lt;p class=&quot;Card__footer-text&quot;&gt;Lorem Ipsum&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+// A card with a card header, body, and footer
+&lt;div class=&quot;Card&quot;&gt;
+  &lt;div class=&quot;Card__header&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;Card__body&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;Card__footer&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="cards-css-.CardDeck"><h3 class="item__heading"><a class="item__name" href="#css-.CardDeck">.CardDeck</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.CardDeck {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}</code>" data-collapsed=".CardDeck { ... }"><code>.CardDeck { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the CardDeck element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>&lt;div class=&quot;CardDeck&quot;&gt;
+  &lt;div class=&quot;Card&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;Card&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;Card&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="forms"><div class="container">Forms</div></h1><section class="main__sub-section" id="forms-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="forms-css-.Form"><h3 class="item__heading"><a class="item__name" href="#css-.Form">.Form</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.Form {
+  width: 100%;
+  margin: auto;
+
+  @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+    width: 90%;
+  }
+
+  @media screen and (min-width: viewport-size(&quot;L&quot;)) {
+    width: 80%;
+  }
+
+  &amp;__group {
+    padding: spacing-size(&quot;tiny&quot;);
+    margin: spacing-size(&quot;base&quot;) spacing-size(&quot;tiny&quot;);
+    border-width: 2px;
+    border-style: solid;
+    border-color: $black;
+    border-radius: $base-border-radius;
+
+    label {
+      display: block;
+      font-family: $heading-semibold-font-family;
+      text-transform: uppercase;
+      text-align: center;
+      width: spacing-size(&quot;super&quot;) * 2;
+      background-color: white;
+      margin-top: (-2 * spacing-size(&quot;small&quot;));
+
+      &amp;.field_with_errors {
+        color: darken(semantic-color(&quot;danger&quot;), 25%);
+      }
+    }
+
+    fieldset {
+      background-color: transparent;
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    legend {
+      font-weight: 600;
+      padding: 0;
+    }
+
+    input,
+    select {
+      @extend %basic-form-field-styling;
+
+      display: block;
+      width: 95%;
+      margin: spacing-size(&quot;mid&quot;) auto;
+
+      @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+        width: 70%;
+      }
+
+      &amp;.field_with_errors {
+        color: darken(semantic-color(&quot;danger&quot;), 25%);
+        border-color: darken(semantic-color(&quot;danger&quot;), 25%);
+      }
+    }
+
+    textarea {
+      @extend %basic-form-field-styling;
+
+      display: block;
+      width: 95%;
+      height: 30vh;
+      margin: spacing-size(&quot;mid&quot;) auto;
+
+      &amp;.field_with_errors {
+        color: darken(semantic-color(&quot;danger&quot;), 40%);
+        border-color: darken(semantic-color(&quot;danger&quot;), 40%);
+      }
+    }
+
+    [type=&quot;checkbox&quot;],
+    [type=&quot;radio&quot;],
+    [type=&quot;file&quot;],
+    select {
+      &amp;:focus {
+        outline: none;
+      }
+    }
+
+    small {
+      display: block;
+      width: 95%;
+      text-align: right;
+      margin: spacing-size(&quot;small&quot;);
+    }
+  }
+
+  &amp;__time-field-group {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin: spacing-size(&quot;mid&quot;) auto;
+
+    @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+      width: 100%;
+    }
+
+    select {
+      flex: 100%;
+      margin: spacing-size(&quot;small&quot;) auto;
+
+      @media screen and (min-width: viewport-size(&quot;S&quot;)) {
+        flex: 30%;
+        margin: auto spacing-size(&quot;tiny&quot;);
+      }
+    }
+  }
+
+  &amp;__action {
+    text-align: center;
+    margin-top: (spacing-size(&quot;mid&quot;) - (spacing-size(&quot;base&quot;) / 6));
+  }
+}</code>" data-collapsed=".Form { ... }"><code>.Form { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the Form element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// A form with form groups enclosing inputs
+&lt;div class=&quot;Form&quot;&gt;
+  &lt;div class=&quot;Form__group&quot;&gt;
+    &lt;label&gt;Lorem Ipsum&lt;/label&gt;
+    &lt;input type=&quot;text&quot; /&gt;
+   &lt;/div&gt;
+  &lt;div class=&quot;Form__group&quot;&gt;
+    &lt;label&gt;Lorem Ipsum&lt;/label&gt;
+    &lt;input type=&quot;text&quot; /&gt;
+   &lt;/div&gt;
+  &lt;div class=&quot;Form__action&quot;&gt;
+    &lt;input type=&quot;submit&quot; class=&quot;Button--solid-safe&quot;&gt;Lorem Ipsum&lt;/input&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="forms-css-.InlineForm"><h3 class="item__heading"><a class="item__name" href="#css-.InlineForm">.InlineForm</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.InlineForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+
+  @media screen and (min-width: viewport-size(&quot;S&quot;)) {
+    flex-flow: row wrap;
+  }
+
+  @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+    width: 70%;
+  }
+
+  button,
+  input[type=&quot;submit&quot;] {
+    flex: 1;
+    margin-top: spacing-size(&quot;tiny&quot;);
+    margin-bottom: spacing-size(&quot;tiny&quot;);
+
+    @media screen and (min-width: viewport-size(&quot;S&quot;)) {
+      flex: 0;
+      margin-left: spacing-size(&quot;tiny&quot;);
+      margin-right: spacing-size(&quot;tiny&quot;);
+    }
+  }
+
+  input[type=&quot;text&quot;] {
+    @extend %basic-form-field-styling;
+
+    border-width: 1px 1px 5px 1px;
+    border-color: grayscale-color(20) grayscale-color(20) $black grayscale-color(20);
+    padding: spacing-size(&quot;small&quot;);
+
+    @media screen and (min-width: viewport-size(&quot;S&quot;)) {
+      width: 50%;
+      margin: spacing-size(&quot;tiny&quot;);
+    }
+  }
+}</code>" data-collapsed=".InlineForm { ... }"><code>.InlineForm { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the InlineForm element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// A form with form groups enclosing inputs
+&lt;div class=&quot;InlineForm&quot;&gt;
+  &lt;input type=&quot;text&quot; /&gt;
+  &lt;input type=&quot;submit&quot; class=&quot;Button--solid-safe&quot;&gt;Lorem Ipsum&lt;/input&gt;
+&lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section><section class="main__sub-section" id="forms-placeholder"><h2 class="main__heading--secondary"><div class="container">placeholders</div></h2><section class="main__item container item" id="forms-placeholder-basic-form-field-styling"><h3 class="item__heading"><a class="item__name" href="#placeholder-basic-form-field-styling">basic-form-field-styling</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%basic-form-field-styling { 
+  @extend %default-border-styling;
+
+  appearance: none;
+  line-height: 7vh;
+  font-family: $base-font-family;
+  font-size: 1em;
+  background-color: $white;
+  box-shadow: $form-box-shadow;
+  transition: border-color $base-duration $base-timing;
+  padding: spacing-size(&quot;small&quot;);
+
+  @media screen and (min-width: viewport-size(&quot;S&quot;)) {
+    line-height: 5vh;
+  }
+
+  &amp;:hover {
+    border-color: theme-color(&quot;secondary&quot;);
+  }
+
+  &amp;:focus {
+    border-color: theme-color(&quot;primary&quot;);
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+
+  &amp;:disabled,
+  &amp;[readonly] {
+    background-color: darken($white, 2%);
+    cursor: not-allowed;
+
+    &amp;:hover {
+      border-color: grayscale-color(30);
+    }
+
+    &amp;:focus {
+      border-color: grayscale-color(30);
+      box-shadow: $form-box-shadow;
+      outline: none;
+    }
+  }
+
+  &amp;::placeholder {
+    color: lighten($base-font-color, 20%);
+  }
+ }" data-collapsed="%basic-form-field-styling { ... }"><code>%basic-form-field-styling { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for form fields.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@extend %basic-form-field-styling;</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-viewport-size"><code>viewport-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-theme-color"><code>theme-color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-theme-color"><code>theme-color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-grayscale-color"><code>grayscale-color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-grayscale-color"><code>grayscale-color</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#base-placeholder-default-border-styling"><code>default-border-styling</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-base-font-family"><code>base-font-family</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-white"><code>white</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#forms-variable-form-box-shadow"><code>form-box-shadow</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-base-duration"><code>base-duration</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-base-timing"><code>base-timing</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#forms-variable-form-box-shadow-focus"><code>form-box-shadow-focus</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-white"><code>white</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#forms-variable-form-box-shadow"><code>form-box-shadow</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-base-font-color"><code>base-font-color</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section><section class="main__sub-section" id="forms-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="forms-variable-form-box-shadow"><h3 class="item__heading"><a class="item__name" href="#variable-form-box-shadow">form-box-shadow</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Box shadow for form inputs</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="forms-variable-form-box-shadow-focus"><h3 class="item__heading"><a class="item__name" href="#variable-form-box-shadow-focus">form-box-shadow-focus</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(theme-color(&quot;primary&quot;), 0.7);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Box shadow for form inputs with focus</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#forms-placeholder-basic-form-field-styling"><code>basic-form-field-styling</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="layout"><div class="container">Layout</div></h1><section class="main__sub-section" id="layout-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="layout-css-.ContentWrapper"><h3 class="item__heading"><a class="item__name" href="#css-.ContentWrapper">.ContentWrapper</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.ContentWrapper {
+  max-width: (viewport-size(&quot;L&quot;) - 20px);
+  margin: spacing-size(&quot;mid&quot;) spacing-size(&quot;small&quot;);
+
+  @media screen and (min-width: (viewport-size(&quot;L&quot;) + 20px)) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  ul {
+    margin: auto spacing-size(&quot;large&quot;) spacing-size(&quot;base&quot;) spacing-size(&quot;large&quot;);
+
+    li {
+      list-style-type: circle;
+    }
+  }
+
+  ol {
+    margin: auto spacing-size(&quot;large&quot;) spacing-size(&quot;base&quot;) spacing-size(&quot;large&quot;);
+
+    li {
+      list-style-type: upper-roman;
+    }
+  }
+
+  blockquote {
+    background-color: grayscale-color(20);
+    text-align: center;
+    font-style: italic;
+    font-size: 110%;
+    margin: spacing-size(&quot;tiny&quot;) auto;
+    padding: spacing-size(&quot;base&quot;);
+    border-radius: $base-border-radius;
+
+    @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+      padding: spacing-size(&quot;mid&quot;);
+    }
+
+    @media screen and (min-width: viewport-size(&quot;L&quot;)) {
+      padding: spacing-size(&quot;small&quot;);
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  code {
+    background-color: grayscale-color(20);
+    display: inline-block;
+    padding: spacing-size(&quot;tiny&quot;) spacing-size(&quot;small&quot;);
+    border-radius: $base-border-radius;
+
+    @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+      padding: spacing-size(&quot;mid&quot;);
+    }
+
+    @media screen and (min-width: viewport-size(&quot;L&quot;)) {
+      padding: spacing-size(&quot;small&quot;);
+    }
+  }
+}</code>" data-collapsed=".ContentWrapper { ... }"><code>.ContentWrapper { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the ContentWrapper element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// A content wrapper to apply styles to child elements.
+&lt;div class=&quot;ContentWrapper&quot;&gt;
+&lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="layout-css-.Flash"><h3 class="item__heading"><a class="item__name" href="#css-.Flash">.Flash</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.Flash {
+  &amp;--safe {
+    @extend %default-flash-styling;
+
+    @include flash-color-scheme(semantic-color(&quot;safe&quot;));
+  }
+
+  &amp;--caution {
+    @extend %default-flash-styling;
+
+    @include flash-color-scheme(semantic-color(&quot;caution&quot;));
+  }
+
+  &amp;--danger {
+    @extend %default-flash-styling;
+
+    @include flash-color-scheme(semantic-color(&quot;danger&quot;));
+  }
+
+  &amp;--info {
+    @extend %default-flash-styling;
+
+    @include flash-color-scheme(semantic-color(&quot;info&quot;));
+  }
+
+  &amp;__list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &amp;__text {
+    margin: 0;
+  }
+}</code>" data-collapsed=".Flash { ... }"><code>.Flash { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the Flash element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// A flash with colors corresponding to the safe semantic color.
+&lt;div class=&quot;Flash--safe&quot;&gt;
+  &lt;p class=&quot;Flash__text&quot;&gt;Lorem Ipsum&lt;/p&gt;
+&lt;/div&gt;
+// A flash with colors corresponding to the caution semantic color.
+&lt;div class=&quot;Flash--caution&quot;&gt;
+  &lt;p class=&quot;Flash__text&quot;&gt;Lorem Ipsum&lt;/p&gt;
+&lt;/div&gt;
+// A flash with colors corresponding to the danger semantic color.
+&lt;div class=&quot;Flash--danger&quot;&gt;
+  &lt;ul class=&quot;Flash__list&quot;&gt;
+    &lt;li&gt;Error One&lt;/li&gt;
+    &lt;li&gt;Error Two&lt;/li&gt;
+    &lt;li&gt;Error Three&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="layout-css-.Hero"><h3 class="item__heading"><a class="item__name" href="#css-.Hero">.Hero</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.Hero {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: $black;
+  background-color: $white;
+  padding: spacing-size(&quot;base&quot;);
+
+  @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+    padding: spacing-size(&quot;super&quot;);
+  }
+
+  &amp;--inverted {
+    @extend .Hero;
+
+    color: $white;
+    background-color: $black;
+  }
+
+  &amp;__headline {
+    flex: 100%;
+    font-size: 300%;
+  }
+
+  &amp;__lede {
+    flex: 100%;
+    font-size: 125%;
+    text-align: center;
+  }
+}</code>" data-collapsed=".Hero { ... }"><code>.Hero { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the Hero element to use.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// A hero element with headline and lede.
+&lt;div class=&quot;Hero&quot;&gt;
+  &lt;h1 class=&quot;Hero__headline&quot;&gt;Lorem Ipsum&lt;/h1&gt;
+  &lt;p class=&quot;Hero__lede&quot;&gt;An exmaple lede for a hero element.&lt;/p&gt;
+&lt;/div&gt;
+// A hero element with an inverted color scheme.
+&lt;div class=&quot;Hero&quot;&gt;
+  &lt;h1 class=&quot;Hero__headline&quot;&gt;Lorem Ipsum&lt;/h1&gt;
+  &lt;p class=&quot;Hero__lede&quot;&gt;An exmaple lede for a hero element.&lt;/p&gt;
+&lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="layout-css-.InfoBox"><h3 class="item__heading"><a class="item__name" href="#css-.InfoBox">.InfoBox</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.InfoBox {
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+    width: 75%;
+  }
+
+  &amp;__group {
+    padding: spacing-size(&quot;tiny&quot;);
+    margin: spacing-size(&quot;base&quot;) spacing-size(&quot;tiny&quot;);
+    border: 2px solid $black;
+    border-radius: $base-border-radius;
+  }
+
+  &amp;__label {
+    display: block;
+    font-family: $heading-semibold-font-family;
+    text-transform: uppercase;
+    text-align: center;
+    width: spacing-size(&quot;super&quot;) * 2;
+    background-color: white;
+    margin-top: (-2 * spacing-size(&quot;small&quot;));
+  }
+
+  &amp;__content {
+    text-align: center;
+    padding-top: spacing-size(&quot;small&quot;);
+    padding-bottom: spacing-size(&quot;small&quot;);
+
+    p {
+      margin: 0;
+    }
+  }
+}</code>" data-collapsed=".InfoBox { ... }"><code>.InfoBox { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the InfoBox element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// An informational box that presents labelled content.
+&lt;div class=&quot;InfoBox&quot;&gt;
+  &lt;div class=&quot;InfoBox__group&quot;&gt;
+    &lt;p class=&quot;InfoBox__label&quot;&gt;Lorem&lt;/p&gt;
+    &lt;p class=&quot;InfoBox__content&quot;&gt;This is example info box content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="layout-css-.Paginator"><h3 class="item__heading"><a class="item__name" href="#css-.Paginator">.Paginator</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.Paginator {
+  font-family: $heading-semibold-font-family;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: spacing-size(&quot;super&quot;);
+  margin-bottom: spacing-size(&quot;super&quot;);
+
+  a {
+    color: $black;
+    margin-left: spacing-size(&quot;base&quot;);
+    margin-right: spacing-size(&quot;base&quot;);
+
+    @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+      margin-left: spacing-size(&quot;super&quot;);
+      margin-right: spacing-size(&quot;super&quot;);
+    }
+
+    &amp;:hover {
+      color: theme-color(&quot;primary&quot;);
+    }
+  }
+
+  p {
+    margin-top: spacing-size(&quot;base&quot;);
+    margin-bottom: spacing-size(&quot;base&quot;);
+  }
+}</code>" data-collapsed=".Paginator { ... }"><code>.Paginator { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the Paginator element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// A wrapper around pagination controls to apply styles to child elements.
+&lt;div class=&quot;Paginator&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt;Prev&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;Next&lt;/a&gt;
+  &lt;p&gt;Displaying records 11-20&lt;/p&gt;
+&lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="layout-css-.Ribbon"><h3 class="item__heading"><a class="item__name" href="#css-.Ribbon">.Ribbon</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.Ribbon {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: spacing-size(&quot;base&quot;) auto spacing-size(&quot;large&quot;) auto;
+}</code>" data-collapsed=".Ribbon { ... }"><code>.Ribbon { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the Ribbon element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// A wrapper that applies flex box spacing and positioning to child elements.
+&lt;div class=&quot;Ribbon&quot;&gt;
+&lt;/div&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section><section class="main__sub-section" id="layout-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="layout-mixin-flash-color-scheme"><h3 class="item__heading"><a class="item__name" href="#mixin-flash-color-scheme">flash-color-scheme</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flash-color-scheme() { 
+  background-color: lighten($_flash_color, 25%);
+  color: darken($_flash_color, 40%);
+  border-color: darken($_flash_color, 20%);
+ }" data-collapsed="@mixin flash-color-scheme() { ... }"><code>@mixin flash-color-scheme() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Defines color scheme for Flash modifier classes to use.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include flash-color-scheme($gray-50);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section><section class="main__sub-section" id="layout-placeholder"><h2 class="main__heading--secondary"><div class="container">placeholders</div></h2><section class="main__item container item" id="layout-placeholder-default-flash-styling"><h3 class="item__heading"><a class="item__name" href="#placeholder-default-flash-styling">default-flash-styling</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%default-flash-styling { 
+  text-align: center;
+  max-width: 1200px;
+  margin: spacing-size(&quot;small&quot;) auto;
+  padding: spacing-size(&quot;base&quot;);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: $base_border_radius;
+ }" data-collapsed="%default-flash-styling { ... }"><code>%default-flash-styling { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the Flash modifier classes to use.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@extend %default-flash-styling;</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="links"><div class="container">Links</div></h1><section class="main__sub-section" id="links-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="links-css-.BoxLink"><h3 class="item__heading"><a class="item__name" href="#css-.BoxLink">.BoxLink</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.BoxLink {
+  &amp;--light {
+    @extend %default-box-link-styling;
+
+    @include box-link-darken-color-scheme(grayscale-color(20));
+  }
+
+  &amp;--dark {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme($black);
+  }
+
+  &amp;--primary {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme(theme-color(&quot;primary&quot;));
+
+    &amp;-variant {
+      @extend %default-box-link-styling;
+
+      @include box-link-lighten-color-scheme(theme-color(&quot;primary-variant&quot;));
+    }
+  }
+
+  &amp;--secondary {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme(theme-color(&quot;secondary&quot;));
+
+    &amp;-variant {
+      @extend %default-box-link-styling;
+
+      @include box-link-lighten-color-scheme(theme-color(&quot;secondary-variant&quot;));
+    }
+  }
+
+  &amp;--accent {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme(theme-color(&quot;accent&quot;));
+
+    &amp;-variant {
+      @extend %default-box-link-styling;
+
+      @include box-link-lighten-color-scheme(theme-color(&quot;accent-variant&quot;));
+    }
+  }
+
+  &amp;--safe {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme(semantic-color(&quot;safe&quot;));
+  }
+
+  &amp;--caution {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme(semantic-color(&quot;caution&quot;));
+  }
+
+  &amp;--danger {
+    @extend %default-box-link-styling;
+
+    @include box-link-lighten-color-scheme(semantic-color(&quot;danger&quot;));
+  }
+}</code>" data-collapsed=".BoxLink { ... }"><code>.BoxLink { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the BoxLink element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// A box link with a light text and border color
+&lt;a class=&quot;BoxLink--light&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A box link with a dark text and border color
+&lt;a class=&quot;BoxLink--dark&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A box link with a text and border color corresponding to the primary theme color
+&lt;a class=&quot;BoxLink--primary&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A box link with a text and border color corresponding to the primary variant theme color
+&lt;a class=&quot;BoxLink--primary-variant&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A box link with a text and border color corresponding to the secondary theme color
+&lt;a class=&quot;BoxLink--secondary&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A box link with a text and border color corresponding to the secondary variant theme color
+&lt;a class=&quot;BoxLink--secondary-variant&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A box link with a text and border color corresponding to the accent theme color
+&lt;a class=&quot;BoxLink--accent&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A box link with a text and border color corresponding to the accent variant theme color
+&lt;a class=&quot;BoxLink--accent-variant&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A box link with a text and border color corresponding to the safe semantic color
+&lt;a class=&quot;BoxLink--safe&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A box link with a text and border color corresponding to the caution semantic color
+&lt;a class=&quot;BoxLink--caution&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A box link with a text and border color corresponding to the danger semantic color
+&lt;a class=&quot;BoxLink--danger&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="links-css-.IconLink"><h3 class="item__heading"><a class="item__name" href="#css-.IconLink">.IconLink</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.IconLink {
+  &amp;--light {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme($white);
+  }
+
+  &amp;--dark {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme($black);
+  }
+
+  &amp;--primary {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme(theme-color(&quot;primary&quot;));
+
+    &amp;-variant {
+      @extend %default-icon-link-styling;
+
+      @include link-color-scheme(theme-color(&quot;primary-variant&quot;));
+    }
+  }
+
+  &amp;--secondary {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme(theme-color(&quot;secondary&quot;));
+
+    &amp;-variant {
+      @extend %default-icon-link-styling;
+
+      @include link-color-scheme(theme-color(&quot;secondary-variant&quot;));
+    }
+  }
+
+  &amp;--accent {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme(theme-color(&quot;accent&quot;));
+
+    &amp;-variant {
+      @extend %default-icon-link-styling;
+
+      @include link-color-scheme(theme-color(&quot;accent-variant&quot;));
+    }
+  }
+
+  &amp;--safe {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme(semantic-color(&quot;safe&quot;));
+  }
+
+  &amp;--caution {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme(semantic-color(&quot;caution&quot;));
+  }
+
+  &amp;--danger {
+    @extend %default-icon-link-styling;
+
+    @include link-color-scheme(semantic-color(&quot;danger&quot;));
+  }
+}</code>" data-collapsed=".IconLink { ... }"><code>.IconLink { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the IconLink element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// An icon link with a light text and border color
+&lt;a class=&quot;IconLink--light&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// An icon link with a dark text and border color
+&lt;a class=&quot;IconLink--dark&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// An icon link with a text and border color corresponding to the primary theme color
+&lt;a class=&quot;IconLink--primary&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// An icon link with a text and border color corresponding to the primary variant theme color
+&lt;a class=&quot;IconLink--primary-variant&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// An icon link with a text and border color corresponding to the secondary theme color
+&lt;a class=&quot;IconLink--secondary&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// An icon link with a text and border color corresponding to the secondary variant theme color
+&lt;a class=&quot;IconLink--secondary-variant&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// An icon link with a text and border color corresponding to the accent theme color
+&lt;a class=&quot;IconLink--accent&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// An icon link with a text and border color corresponding to the accent variant theme color
+&lt;a class=&quot;IconLink--accent-variant&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// An icon link with a text and border color corresponding to the safe semantic color
+&lt;a class=&quot;IconLink--safe&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// An icon link with a text and border color corresponding to the caution semantic color
+&lt;a class=&quot;IconLink--caution&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// An icon link with a text and border color corresponding to the danger semantic color
+&lt;a class=&quot;IconLink--danger&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="links-css-.Link"><h3 class="item__heading"><a class="item__name" href="#css-.Link">.Link</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.Link {
+  &amp;--light {
+    @extend %default-link-styling;
+
+    @include link-color-scheme($white);
+  }
+
+  &amp;--dark {
+    @extend %default-link-styling;
+
+    @include link-color-scheme($black);
+  }
+
+  &amp;--primary {
+    @extend %default-link-styling;
+
+    @include link-color-scheme(theme-color(&quot;primary&quot;));
+
+    &amp;-variant {
+      @extend %default-link-styling;
+
+      @include link-color-scheme(theme-color(&quot;primary-variant&quot;));
+    }
+  }
+
+  &amp;--secondary {
+    @extend %default-link-styling;
+
+    @include link-color-scheme(theme-color(&quot;secondary&quot;));
+
+    &amp;-variant {
+      @extend %default-link-styling;
+
+      @include link-color-scheme(theme-color(&quot;secondary-variant&quot;));
+    }
+  }
+
+  &amp;--accent {
+    @extend %default-link-styling;
+
+    @include link-color-scheme(theme-color(&quot;accent&quot;));
+
+    &amp;-variant {
+      @extend %default-link-styling;
+
+      @include link-color-scheme(theme-color(&quot;accent-variant&quot;));
+    }
+  }
+
+  &amp;--safe {
+    @extend %default-link-styling;
+
+    @include link-color-scheme(semantic-color(&quot;safe&quot;));
+  }
+
+  &amp;--caution {
+    @extend %default-link-styling;
+
+    @include link-color-scheme(semantic-color(&quot;caution&quot;));
+  }
+
+  &amp;--danger {
+    @extend %default-link-styling;
+
+    @include link-color-scheme(semantic-color(&quot;danger&quot;));
+  }
+}</code>" data-collapsed=".Link { ... }"><code>.Link { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for the Link element.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// A link with a light text and hover color
+&lt;a class=&quot;Link--light&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A link with a dark text and hover color
+&lt;a class=&quot;Link--dark&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A link with a text and hover color corresponding to the primary theme color
+&lt;a class=&quot;Link--primary&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A link with a text and hover color corresponding to the primary variant theme color
+&lt;a class=&quot;Link--primary-variant&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A link with a text and hover color corresponding to the secondary theme color
+&lt;a class=&quot;Link--secondary&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A link with a text and hover color corresponding to the secondary variant theme color
+&lt;a class=&quot;Link--secondary-variant&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A link with a text and hover color corresponding to the accent theme color
+&lt;a class=&quot;Link--accent&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A link with a text and hover color corresponding to the accent variant theme color
+&lt;a class=&quot;Link--accent-variant&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A link with a text and hover color corresponding to the safe semantic color
+&lt;a class=&quot;Link--safe&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A link with a text and hover color corresponding to the caution semantic color
+&lt;a class=&quot;Link--caution&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;
+
+// A link with a text and hover color corresponding to the danger semantic color
+&lt;a class=&quot;Link--danger&quot; href=&quot;#&quot;&gt;Lorem Ipsum&lt;/a&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section><section class="main__sub-section" id="links-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="links-mixin-link-color-scheme"><h3 class="item__heading"><a class="item__name" href="#mixin-link-color-scheme">link-color-scheme</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin link-color-scheme($_link_color) { 
+  color: $_link_color;
+
+  &amp;:hover {
+    color: lighten($_link_color, 20%);
+  }
+ }" data-collapsed="@mixin link-color-scheme($_link_color) { ... }"><code>@mixin link-color-scheme($_link_color) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides styles for Link text and border color.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$_link_color</code></th><td data-label="desc"><p>The desired display color</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include link-color-scheme($black);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="links-mixin-box-link-darken-color-scheme"><h3 class="item__heading"><a class="item__name" href="#mixin-box-link-darken-color-scheme">box-link-darken-color-scheme</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin box-link-darken-color-scheme($_link_color) { 
+  color: $_link_color;
+  border-color: darken($_link_color, 10%);
+
+  &amp;:hover {
+    color: lighten($_link_color, 20%);
+    border-color: lighten($_link_color, 25%);
+  }
+ }" data-collapsed="@mixin box-link-darken-color-scheme($_link_color) { ... }"><code>@mixin box-link-darken-color-scheme($_link_color) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides darkened styles for BoxLink text and border color.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$_link_color</code></th><td data-label="desc"><p>The desired display color</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include box-link-darken-color-scheme($black);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="links-mixin-box-link-lighten-color-scheme"><h3 class="item__heading"><a class="item__name" href="#mixin-box-link-lighten-color-scheme">box-link-lighten-color-scheme</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin box-link-lighten-color-scheme($_link_color) { 
+  color: $_link_color;
+  border-color: darken($_link_color, 10%);
+
+  &amp;:hover {
+    color: darken($_link_color, 20%);
+    border-color: darken($_link_color, 25%);
+  }
+ }" data-collapsed="@mixin box-link-lighten-color-scheme($_link_color) { ... }"><code>@mixin box-link-lighten-color-scheme($_link_color) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides lightened styles for BoxLink text and border color.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$_link_color</code></th><td data-label="desc"><p>The desired display color</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include box-link-lighten-color-scheme($gray-20);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section><section class="main__sub-section" id="links-placeholder"><h2 class="main__heading--secondary"><div class="container">placeholders</div></h2><section class="main__item container item" id="links-placeholder-default-link-styling"><h3 class="item__heading"><a class="item__name" href="#placeholder-default-link-styling">default-link-styling</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%default-link-styling { 
+  text-decoration-skip: ink;
+  transition: color $base-duration $base-timing;
+
+  &amp;:focus {
+    outline: none;
+    outline-offset: none;
+  }
+ }" data-collapsed="%default-link-styling { ... }"><code>%default-link-styling { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides default styles for Link elements.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@extend %default-link-styling;</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-base-duration"><code>base-duration</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-base-timing"><code>base-timing</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="links-placeholder-default-box-link-styling"><h3 class="item__heading"><a class="item__name" href="#placeholder-default-box-link-styling">default-box-link-styling</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%default-box-link-styling { 
+  display: block;
+  font-family: $heading-semibold-font-family;
+  font-size: 125%;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  margin: spacing-size(&quot;tiny&quot;);
+  padding: spacing-size(&quot;base&quot;) spacing-size(&quot;small&quot;);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: $base-border-radius;
+
+  @media screen and (min-width: viewport-size(&quot;M&quot;)) {
+    margin: spacing-size(&quot;small&quot;);
+    padding: spacing-size(&quot;base&quot;);
+  }
+
+  @media screen and (min-width: viewport-size(&quot;L&quot;)) {
+    margin: spacing-size(&quot;base&quot;);
+    padding: spacing-size(&quot;large&quot;);
+  }
+ }" data-collapsed="%default-box-link-styling { ... }"><code>%default-box-link-styling { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides default styles for BoxLink elements.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@extend %default-box-link-styling;</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-viewport-size"><code>viewport-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-viewport-size"><code>viewport-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base-function-spacing-size"><code>spacing-size</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-heading-semibold-font-family"><code>heading-semibold-font-family</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#base-variable-base-border-radius"><code>base-border-radius</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="links-placeholder-default-icon-link-styling"><h3 class="item__heading"><a class="item__name" href="#placeholder-default-icon-link-styling">default-icon-link-styling</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%default-icon-link-styling { 
+  text-decoration: none;
+  cursor: pointer;
+
+  &amp;:hover {
+    text-decoration: none;
+  }
+ }" data-collapsed="%default-icon-link-styling { ... }"><code>%default-icon-link-styling { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides default styles for IconLink elements.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@extend %default-icon-link-styling;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="utilities"><div class="container">Utilities</div></h1><section class="main__sub-section" id="utilities-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="utilities-css-.u-Image"><h3 class="item__heading"><a class="item__name" href="#css-.u-Image">.u-Image</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.u-Image {
+  &amp;--rounded {
+    border-radius: 50%;
+  }
+
+  &amp;--responsive {
+    width: 100%;
+    height: auto;
+  }
+}</code>" data-collapsed=".u-Image { ... }"><code>.u-Image { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides utility classes for images.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// Rounds an image.
+&lt;img src=&quot;foobar.png&quot; class=&quot;u-Image--rounded&quot; /&gt;
+// Makes an image responsive.
+&lt;img src=&quot;foobar.png&quot; class=&quot;u-Image--responsive&quot; /&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="utilities-css-.u-List"><h3 class="item__heading"><a class="item__name" href="#css-.u-List">.u-List</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.u-List {
+  &amp;--unstyled {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}</code>" data-collapsed=".u-List { ... }"><code>.u-List { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides utility classes for lists.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// Resets a list&#39;s style.
+&lt;ul class=&quot;u-List--unstyled&quot;&gt;
+  &lt;li&gt;Foo&lt;/li&gt;
+  &lt;li&gt;Bar&lt;/li&gt;
+  &lt;li&gt;Baz&lt;/li&gt;
+&lt;/ul&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section><section class="main__item container item" id="utilities-css-.u-Text"><h3 class="item__heading"><a class="item__name" href="#css-.u-Text">.u-Text</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.u-Text {
+  &amp;--muted {
+    color: grayscale-color(70);
+  }
+
+  &amp;--loud {
+    font-family: $heading-semibold-font-family;
+    text-transform: uppercase;
+  }
+
+  &amp;--left {
+    text-align: left;
+  }
+
+  &amp;--center {
+    text-align: center;
+  }
+
+  &amp;--right {
+    text-align: right;
+  }
+
+  &amp;--color {
+    &amp;-dark {
+      color: $black;
+    }
+
+    &amp;-light {
+      color: $white;
+    }
+
+    &amp;-primary {
+      color: theme-color(&quot;primary&quot;);
+
+      &amp;-variant {
+        color: theme-color(&quot;primary-variant&quot;);
+      }
+    }
+
+    &amp;-secondary {
+      color: theme-color(&quot;secondary&quot;);
+
+      &amp;-variant {
+        color: theme-color(&quot;secondary-variant&quot;);
+      }
+    }
+
+    &amp;-accent {
+      color: theme-color(&quot;accent&quot;);
+
+      &amp;-variant {
+        color: theme-color(&quot;accent-variant&quot;);
+      }
+    }
+
+    &amp;-safe {
+      color: semantic-color(&quot;safe&quot;);
+    }
+
+    &amp;-caution {
+      color: semantic-color(&quot;caution&quot;);
+    }
+
+    &amp;-danger {
+      color: semantic-color(&quot;danger&quot;);
+    }
+  }
+}</code>" data-collapsed=".u-Text { ... }"><code>.u-Text { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides utility classes for text.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>// Subdues a text element&#39;s color.
+&lt;p class=&quot;u-Text--muted&quot;&gt;Foo&lt;/p&gt;
+// Makes a text element stand out.
+&lt;p class=&quot;u-Text--loud&quot;&gt;Foo&lt;/p&gt;
+// Aligns a text element to the left.
+&lt;p class=&quot;u-Text--left&quot;&gt;Foo&lt;/p&gt;
+// Aligns a text element to the right.
+&lt;p class=&quot;u-Text--right&quot;&gt;Foo&lt;/p&gt;
+// Aligns a text element to the center.
+&lt;p class=&quot;u-Text--center&quot;&gt;Foo&lt;/p&gt;
+// Changes a text element&#39;s color to the light theme color.
+&lt;p class=&quot;u-Text--color-light&quot;&gt;Foo&lt;/p&gt;
+// Changes a text element&#39;s color to the dark theme color.
+&lt;p class=&quot;u-Text--color-dark&quot;&gt;Foo&lt;/p&gt;
+// Changes a text element&#39;s color to the primary theme color.
+&lt;p class=&quot;u-Text--color-primary&quot;&gt;Foo&lt;/p&gt;
+// Changes a text element&#39;s color to the primary-variant theme color.
+&lt;p class=&quot;u-Text--color-primary-variant&quot;&gt;Foo&lt;/p&gt;
+// Changes a text element&#39;s color to the secondary theme color.
+&lt;p class=&quot;u-Text--color-secondary&quot;&gt;Foo&lt;/p&gt;
+// Changes a text element&#39;s color to the secondary-variant theme color.
+&lt;p class=&quot;u-Text--color-secondary-variant&quot;&gt;Foo&lt;/p&gt;
+// Changes a text element&#39;s color to the accent theme color.
+&lt;p class=&quot;u-Text--color-accent&quot;&gt;Foo&lt;/p&gt;
+// Changes a text element&#39;s color to the accent-variant theme color.
+&lt;p class=&quot;u-Text--color-accent-variant&quot;&gt;Foo&lt;/p&gt;
+// Changes a text element&#39;s color to the safe semantic color.
+&lt;p class=&quot;u-Text--color-safe&quot;&gt;Foo&lt;/p&gt;
+// Changes a text element&#39;s color to the caution semantic color.
+&lt;p class=&quot;u-Text--color-caution&quot;&gt;Foo&lt;/p&gt;
+// Changes a text element&#39;s color to the danger semantic color.
+&lt;p class=&quot;u-Text--color-danger&quot;&gt;Foo&lt;/p&gt;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Richard Davis</p></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Mushaka-design</span><!-- Version --> <span class="project-info__version">- v0.1.2</span><!-- License --> <span class="project-info__license">, under GPL-3.0-or-later</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

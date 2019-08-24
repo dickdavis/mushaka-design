@@ -1,0 +1,57 @@
+/// Provides default styles for Link elements.
+/// @group links
+/// @author Richard Davis
+/// @example
+///   @extend %default-link-styling;
+%default-link-styling {
+  text-decoration-skip: ink;
+  transition: color $base-duration $base-timing;
+
+  &:focus {
+    outline: none;
+    outline-offset: none;
+  }
+}
+
+/// Provides default styles for BoxLink elements.
+/// @group links
+/// @author Richard Davis
+/// @example
+///   @extend %default-box-link-styling;
+%default-box-link-styling {
+  display: block;
+  font-family: $heading-semibold-font-family;
+  font-size: 125%;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  margin: spacing-size("tiny");
+  padding: spacing-size("base") spacing-size("small");
+  border-width: 1px;
+  border-style: solid;
+  border-radius: $base-border-radius;
+
+  @media screen and (min-width: viewport-size("M")) {
+    margin: spacing-size("small");
+    padding: spacing-size("base");
+  }
+
+  @media screen and (min-width: viewport-size("L")) {
+    margin: spacing-size("base");
+    padding: spacing-size("large");
+  }
+}
+
+/// Provides default styles for IconLink elements.
+/// @group links
+/// @author Richard Davis
+/// @example
+///   @extend %default-icon-link-styling;
+%default-icon-link-styling {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
