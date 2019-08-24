@@ -1,65 +1,68 @@
-.u-Text--muted {
-  color: $gray-70;
-}
-
-.u-Text--loud {
-  font-family: $heading-semibold-font-family;
-  text-transform: uppercase;
-}
-
-.u-Text--left {
-  text-align: left;
-}
-
-.u-Text--center {
-  text-align: center;
-}
-
-.u-Text--right {
-  text-align: right;
-}
-
-.u-Text--color {
-  &-dark {
-    color: $black;
+.u-Text {
+  &--muted {
+    color: $gray-70;
   }
 
-  &-safe {
-    color: $white;
+  &--loud {
+    font-family: $heading-semibold-font-family;
+    text-transform: uppercase;
   }
 
-  &-primary {
-    color: map-get($theme-colors, primary);
+  &--left {
+    text-align: left;
+  }
 
-    &-variant {
-      color: map-get($theme-colors, primary-variant);
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--color {
+    &-dark {
+      color: $black;
     }
-  }
 
-  &-secondary {
-    color: map-get($theme-colors, secondary);
-
-    &-variant {
-      color: map-get($theme-colors, secondary-variant);
+    &-light {
+      color: $white;
     }
-  }
-  &-accent {
-    color: map-get($theme-colors, accent);
 
-    &-variant {
-      color: map-get($theme-colors, accent-variant);
+    &-primary {
+      color: map-get($theme-colors, primary);
+
+      &-variant {
+        color: map-get($theme-colors, primary-variant);
+      }
     }
-  }
 
-  &-safe {
-    color: map-get($semantic-colors, safe);
-  }
+    &-secondary {
+      color: map-get($theme-colors, secondary);
 
-  &-caution {
-    color: map-get($theme-colors, caution);
-  }
+      &-variant {
+        color: map-get($theme-colors, secondary-variant);
+      }
+    }
 
-  &-danger {
-    color: map-get($theme-colors, danger);
+    &-accent {
+      color: map-get($theme-colors, accent);
+
+      &-variant {
+        color: map-get($theme-colors, accent-variant);
+      }
+    }
+
+    &-safe {
+      color: map-get($semantic-colors, safe);
+    }
+
+    &-caution {
+      color: map-get($theme-colors, caution);
+    }
+
+    &-danger {
+      color: map-get($theme-colors, danger);
+    }
   }
 }

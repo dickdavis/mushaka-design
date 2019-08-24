@@ -100,12 +100,6 @@
     &-text {
       margin: 0;
     }
-
-    &--flex-halves {
-    }
-
-    &--flex-thirds {
-    }
   }
 
   &__body {
@@ -113,9 +107,6 @@
 
     @media screen and (min-width: $M) {
       padding: $base-spacing;
-    }
-
-    &-text {
     }
   }
 

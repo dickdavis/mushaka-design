@@ -1,49 +1,59 @@
 .CardAlt {
   @extend .Card;
+
   @include basic-card-alt-border($black);
 
   &--primary {
     @extend .CardAlt;
+
     @include basic-card-alt-border(map-get($theme-colors, primary));
 
     &-variant {
       @extend .CardAlt;
+
       @include basic-card-alt-border(map-get($theme-colors, primary-variant));
     }
   }
 
   &--secondary {
     @extend .CardAlt;
+
     @include basic-card-alt-border(map-get($theme-colors, secondary));
 
     &-variant {
       @extend .CardAlt;
+
       @include basic-card-alt-border(map-get($theme-colors, secondary-variant));
     }
   }
 
   &--accent {
     @extend .CardAlt;
+
     @include basic-card-alt-border(map-get($theme-colors, accent));
 
     &-variant {
       @extend .CardAlt;
+
       @include basic-card-alt-border(map-get($theme-colors, accent-variant));
     }
   }
 
   &--safe {
     @extend .CardAlt;
+
     @include basic-card-alt-border(map-get($semantic-colors, safe));
   }
 
   &--caution {
     @extend .CardAlt;
+
     @include basic-card-alt-border(map-get($semantic-colors, caution));
   }
 
   &--danger {
     @extend .CardAlt;
+
     @include basic-card-alt-border(map-get($semantic-colors, danger));
   }
 
@@ -61,19 +71,10 @@
     &-text {
       @extend .Card__header-text;
     }
-
-    &--flex-halves {
-    }
-
-    &--flex-thirds {
-    }
   }
 
   &__body {
     @extend .Card__body;
-
-    &-text {
-    }
   }
 
   &__title {

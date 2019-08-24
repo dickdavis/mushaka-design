@@ -23,56 +23,67 @@
 
   &--light {
     @extend .BoxLink;
+
     @include basic-box-link-inverted($gray-20);
   }
 
   &--dark {
     @extend .BoxLink;
+
     @include basic-box-link($black);
   }
 
   &--primary {
     @extend .BoxLink;
+
     @include basic-box-link(map-get($theme_colors, primary));
 
     &-variant {
       @extend .BoxLink;
+
       @include basic-box-link(map-get($theme_colors, primary-variant));
     }
   }
 
   &--secondary {
     @extend .BoxLink;
+
     @include basic-box-link(map-get($theme_colors, secondary));
 
     &-variant {
       @extend .BoxLink;
+
       @include basic-box-link(map-get($theme_colors, secondary-variant));
     }
   }
 
   &--accent {
     @extend .BoxLink;
+
     @include basic-box-link(map-get($theme_colors, accent));
 
     &-variant {
       @extend .BoxLink;
+
       @include basic-box-link(map-get($theme_colors, accent-variant));
     }
   }
 
   &--safe {
     @extend .BoxLink;
+
     @include basic-box-link(map-get($semantic_colors, safe));
   }
 
   &--caution {
     @extend .BoxLink;
+
     @include basic-box-link(map-get($semantic_colors, caution));
   }
 
   &--danger {
     @extend .BoxLink;
+
     @include basic-box-link(map-get($semantic_colors, danger));
   }
 }

@@ -27,6 +27,7 @@
 
   input[type="text"] {
     @include basic-form-field-styling;
+
     border-width: 1px 1px 5px 1px;
     border-style: solid;
     border-color: $gray-20 $gray-20 $black $gray-20;

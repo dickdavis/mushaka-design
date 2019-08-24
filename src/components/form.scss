@@ -25,7 +25,6 @@
       text-align: center;
       width: $super-spacing * 2;
       background-color: white;
-
       margin-top: (-2 * $small-spacing);
 
       &.field_with_errors {
@@ -69,6 +68,7 @@
 
       display: block;
       width: 95%;
+      height: 30vh;
       margin: $mid-spacing auto;
 
       &.field_with_errors {
@@ -85,10 +85,6 @@
       &:focus {
         outline: none;
       }
-    }
-
-    textarea {
-      height: 30vh;
     }
 
     small {

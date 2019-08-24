@@ -55,7 +55,8 @@ ul {
   list-style-type: circle;
 }
 
-ul, ol > li {
+ul,
+ol > li {
   line-height: $base-line-height;
 }
 

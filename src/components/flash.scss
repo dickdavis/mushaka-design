@@ -9,21 +9,25 @@
 
   &--safe {
     @extend .Flash;
+
     @include basic-flash(map-get($semantic-colors, safe));
   }
 
   &--caution {
     @extend .Flash;
+
     @include basic-flash(map-get($semantic-colors, caution));
   }
 
   &--danger {
     @extend .Flash;
+
     @include basic-flash(map-get($semantic-colors, danger));
   }
 
   &--info {
     @extend .Flash;
+
     @include basic-flash(map-get($semantic-colors, info));
   }
 

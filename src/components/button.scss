@@ -29,56 +29,67 @@
   &--solid {
     &-light {
       @extend .Button;
+
       @include button-solid-color($white, $black);
     }
 
     &-dark {
       @extend .Button;
+
       @include button-solid-color($black, $white);
     }
 
     &-primary {
       @extend .Button;
+
       @include button-solid-color(map-get($theme-colors, primary), $white);
 
       &-variant {
         @extend .Button;
+
         @include button-solid-color(map-get($theme-colors, primary-variant), $white);
       }
     }
 
     &-secondary {
       @extend .Button;
+
       @include button-solid-color(map-get($theme-colors, secondary), $white);
 
       &-variant {
         @extend .Button;
+
         @include button-solid-color(map-get($theme-colors, secondary-variant), $white);
       }
     }
 
     &-accent {
       @extend .Button;
+
       @include button-solid-color(map-get($theme-colors, accent), $white);
 
       &-variant {
         @extend .Button;
+
         @include button-solid-color(map-get($theme-colors, accent-variant), $white);
       }
     }
 
     &-safe {
       @extend .Button;
+
       @include button-solid-color(map-get($semantic-colors, safe), $white);
     }
 
     &-caution {
       @extend .Button;
+
       @include button-solid-color(map-get($semantic-colors, caution), $white);
     }
 
     &-danger {
       @extend .Button;
+
       @include button-solid-color(map-get($semantic-colors, danger), $white);
     }
   }
@@ -86,56 +97,67 @@
   &--outline {
     &-light {
       @extend .Button;
+
       @include button-outline-color($white, $black);
     }
 
     &-dark {
       @extend .Button;
+
       @include button-outline-color($black, $white);
     }
 
     &-primary {
       @extend .Button;
+
       @include button-outline-color(map-get($theme-colors, primary), $white);
 
       &-variant {
         @extend .Button;
+
         @include button-outline-color(map-get($theme-colors, primary-variant), $white);
       }
     }
 
     &-secondary {
       @extend .Button;
+
       @include button-outline-color(map-get($theme-colors, secondary), $white);
 
       &-variant {
         @extend .Button;
+
         @include button-outline-color(map-get($theme-colors, secondary-variant), $white);
       }
     }
 
     &-accent {
       @extend .Button;
+
       @include button-outline-color(map-get($theme-colors, accent), $white);
 
       &-variant {
         @extend .Button;
+
         @include button-outline-color(map-get($theme-colors, accent-variant), $white);
       }
     }
 
     &-safe {
       @extend .Button;
+
       @include button-outline-color(map-get($semantic-colors, safe), $white);
     }
 
     &-caution {
       @extend .Button;
+
       @include button-outline-color(map-get($semantic-colors, caution), $white);
     }
 
     &-danger {
       @extend .Button;
+
       @include button-outline-color(map-get($semantic-colors, danger), $white);
     }
   }

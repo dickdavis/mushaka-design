@@ -9,56 +9,67 @@
 
   &--light {
     @extend .Link;
+
     @include basic-link($white);
   }
 
   &--dark {
     @extend .Link;
+
     @include basic-link($black);
   }
 
   &--primary {
     @extend .Link;
+
     @include basic-link(map-get($theme_colors, primary));
 
     &-variant {
       @extend .Link;
+
       @include basic-link(map-get($theme_colors, primary-variant));
     }
   }
 
   &--secondary {
     @extend .Link;
+
     @include basic-link(map-get($theme_colors, secondary));
 
     &-variant {
       @extend .Link;
+
       @include basic-link(map-get($theme_colors, secondary-variant));
     }
   }
 
   &--accent {
     @extend .Link;
+
     @include basic-link(map-get($theme_colors, accent));
 
     &-variant {
       @extend .Link;
+
       @include basic-link(map-get($theme_colors, accent-variant));
     }
   }
 
   &--safe {
     @extend .Link;
+
     @include basic-link(map-get($semantic_colors, safe));
   }
 
   &--caution {
     @extend .Link;
+
     @include basic-link(map-get($semantic_colors, caution));
   }
 
   &--danger {
     @extend .Link;
+
     @include basic-link(map-get($semantic_colors, danger));
   }
 }
