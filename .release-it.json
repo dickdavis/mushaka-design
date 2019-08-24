@@ -5,5 +5,11 @@
   },
   "gitlab": {
     "release": true
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "eslint",
+      "infile": "CHANGELOG.md"
+    }
   }
 }
