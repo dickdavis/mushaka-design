@@ -1,3 +1,10 @@
+## [0.1.4](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.1.3...v0.1.4) (2019-08-25)
+
+
+### Fix
+
+* Added default qualifier to theme variables ([960551a4e0f1f9b21501aeff65f4974e8b22800e](https://gitlab.com/d3d1rty/mushaka-design/commit/960551a4e0f1f9b21501aeff65f4974e8b22800e))
+
 ## [0.1.3](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.1.2...v0.1.3) (2019-08-25)
 
 
