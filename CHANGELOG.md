@@ -1,3 +1,10 @@
+## [0.1.3](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.1.2...v0.1.3) (2019-08-25)
+
+
+### Chore
+
+* Reorganized and documented project ([ec8b38ef701632f72bd289fe42956c90f8deeb18](https://gitlab.com/d3d1rty/mushaka-design/commit/ec8b38ef701632f72bd289fe42956c90f8deeb18))
+
 ## [0.1.2](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.1.1...v0.1.2) (2019-08-24)
 
 
