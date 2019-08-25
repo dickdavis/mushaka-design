@@ -10,7 +10,8 @@
   }
 
   @else {
-    @error "Key provided not found in $viewport-sizes map."; }
+    @error "Key provided not found in $viewport-sizes map.";
+  }
 }
 
 /// Returns spacing size from $spacing-sizes map for provided key.
@@ -25,7 +26,8 @@
   }
 
   @else {
-    @error "Key provided not found in $spacing-sizes map."; }
+    @error "Key provided not found in $spacing-sizes map.";
+  }
 }
 
 /// Returns theme color from $theme-colors map for provided key.
@@ -40,7 +42,8 @@
   }
 
   @else {
-    @error "Key provided not found in $theme-colors map."; }
+    @error "Key provided not found in $theme-colors map.";
+  }
 }
 
 /// Returns semantic color from $semantic-colors map for provided key.
@@ -55,7 +58,8 @@
   }
 
   @else {
-    @error "Key provided not found in $semantic-colors map."; }
+    @error "Key provided not found in $semantic-colors map.";
+  }
 }
 
 /// Returns grayscale color from $grayscale-colors map for provided key.
@@ -70,7 +74,8 @@
   }
 
   @else {
-    @error "Key provided not found in $grayscale-colors map."; }
+    @error "Key provided not found in $grayscale-colors map.";
+  }
 }
 
 /// Returns scaled font size
