@@ -7,3 +7,135 @@
   border: 1px solid grayscale-color(30);
   border-radius: $base-border-radius;
 }
+
+/// Provides styles for headings.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @extend %default-heading-styling;
+%default-heading-styling {
+  line-height: $heading-line-height;
+  text-transform: uppercase;
+  word-break: break-word;
+}
+
+/// Provides styles for h1 elements.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @extend %heading-1-styling;
+%heading-1-style {
+  @extend %default-heading-styling;
+  @include heading-font-size(5);
+
+  font-family: $heading-bold-font-family;
+  text-align: center;
+  margin: spacing-size("base") 0 spacing-size("tiny");
+}
+
+/// Provides styles for h2 elements.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @extend %heading-2-styling;
+%heading-2-style {
+  @extend %default-heading-styling;
+  @include heading-font-size(3);
+
+  font-family: $heading-bold-font-family;
+  text-align: center;
+  margin: spacing-size("base") 0 spacing-size("tiny");
+}
+
+/// Provides styles for h3 elements.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @extend %heading-3-styling;
+%heading-3-style {
+  @extend %default-heading-styling;
+  @include heading-font-size(2);
+
+  display: inline-block;
+  font-family: $heading-semibold-font-family;
+  text-align: left;
+  margin: spacing-size("base") 0 spacing-size("tiny");
+  padding-right: spacing-size("tiny");
+  border-bottom: 3px solid $black;
+}
+
+/// Provides styles for h4 elements.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @extend %heading-4-styling;
+%heading-4-style {
+  @extend %default-heading-styling;
+  @include heading-font-size(2);
+
+  font-family: $heading-regular-font-family;
+  text-align: left;
+  margin: spacing-size("mid") 0 spacing-size("tiny");
+}
+
+/// Provides styles for h5 elements.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @extend %heading-5-styling;
+%heading-5-style {
+  @extend %default-heading-styling;
+  @include heading-font-size(1);
+
+  font-family: $heading-regular-font-family;
+  text-align: left;
+  margin: spacing-size("mid") 0 spacing-size("tiny");
+}
+
+/// Provides default styles for body text.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @extend %default-body-text-styling;
+%default-body-text-styling {
+  line-height: $base-line-height;
+  margin: 0 0 spacing-size("mid");
+}
+
+/// Provides default styles for unordered lists.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @extend %default-ulist-styling;
+%default-ulist-styling {
+  list-style-type: circle;
+
+  li {
+    line-height: $base-line-height;
+  }
+}
+
+/// Provides default styles for ordered lists.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @extend %default-olist-styling;
+%default-olist-styling {
+  li {
+    line-height: $base-line-height;
+  }
+}
+
+/// Provides default styles for horizontal rules.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @extend %default-hr-styling;
+%default-hr-styling {
+  @extend %default-border-styling;
+
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: spacing-size("base");
+}

@@ -1,6 +1,7 @@
 /// Defines color scheme for Flash modifier classes to use.
 /// @group layout
 /// @author Richard Davis
+/// @param {Color} $_flash_color - The color base of the flash color scheme.
 /// @example
 ///   @include flash-color-scheme($gray-50);
 @mixin flash-color-scheme($_flash_color) {

@@ -85,12 +85,12 @@
 /// @example
 ///   font-scale(2);
 @function font-scale($_factor) {
-  $_ratio: 1.333;
+  $_ratio: 1.618;
   $_value: $_ratio * 100%;
 
   @if ($_factor > 1) {
-    @for $_i from 1 through ($_factor - 1) {
-      $_value: $_value * $_i;
+    @for $_i from 1 through ($_factor) {
+      $_value: $_value + ($_i * 33%);
     }
   }
 

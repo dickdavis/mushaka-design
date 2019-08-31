@@ -32,8 +32,11 @@
   }
 
   &__headline {
+    @extend %default-heading-styling;
+    @include heading-font-size(3);
+
     flex: 100%;
-    font-size: 300%;
+    text-align: center;
   }
 
   &__lede {

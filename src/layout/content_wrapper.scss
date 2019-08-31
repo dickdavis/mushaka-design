@@ -18,10 +18,32 @@
   h2,
   h3,
   h4,
-  h5,
-  h6 {
-    text-transform: uppercase;
-    text-align: left;
+  h5 {
+    @extend %default-heading-styling;
+  }
+
+  h1 {
+    @extend %heading-1-style;
+  }
+
+  h2 {
+    @extend %heading-2-style;
+  }
+
+  h3 {
+    @extend %heading-3-style;
+  }
+
+  h4 {
+    @extend %heading-4-style;
+  }
+
+  h5 {
+    @extend %heading-5-style;
+  }
+
+  p {
+    @extend %default-body-text-styling;
   }
 
   ul {
