@@ -157,6 +157,26 @@
   }
 }
 
+/// Provides default styles for code blocks.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @extend %default-code-styling;
+%default-code-styling {
+  background-color: grayscale-color(20);
+  display: inline-block;
+  padding: spacing-size("tiny") spacing-size("small");
+  border-radius: $base-border-radius;
+
+  @media screen and (min-width: viewport-size("M")) {
+    padding: spacing-size("mid");
+  }
+
+  @media screen and (min-width: viewport-size("L")) {
+    padding: spacing-size("small");
+  }
+}
+
 /// Provides default styles for horizontal rules.
 /// @group base
 /// @author Richard Davis
