@@ -19,28 +19,33 @@
 ///     </ul>
 ///   </div>
 .Flash {
-  &--safe {
-    @extend %default-flash-styling;
+  margin: 0;
+  padding: spacing-size("tiny");
 
-    @include flash-color-scheme(semantic-color("safe"));
-  }
+  &__body {
+    &--safe {
+      @extend %default-flash-styling;
 
-  &--caution {
-    @extend %default-flash-styling;
+      @include flash-color-scheme(semantic-color("safe"));
+    }
 
-    @include flash-color-scheme(semantic-color("caution"));
-  }
+    &--caution {
+      @extend %default-flash-styling;
 
-  &--danger {
-    @extend %default-flash-styling;
+      @include flash-color-scheme(semantic-color("caution"));
+    }
 
-    @include flash-color-scheme(semantic-color("danger"));
-  }
+    &--danger {
+      @extend %default-flash-styling;
 
-  &--info {
-    @extend %default-flash-styling;
+      @include flash-color-scheme(semantic-color("danger"));
+    }
 
-    @include flash-color-scheme(semantic-color("info"));
+    &--info {
+      @extend %default-flash-styling;
+
+      @include flash-color-scheme(semantic-color("info"));
+    }
   }
 
   &__list {
