@@ -5,13 +5,21 @@
 ///   // A content wrapper to apply styles to child elements.
 ///   <div class="ContentWrapper">
 ///   </div>
+///   // A content wrapper with max width to apply styles to child elements.
+///   <div class="ContentWrapper--restricted">
+///   </div>
 .ContentWrapper {
-  max-width: (viewport-size("L") - 20px);
   margin: spacing-size("mid") spacing-size("small");
 
-  @media screen and (min-width: (viewport-size("L") + 20px)) {
-    margin-left: auto;
-    margin-right: auto;
+  &--restricted {
+    @extend .ContentWrapper;
+
+    max-width: (viewport-size("L") - 20px);
+
+    @media screen and (min-width: (viewport-size("L") + 20px)) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   h1,
@@ -55,25 +63,7 @@
   }
 
   blockquote {
-    background-color: grayscale-color(20);
-    text-align: center;
-    font-style: italic;
-    font-size: 110%;
-    margin: spacing-size("tiny") auto;
-    padding: spacing-size("base");
-    border-radius: $base-border-radius;
-
-    @media screen and (min-width: viewport-size("M")) {
-      padding: spacing-size("mid");
-    }
-
-    @media screen and (min-width: viewport-size("L")) {
-      padding: spacing-size("small");
-    }
-
-    p {
-      margin: 0;
-    }
+    @extend %default-blockquote-styling;
   }
 
   code {

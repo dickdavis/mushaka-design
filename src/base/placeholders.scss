@@ -130,6 +130,33 @@
   }
 }
 
+/// Provides default styles for blockquotes.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @extend %default-blockquote-styling;
+%default-blockquote-styling {
+  background-color: grayscale-color(20);
+  text-align: center;
+  font-style: italic;
+  font-size: 110%;
+  margin: spacing-size("tiny") auto;
+  padding: spacing-size("base");
+  border-radius: $base-border-radius;
+
+  @media screen and (min-width: viewport-size("M")) {
+    padding: spacing-size("mid");
+  }
+
+  @media screen and (min-width: viewport-size("L")) {
+    padding: spacing-size("small");
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
 /// Provides default styles for horizontal rules.
 /// @group base
 /// @author Richard Davis
