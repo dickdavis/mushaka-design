@@ -47,19 +47,11 @@
   }
 
   ul {
-    margin: auto spacing-size("large") spacing-size("base") spacing-size("large");
-
-    li {
-      list-style-type: circle;
-    }
+    @extend %default-ulist-styling;
   }
 
   ol {
-    margin: auto spacing-size("large") spacing-size("base") spacing-size("large");
-
-    li {
-      list-style-type: upper-roman;
-    }
+    @extend %default-olist-styling;
   }
 
   blockquote {

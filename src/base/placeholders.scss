@@ -109,6 +109,7 @@
 ///   @extend %default-ulist-styling;
 %default-ulist-styling {
   list-style-type: circle;
+  margin: auto spacing-size("large") spacing-size("base") spacing-size("large");
 
   li {
     line-height: $base-line-height;
@@ -121,6 +122,9 @@
 /// @example
 ///   @extend %default-olist-styling;
 %default-olist-styling {
+  list-style-type: upper-roman;
+  margin: auto spacing-size("large") spacing-size("base") spacing-size("large");
+
   li {
     line-height: $base-line-height;
   }
