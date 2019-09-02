@@ -188,9 +188,7 @@
   }
 
   &__title {
-    @extend %default-heading-styling;
-
-    @include heading-font-size(2);
+    @extend %heading-2-style;
 
     font-family: $heading-bold-font-family;
     color: $black;
