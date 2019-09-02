@@ -21,6 +21,7 @@
   },
   "scripts": {
     "build": "node-sass -o ./dist/ ./src/main.scss",
+    "watch": "yarn build --watch --recursive",
     "release": "release-it",
     "lint": "stylelint './src/**/*.scss' --syntax scss --fix",
     "docs": "sassdoc './src/**/*.scss' --dest './docs'"
