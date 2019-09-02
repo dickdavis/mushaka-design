@@ -1,3 +1,18 @@
+# [0.3.0](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.2.2...v0.3.0) (2019-09-02)
+
+
+### Build
+
+* Implemented auto-compilation on file change ([d47086d42ff90eab28bdd4543c66a4668a4eb775](https://gitlab.com/d3d1rty/mushaka-design/commit/d47086d42ff90eab28bdd4543c66a4668a4eb775))
+
+### Chore
+
+* Refactored card title stylings ([3a4c80a01dae76491f126d75451bd6f76d25fb58](https://gitlab.com/d3d1rty/mushaka-design/commit/3a4c80a01dae76491f126d75451bd6f76d25fb58))
+
+### New
+
+* Added horizontal rule utility classes ([ba48d275fb8df263139bbb8eed8a9ea03ab681de](https://gitlab.com/d3d1rty/mushaka-design/commit/ba48d275fb8df263139bbb8eed8a9ea03ab681de))
+
 ## [0.2.2](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.2.1...v0.2.2) (2019-09-02)
 
 
