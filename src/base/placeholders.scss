@@ -26,6 +26,7 @@
 ///   @extend %heading-1-styling;
 %heading-1-style {
   @extend %default-heading-styling;
+
   @include heading-font-size(5);
 
   font-family: $heading-bold-font-family;
@@ -40,6 +41,7 @@
 ///   @extend %heading-2-styling;
 %heading-2-style {
   @extend %default-heading-styling;
+
   @include heading-font-size(3);
 
   font-family: $heading-bold-font-family;
@@ -54,6 +56,7 @@
 ///   @extend %heading-3-styling;
 %heading-3-style {
   @extend %default-heading-styling;
+
   @include heading-font-size(2);
 
   display: inline-block;
@@ -71,6 +74,7 @@
 ///   @extend %heading-4-styling;
 %heading-4-style {
   @extend %default-heading-styling;
+
   @include heading-font-size(2);
 
   font-family: $heading-regular-font-family;
@@ -85,6 +89,7 @@
 ///   @extend %heading-5-styling;
 %heading-5-style {
   @extend %default-heading-styling;
+
   @include heading-font-size(1);
 
   font-family: $heading-regular-font-family;

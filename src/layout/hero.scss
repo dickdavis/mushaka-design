@@ -33,6 +33,7 @@
 
   &__headline {
     @extend %default-heading-styling;
+
     @include heading-font-size(3);
 
     font-family: $heading-bold-font-family;

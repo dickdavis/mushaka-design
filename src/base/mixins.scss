@@ -5,14 +5,14 @@
 /// @example
 ///   @include heading-font-size(2);
 @mixin heading-font-size($_font_scale) {
-  font-size: font-scale($_font_scale) * .6;
+  font-size: font-scale($_font_scale) * 0.6;
 
   @media screen and (min-width: viewport-size("S")) {
-    font-size: font-scale($_font_scale) * .7;
+    font-size: font-scale($_font_scale) * 0.7;
   }
 
   @media screen and (min-width: viewport-size("M")) {
-    font-size: font-scale($_font_scale) * .8;
+    font-size: font-scale($_font_scale) * 0.8;
   }
 
   @media screen and (min-width: viewport-size("L")) {
