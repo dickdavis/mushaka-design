@@ -1,3 +1,10 @@
+## [0.2.2](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.2.1...v0.2.2) (2019-09-02)
+
+
+### Fix
+
+* Corrected card title styles ([adec3ffab76c77d5cdd074a0cee8f150931d2522](https://gitlab.com/d3d1rty/mushaka-design/commit/adec3ffab76c77d5cdd074a0cee8f150931d2522))
+
 ## [0.2.1](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.2.0...v0.2.1) (2019-09-02)
 
 
