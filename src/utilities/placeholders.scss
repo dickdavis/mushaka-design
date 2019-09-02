@@ -1,0 +1,10 @@
+/// Provides styles for borders.
+/// @group utilities
+/// @author Richard Davis
+/// @example
+///   @extend %default-hr-styling;
+%default-hr-styling {
+  border: 1px solid grayscale-color(40);
+  margin-left: auto;
+  margin-right: auto;
+}

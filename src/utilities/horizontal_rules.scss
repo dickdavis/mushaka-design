@@ -1,0 +1,29 @@
+/// Provides utility classes for horizontal rules.
+/// @group utilities
+/// @author Richard Davis
+/// @example
+///   // Small horizontal rule
+///   <hr class="u-HorizontalRule--small">
+///   // Medium horizontal rule
+///   <hr class="u-HorizontalRule--medium">
+///   // Large horizontal rule
+///   <hr class="u-HorizontalRule--large">
+.u-HorizontalRule {
+  &--small {
+    @extend %default-hr-styling;
+
+    width: 33%;
+  }
+
+  &--medium {
+    @extend %default-hr-styling;
+
+    width: 66%;
+  }
+
+  &--large {
+    @extend %default-hr-styling;
+
+    width: 97%;
+  }
+}
