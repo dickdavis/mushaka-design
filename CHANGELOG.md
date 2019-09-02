@@ -1,3 +1,11 @@
+## [0.2.1](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.2.0...v0.2.1) (2019-09-02)
+
+
+### Fix
+
+* Corrected style violations ([e8a0f89a8ca83a69f82ae3abc42888453f08d14c](https://gitlab.com/d3d1rty/mushaka-design/commit/e8a0f89a8ca83a69f82ae3abc42888453f08d14c))
+* Set font family for Hero headline ([d450906f6fa0aca98e6d4b45f1e7adb059ccc1b6](https://gitlab.com/d3d1rty/mushaka-design/commit/d450906f6fa0aca98e6d4b45f1e7adb059ccc1b6))
+
 # [0.2.0](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.1.4...v0.2.0) (2019-09-02)
 
 
