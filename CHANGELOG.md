@@ -1,3 +1,29 @@
+# [0.2.0](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.1.4...v0.2.0) (2019-09-02)
+
+
+### Chore
+
+* Refactored blockquote styling ([0bb7a2f4a2418a41281265ecaf7dafea043feac2](https://gitlab.com/d3d1rty/mushaka-design/commit/0bb7a2f4a2418a41281265ecaf7dafea043feac2))
+* Refactored code styling ([9d013491d8797cc04897ca92b77170afe2d55a8f](https://gitlab.com/d3d1rty/mushaka-design/commit/9d013491d8797cc04897ca92b77170afe2d55a8f))
+* Refactored ul and ol stylings ([35c79286f8a4bb1297545ec827c3548996409287](https://gitlab.com/d3d1rty/mushaka-design/commit/35c79286f8a4bb1297545ec827c3548996409287))
+
+### Docs
+
+* Fixed documentation for forms ([2e8e803fc6da0b3ccd032a612f5fd5bb52531761](https://gitlab.com/d3d1rty/mushaka-design/commit/2e8e803fc6da0b3ccd032a612f5fd5bb52531761))
+* Updated README and added CONTRIBUTING ([5530b89df928897eaf849429bf7edaaa7b702f31](https://gitlab.com/d3d1rty/mushaka-design/commit/5530b89df928897eaf849429bf7edaaa7b702f31))
+
+### Fix
+
+* Updates documentation and fixes styling for inline forms ([d6053a24ae2127660af034fc4f6886a92040e3da](https://gitlab.com/d3d1rty/mushaka-design/commit/d6053a24ae2127660af034fc4f6886a92040e3da))
+
+### New
+
+* Implemented responsive heading styles ([92e4f1283e9be7c24dd3ef38430911741858acce](https://gitlab.com/d3d1rty/mushaka-design/commit/92e4f1283e9be7c24dd3ef38430911741858acce))
+
+### Update
+
+* Modified flash styling ([d9215b3c14f7938e9258202932627d15ff569eb1](https://gitlab.com/d3d1rty/mushaka-design/commit/d9215b3c14f7938e9258202932627d15ff569eb1))
+
 ## [0.1.4](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.1.3...v0.1.4) (2019-08-25)
 
 
