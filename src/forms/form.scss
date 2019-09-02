@@ -3,19 +3,19 @@
 /// @author Richard Davis
 /// @example
 ///   // A form with form groups enclosing inputs
-///   <div class="Form">
+///   <form class="Form">
 ///     <div class="Form__group">
 ///       <label>Lorem Ipsum</label>
 ///       <input type="text" />
-///      </div>
-///     <div class="Form__group">
-///       <label>Lorem Ipsum</label>
-///       <input type="text" />
-///      </div>
-///     <div class="Form__action">
-///       <input type="submit" class="Button--solid-safe">Lorem Ipsum</input>
 ///     </div>
-///   </div>
+///     <div class="Form__group">
+///       <label>Lorem Ipsum</label>
+///       <input type="text" />
+///     </div>
+///     <div class="Form__action">
+///       <input type="submit" class="Button--solid-primary" value="Lorem Ipsum" />
+///     </div>
+///   </form>
 .Form {
   width: 100%;
   margin: auto;
