@@ -188,12 +188,19 @@
   }
 
   &__title {
+    @extend %default-heading-styling;
+
+    @include heading-font-size(2);
+
+    font-family: $heading-bold-font-family;
     color: $black;
     text-transform: uppercase;
     text-align: center;
     margin: spacing-size("mid") 0 spacing-size("tiny");
 
     &--spaced {
+      @extend .Card__title;
+
       margin: spacing-size("mid") 0 spacing-size("base");
     }
   }
