@@ -19,3 +19,89 @@
     font-size: font-scale($_font_scale);
   }
 }
+
+/// Returns content wrapped in media query targeting the specified viewport size.
+/// @group base
+/// @author Richard Davis
+/// @param {String} $_viewport_size - The size of the viewport to target
+/// @example
+///   @include breakpoint(500px) {
+///     width: 50%;
+///   }
+@mixin breakpoint($_viewport_size) {
+  @media screen and (min-width: #{$_viewport_size}) {
+    @content;
+  }
+}
+
+/// Returns content wrapped in media query targeting a mapped viewport size.
+/// @group base
+/// @author Richard Davis
+/// @param {String} $_key - The key to return an associated viewport size for.
+/// @example
+///   @include breakpoint-mapped('L') {
+///     color: black;
+///   }
+@mixin breakpoint-mapped($_key) {
+  @if map-has-key($viewport-sizes, $_key) {
+    @media screen and (min-width: #{viewport-size($_key)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @error "Key provided not found in $viewport-sizes map.";
+  }
+}
+
+/// Returns content wrapped in media query targeting small screens and up
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @include breakpoint-s {
+///     width: 80%;
+///   }
+@mixin breakpoint-s {
+  @include breakpoint-mapped("S") {
+    @content;
+  }
+}
+
+/// Returns content wrapped in media query targeting medium screens and up
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @include breakpoint-m {
+///     width: 75%;
+///   }
+@mixin breakpoint-m {
+  @include breakpoint-mapped("M") {
+    @content;
+  }
+}
+
+/// Returns content wrapped in media query targeting large screens and up
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @include breakpoint-l {
+///     width: 50%;
+///   }
+@mixin breakpoint-l {
+  @include breakpoint-mapped("L") {
+    @content;
+  }
+}
+
+/// Returns content wrapped in media query targeting extra large screens and up
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @include breakpoint-xl {
+///     width: 30%;
+///   }
+@mixin breakpoint-xl {
+  @include breakpoint-mapped("XL") {
+    @content;
+  }
+}
