@@ -15,7 +15,7 @@
   transition: border-color $base-duration $base-timing;
   padding: spacing-size("small");
 
-  @media screen and (min-width: viewport-size("S")) {
+  @include breakpoint-s {
     line-height: 5vh;
   }
 

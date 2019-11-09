@@ -93,16 +93,20 @@
   padding: 0;
   margin: spacing-size("small") auto;
 
-  @media screen and (min-width: viewport-size("S")) {
+  @include breakpoint-s {
     width: 75%;
   }
 
-  @media screen and (min-width: viewport-size("M")) {
+  @include breakpoint-m {
     width: 65%;
   }
 
-  @media screen and (min-width: viewport-size("L")) {
+  @include breakpoint-l {
     width: 55%;
+  }
+
+  @include breakpoint-xl {
+    width: 45%;
   }
 
   &--topBorder {
@@ -136,31 +140,36 @@
   &--medium {
     width: 97%;
 
-    @media screen and (min-width: viewport-size("S")) {
-      width: 75%;
+
+    @include breakpoint-s {
+      width: 70%;
     }
 
-    @media screen and (min-width: viewport-size("M")) {
-      width: 65%;
+    @include breakpoint-m {
+      width: 60%;
     }
 
-    @media screen and (min-width: viewport-size("L")) {
-      width: 55%;
+    @include breakpoint-l {
+      width: 50%;
+    }
+
+    @include breakpoint-xl {
+      width: 40%;
     }
   }
 
   &--small {
     width: 97%;
 
-    @media screen and (min-width: viewport-size("S")) {
+    @include breakpoint-s {
       width: 66%;
     }
 
-    @media screen and (min-width: viewport-size("M")) {
+    @include breakpoint-m {
       width: 55%;
     }
 
-    @media screen and (min-width: viewport-size("L")) {
+    @include breakpoint-l {
       width: 33%;
     }
   }
@@ -182,7 +191,7 @@
   &__body {
     padding: spacing-size("mid");
 
-    @media screen and (min-width: viewport-size("M")) {
+    @include breakpoint-m {
       padding: spacing-size("base");
     }
   }

@@ -31,12 +31,12 @@
   border-style: solid;
   border-radius: $base-border-radius;
 
-  @media screen and (min-width: viewport-size("M")) {
+  @include breakpoint-s {
     margin: spacing-size("small");
     padding: spacing-size("base");
   }
 
-  @media screen and (min-width: viewport-size("L")) {
+  @include breakpoint-l {
     margin: spacing-size("base");
     padding: spacing-size("large");
   }

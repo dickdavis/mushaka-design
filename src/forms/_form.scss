@@ -20,11 +20,11 @@
   width: 100%;
   margin: auto;
 
-  @media screen and (min-width: viewport-size("M")) {
+  @include breakpoint-m {
     width: 90%;
   }
 
-  @media screen and (min-width: viewport-size("L")) {
+  @include breakpoint-l {
     width: 80%;
   }
 
@@ -70,7 +70,7 @@
       width: 95%;
       margin: spacing-size("mid") auto;
 
-      @media screen and (min-width: viewport-size("M")) {
+      @include breakpoint-m {
         width: 70%;
       }
 
@@ -118,7 +118,7 @@
     width: 100%;
     margin: spacing-size("mid") auto;
 
-    @media screen and (min-width: viewport-size("M")) {
+    @include breakpoint-m {
       width: 100%;
     }
 
@@ -126,7 +126,7 @@
       flex: 100%;
       margin: spacing-size("small") auto;
 
-      @media screen and (min-width: viewport-size("S")) {
+      @include breakpoint-s {
         flex: 30%;
         margin: auto spacing-size("tiny");
       }

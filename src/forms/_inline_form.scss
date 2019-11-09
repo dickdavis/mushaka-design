@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
 
-  @media screen and (min-width: viewport-size("S")) {
+  @include breakpoint-s {
     flex-flow: row wrap;
   }
 
@@ -21,7 +21,7 @@
     flex: 1;
     margin: spacing-size("tiny");
 
-    @media screen and (min-width: viewport-size("S")) {
+    @include breakpoint-s {
       flex: 0;
     }
   }
@@ -35,7 +35,7 @@
     padding: spacing-size("small");
     margin: spacing-size("tiny");
 
-    @media screen and (min-width: viewport-size("S")) {
+    @include breakpoint-s {
       margin: spacing-size("tiny");
     }
   }

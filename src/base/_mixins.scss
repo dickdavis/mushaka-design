@@ -7,15 +7,15 @@
 @mixin heading-font-size($_font_scale) {
   font-size: font-scale($_font_scale) * 0.6;
 
-  @media screen and (min-width: viewport-size("S")) {
+  @include breakpoint-s {
     font-size: font-scale($_font_scale) * 0.7;
   }
 
-  @media screen and (min-width: viewport-size("M")) {
+  @include breakpoint-m {
     font-size: font-scale($_font_scale) * 0.8;
   }
 
-  @media screen and (min-width: viewport-size("L")) {
+  @include breakpoint-l {
     font-size: font-scale($_font_scale);
   }
 }

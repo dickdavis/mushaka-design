@@ -16,7 +16,7 @@
 
     max-width: (viewport-size("L") - 20px);
 
-    @media screen and (min-width: (viewport-size("L") + 20px)) {
+    @include breakpoint(#{(viewport-size("L") - 20px)}) {
       margin-left: auto;
       margin-right: auto;
     }

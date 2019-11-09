@@ -20,7 +20,7 @@
   background-color: $white;
   padding: spacing-size("base");
 
-  @media screen and (min-width: viewport-size("M")) {
+  @include breakpoint-m {
     padding: spacing-size("super");
   }
 

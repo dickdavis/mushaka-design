@@ -149,11 +149,11 @@
   padding: spacing-size("base");
   border-radius: $base-border-radius;
 
-  @media screen and (min-width: viewport-size("M")) {
+  @include breakpoint-m {
     padding: spacing-size("mid");
   }
 
-  @media screen and (min-width: viewport-size("L")) {
+  @include breakpoint-l {
     padding: spacing-size("small");
   }
 
@@ -173,11 +173,11 @@
   padding: spacing-size("tiny") spacing-size("small");
   border-radius: $base-border-radius;
 
-  @media screen and (min-width: viewport-size("M")) {
+  @include breakpoint-m {
     padding: spacing-size("mid");
   }
 
-  @media screen and (min-width: viewport-size("L")) {
+  @include breakpoint-l {
     padding: spacing-size("small");
   }
 }

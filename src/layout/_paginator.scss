@@ -20,7 +20,7 @@
     margin-left: spacing-size("base");
     margin-right: spacing-size("base");
 
-    @media screen and (min-width: viewport-size("M")) {
+    @include breakpoint-m {
       margin-left: spacing-size("super");
       margin-right: spacing-size("super");
     }
