@@ -19,7 +19,7 @@
   button,
   input[type="submit"] {
     flex: 1;
-    margin: spacing-size("tiny");
+    margin: spacing-size(1);
 
     @include breakpoint-s {
       flex: 0;
@@ -32,11 +32,11 @@
     flex-grow: 8;
     border-width: 1px 1px 5px 1px;
     border-color: grayscale-color(20) grayscale-color(20) $black grayscale-color(20);
-    padding: spacing-size("small");
-    margin: spacing-size("tiny");
+    padding: spacing-size(2);
+    margin: spacing-size(1);
 
     @include breakpoint-s {
-      margin: spacing-size("tiny");
+      margin: spacing-size(1);
     }
   }
 }

@@ -18,12 +18,12 @@
   a,
   input,
   button {
-    margin-top: spacing-size("tiny");
-    margin-bottom: spacing-size("tiny");
+    margin-top: spacing-size(1);
+    margin-bottom: spacing-size(1);
 
     @include breakpoint-s {
-      margin-left: spacing-size("tiny");
-      margin-right: spacing-size("tiny");
+      margin-left: spacing-size(1);
+      margin-right: spacing-size(1);
     }
   }
 }

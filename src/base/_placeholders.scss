@@ -31,7 +31,7 @@
 
   font-family: $heading-bold-font-family;
   text-align: center;
-  margin: spacing-size("base") 0 spacing-size("tiny");
+  margin: spacing-size(4) 0 spacing-size(1);
 }
 
 /// Provides styles for h2 elements.
@@ -46,7 +46,7 @@
 
   font-family: $heading-bold-font-family;
   text-align: center;
-  margin: spacing-size("base") 0 spacing-size("tiny");
+  margin: spacing-size(4) 0 spacing-size(1);
 }
 
 /// Provides styles for h3 elements.
@@ -62,8 +62,8 @@
   display: inline-block;
   font-family: $heading-semibold-font-family;
   text-align: left;
-  margin: spacing-size("base") 0 spacing-size("tiny");
-  padding-right: spacing-size("tiny");
+  margin: spacing-size(4) 0 spacing-size(1);
+  padding-right: spacing-size(1);
   border-bottom: 3px solid $black;
 }
 
@@ -79,7 +79,7 @@
 
   font-family: $heading-regular-font-family;
   text-align: left;
-  margin: spacing-size("mid") 0 spacing-size("tiny");
+  margin: spacing-size(3) 0 spacing-size(1);
 }
 
 /// Provides styles for h5 elements.
@@ -94,7 +94,7 @@
 
   font-family: $heading-regular-font-family;
   text-align: left;
-  margin: spacing-size("mid") 0 spacing-size("tiny");
+  margin: spacing-size(3) 0 spacing-size(1);
 }
 
 /// Provides default styles for body text.
@@ -104,7 +104,7 @@
 ///   @extend %default-body-text-styling;
 %default-body-text-styling {
   line-height: $base-line-height;
-  margin: 0 0 spacing-size("mid");
+  margin: 0 0 spacing-size(3);
 }
 
 /// Provides default styles for unordered lists.
@@ -114,7 +114,7 @@
 ///   @extend %default-ulist-styling;
 %default-ulist-styling {
   list-style-type: circle;
-  margin: auto spacing-size("large") spacing-size("base") spacing-size("large");
+  margin: auto spacing-size(5) spacing-size(4) spacing-size(5);
 
   li {
     line-height: $base-line-height;
@@ -128,7 +128,7 @@
 ///   @extend %default-olist-styling;
 %default-olist-styling {
   list-style-type: upper-roman;
-  margin: auto spacing-size("large") spacing-size("base") spacing-size("large");
+  margin: auto spacing-size(5) spacing-size(4) spacing-size(5);
 
   li {
     line-height: $base-line-height;
@@ -145,16 +145,16 @@
   text-align: center;
   font-style: italic;
   font-size: 110%;
-  margin: spacing-size("tiny") auto;
-  padding: spacing-size("base");
+  margin: spacing-size(1) auto;
+  padding: spacing-size(4);
   border-radius: $base-border-radius;
 
   @include breakpoint-m {
-    padding: spacing-size("mid");
+    padding: spacing-size(3);
   }
 
   @include breakpoint-l {
-    padding: spacing-size("small");
+    padding: spacing-size(2);
   }
 
   p {
@@ -170,15 +170,15 @@
 %default-code-styling {
   background-color: grayscale-color(20);
   display: inline-block;
-  padding: spacing-size("tiny") spacing-size("small");
+  padding: spacing-size(1) spacing-size(2);
   border-radius: $base-border-radius;
 
   @include breakpoint-m {
-    padding: spacing-size("mid");
+    padding: spacing-size(3);
   }
 
   @include breakpoint-l {
-    padding: spacing-size("small");
+    padding: spacing-size(2);
   }
 }
 
@@ -193,5 +193,5 @@
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  margin: spacing-size("base");
+  margin: spacing-size(4);
 }

@@ -19,8 +19,8 @@
   }
 
   &__group {
-    padding: spacing-size("tiny");
-    margin: spacing-size("base") spacing-size("tiny");
+    padding: spacing-size(1);
+    margin: spacing-size(4) spacing-size(1);
     border: 2px solid $black;
     border-radius: $base-border-radius;
   }
@@ -30,15 +30,15 @@
     font-family: $heading-semibold-font-family;
     text-transform: uppercase;
     text-align: center;
-    width: spacing-size("super") * 2;
+    width: spacing-size(6) * 2;
     background-color: white;
-    margin-top: (-2 * spacing-size("small"));
+    margin-top: (-2 * spacing-size(2));
   }
 
   &__content {
     text-align: center;
-    padding-top: spacing-size("small");
-    padding-bottom: spacing-size("small");
+    padding-top: spacing-size(2);
+    padding-bottom: spacing-size(2);
 
     p {
       margin: 0;

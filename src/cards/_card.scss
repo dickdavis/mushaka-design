@@ -91,7 +91,7 @@
   width: 97%;
   word-wrap: break-word;
   padding: 0;
-  margin: spacing-size("small") auto;
+  margin: spacing-size(2) auto;
 
   @include breakpoint-s {
     width: 75%;
@@ -140,7 +140,6 @@
   &--medium {
     width: 97%;
 
-
     @include breakpoint-s {
       width: 70%;
     }
@@ -181,7 +180,7 @@
     font-size: 85%;
     line-height: 1.5;
     margin: 0;
-    padding: spacing-size("small");
+    padding: spacing-size(2);
 
     &-text {
       margin: 0;
@@ -189,10 +188,10 @@
   }
 
   &__body {
-    padding: spacing-size("mid");
+    padding: spacing-size(3);
 
     @include breakpoint-m {
-      padding: spacing-size("base");
+      padding: spacing-size(4);
     }
   }
 
@@ -203,12 +202,12 @@
     color: $black;
     text-transform: uppercase;
     text-align: center;
-    margin: spacing-size("mid") 0 spacing-size("tiny");
+    margin: spacing-size(3) 0 spacing-size(1);
 
     &--spaced {
       @extend .Card__title;
 
-      margin: spacing-size("mid") 0 spacing-size("base");
+      margin: spacing-size(3) 0 spacing-size(4);
     }
   }
 
@@ -216,7 +215,7 @@
     font-size: 85%;
     line-height: 1.5;
     margin: 0;
-    padding: spacing-size("small");
+    padding: spacing-size(2);
 
     &-text {
       margin: 0;

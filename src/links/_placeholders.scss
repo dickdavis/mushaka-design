@@ -25,20 +25,20 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  margin: spacing-size("tiny");
-  padding: spacing-size("base") spacing-size("small");
+  margin: spacing-size(1);
+  padding: spacing-size(4) spacing-size(2);
   border-width: 1px;
   border-style: solid;
   border-radius: $base-border-radius;
 
   @include breakpoint-s {
-    margin: spacing-size("small");
-    padding: spacing-size("base");
+    margin: spacing-size(2);
+    padding: spacing-size(4);
   }
 
   @include breakpoint-l {
-    margin: spacing-size("base");
-    padding: spacing-size("large");
+    margin: spacing-size(4);
+    padding: spacing-size(5);
   }
 }
 

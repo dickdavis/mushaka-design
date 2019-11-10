@@ -17,9 +17,9 @@
 /// Returns spacing size from $spacing-sizes map for provided key.
 /// @group base
 /// @author Richard Davis
-/// @param {String} $_key - The key to return an associated spacing size for.
+/// @param {Number} $_key - The key to return an associated spacing size for.
 /// @example
-///   spacing-size("base");
+///   spacing-size(4);
 @function spacing-size($_key) {
   @if map-has-key($spacing-sizes, $_key) {
     @return map-get($spacing-sizes, $_key);

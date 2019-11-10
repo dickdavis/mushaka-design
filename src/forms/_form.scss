@@ -29,8 +29,8 @@
   }
 
   &__group {
-    padding: spacing-size("tiny");
-    margin: spacing-size("base") spacing-size("tiny");
+    padding: spacing-size(1);
+    margin: spacing-size(4) spacing-size(1);
     border-width: 2px;
     border-style: solid;
     border-color: $black;
@@ -41,9 +41,9 @@
       font-family: $heading-semibold-font-family;
       text-transform: uppercase;
       text-align: center;
-      width: spacing-size("super") * 2;
+      width: spacing-size(6) * 2;
       background-color: white;
-      margin-top: (-2 * spacing-size("small"));
+      margin-top: (-2 * spacing-size(2));
 
       &.field_with_errors {
         color: darken(semantic-color("danger"), 25%);
@@ -68,7 +68,7 @@
 
       display: block;
       width: 95%;
-      margin: spacing-size("mid") auto;
+      margin: spacing-size(3) auto;
 
       @include breakpoint-m {
         width: 70%;
@@ -86,7 +86,7 @@
       display: block;
       width: 95%;
       height: 30vh;
-      margin: spacing-size("mid") auto;
+      margin: spacing-size(3) auto;
 
       &.field_with_errors {
         color: darken(semantic-color("danger"), 40%);
@@ -107,7 +107,7 @@
       display: block;
       width: 95%;
       text-align: right;
-      margin: spacing-size("small");
+      margin: spacing-size(2);
     }
   }
 
@@ -116,7 +116,7 @@
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
-    margin: spacing-size("mid") auto;
+    margin: spacing-size(3) auto;
 
     @include breakpoint-m {
       width: 100%;
@@ -124,17 +124,17 @@
 
     select {
       flex: 100%;
-      margin: spacing-size("small") auto;
+      margin: spacing-size(2) auto;
 
       @include breakpoint-s {
         flex: 30%;
-        margin: auto spacing-size("tiny");
+        margin: auto spacing-size(1);
       }
     }
   }
 
   &__action {
     text-align: center;
-    margin-top: (spacing-size("mid") - (spacing-size("base") / 6));
+    margin-top: (spacing-size(3) - (spacing-size(4) / 6));
   }
 }

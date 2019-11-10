@@ -13,7 +13,7 @@
   background-color: $white;
   box-shadow: $form-box-shadow;
   transition: border-color $base-duration $base-timing;
-  padding: spacing-size("small");
+  padding: spacing-size(2);
 
   @include breakpoint-s {
     line-height: 5vh;

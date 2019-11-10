@@ -9,7 +9,7 @@
 ///   <div class="ContentWrapper--restricted">
 ///   </div>
 .ContentWrapper {
-  margin: spacing-size("mid") spacing-size("small");
+  margin: spacing-size(3) spacing-size(2);
 
   &--restricted {
     @extend .ContentWrapper;

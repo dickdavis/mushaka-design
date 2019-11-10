@@ -18,10 +18,10 @@
   justify-content: center;
   color: $black;
   background-color: $white;
-  padding: spacing-size("base");
+  padding: spacing-size(4);
 
   @include breakpoint-m {
-    padding: spacing-size("super");
+    padding: spacing-size(6);
   }
 
   &--inverted {

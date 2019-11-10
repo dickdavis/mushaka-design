@@ -12,17 +12,17 @@
   font-family: $heading-semibold-font-family;
   text-transform: uppercase;
   text-align: center;
-  margin-top: spacing-size("super");
-  margin-bottom: spacing-size("super");
+  margin-top: spacing-size(6);
+  margin-bottom: spacing-size(6);
 
   a {
     color: $black;
-    margin-left: spacing-size("base");
-    margin-right: spacing-size("base");
+    margin-left: spacing-size(4);
+    margin-right: spacing-size(4);
 
     @include breakpoint-m {
-      margin-left: spacing-size("super");
-      margin-right: spacing-size("super");
+      margin-left: spacing-size(6);
+      margin-right: spacing-size(6);
     }
 
     &:hover {
@@ -31,7 +31,7 @@
   }
 
   p {
-    margin-top: spacing-size("base");
-    margin-bottom: spacing-size("base");
+    margin-top: spacing-size(4);
+    margin-bottom: spacing-size(4);
   }
 }
