@@ -13,13 +13,13 @@ $viewport-sizes: (
 
 /// Spacing sizes
 $spacing-sizes: (
-  tiny: 0.3em,
-  small: 0.5em,
-  mid: 0.75em,
-  base: 1.5em,
-  large: 3em,
-  super: 4.5em
-);
+  1: 0.3em,
+  2: 0.5em,
+  3: 0.75em,
+  4: 1.5em,
+  5: 3em,
+  6: 4.5em
+) !default;
 
 /// Black color value
 $black: hsla(0, 0%, 20%, 1) !default;
