@@ -15,6 +15,34 @@ yarn lint
 
 This will run the linter on all of the stylesheets, fixing what it can automatically and outputting errors for the rest.
 
+### Releases
+Releases are managed by the code maintainer and require appropriate permissions and access to the NPM package and GitLab repository. To initiate the release process, execute:
+
+```
+yarn release
+```
+
+Given that the release process automatically generates a CHANGELOG based on commit history, you must follow the guidelines for commit messages.
+
+For the first line of your commit, please include the nature of the change that you are introducing in a tag prefix, followed by a concise summary of those changes.
+
+Format: `Tag: Concise summary of the change`
+
+For tags, please use your best judgement to select from the list below in choosing a tag for your commit.
+
+* New - a new feature.
+* Fix - a bug fix.
+* Update - a change that is backwards compatible.
+* Breaking - a change that is not backwards compatible.
+* Docs - a change to the project documentation.
+* Build - a build process change.
+* Upgrade - an upgrade of the project's dependencies.
+* Chore - any change that is not user facing that doesn't fit into the above categories.
+
+Example: `Docs: Update CONTRIBUTING.md to include documentation standards`
+
+Please note that we will reject commits that do not adhere to this standard.
+
 ## Documentation
 You must document any changes or additions to the stylesheets following the [SassDoc](http://sassdoc.com/) conventions. Please refer to the included examples for doucmenting placeholders, mixins, functions, variables, and classes.
 
@@ -92,140 +120,152 @@ This compiles the stylesheets into a single CSS stylesheet in the `dist/` direct
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <h2>A plain card</h2>
-    <div class="Card">
-      <div class="Card__body">
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-      </div>
-    </div>
-    <h2>A medium-sized card</h2>
-    <div class="Card Card--medium">
-      <div class="Card__body">
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-      </div>
-    </div>
-    <h2>A small-sized card</h2>
-    <div class="Card Card--small">
-      <div class="Card__body">
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-      </div>
-    </div>
-    <h2>A card with a thick top border</h2>
-    <div class="Card--topBorder">
-      <div class="Card__body">
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-      </div>
-    </div>
-    <h2>A card with a thick right border</h2>
-    <div class="Card--rightBorder">
-      <div class="Card__body">
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-      </div>
-    </div>
-    <h2>A card with a thick bottom border</h2>
-    <div class="Card--bottomBorder">
-      <div class="Card__body">
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-      </div>
-    </div>
-    <h2>A card with a thick left border</h2>
-    <div class="Card--leftBorder">
-      <div class="Card__body">
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-      </div>
-    </div>
-    <h2>A card with a card header and header text</h2>
-    <div class="Card">
-      <div class="Card__header">
-        <p class="Card__header-text">Lorem Ipsum</p>
-      </div>
-      <div class="Card__body">
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-      </div>
-    </div>
-    <h2>A card with a card body and title</h2>
-    <div class="Card">
-      <div class="Card__body">
-        <h2 class="Card__title">Lorem Ipsum</h2>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-      </div>
-    </div>
-    <h2>A card with a card body and spaced title</h2>
-    <div class="Card">
-      <div class="Card__body">
-        <h2 class="Card__title--spaced">Lorem Ipsum</h2>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-      </div>
-    </div>
-    <h2>A card with a card footer and footer text</h2>
-    <div class="Card">
-      <div class="Card__body">
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-      </div>
-      <div class="Card__footer">
-        <p class="Card__footer-text">Lorem Ipsum</p>
-      </div>
-    </div>
-    <h2>A card with a card header, body, title, and footer</h2>
-    <div class="Card">
-      <div class="Card__header">
-        <p class="Card__header-text">Lorem Ipsum</p>
-      </div>
-      <div class="Card__body">
-        <h2 class="Card__title">Lorem Ipsum</h2>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-      </div>
-      <div class="Card__footer">
-        <p class="Card__footer-text">Lorem Ipsum</p>
-      </div>
-    </div>
-    <h2>A card deck with multiple small cards</h2>
-    <div class="CardDeck">
-      <div class="Card Card--small">
-        <div class="Card__body">
-          <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-          <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-          <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        </div>
-      </div>
-      <div class="Card Card--small">
-        <div class="Card__body">
-          <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-          <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-          <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        </div>
-      </div>
-      <div class="Card Card--small">
-        <div class="Card__body">
-          <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-          <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-          <p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
-        </div>
-      </div>
+		<h2>A plain card</h2>
+		<div class="Card">
+			<div class="Card__body">
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+			</div>
+		</div>
+
+		<h2>A medium-sized card</h2>
+		<div class="Card Card--medium">
+			<div class="Card__body">
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+			</div>
+		</div>
+
+		<h2>A small-sized card</h2>
+		<div class="Card Card--small">
+			<div class="Card__body">
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+			</div>
+		</div>
+
+		<h2>A card with a thick top border</h2>
+		<div class="Card--topBorder">
+			<div class="Card__body">
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+			</div>
+		</div>
+
+		<h2>A card with a thick right border</h2>
+		<div class="Card--rightBorder">
+			<div class="Card__body">
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+			</div>
+		</div>
+
+		<h2>A card with a thick bottom border</h2>
+		<div class="Card--bottomBorder">
+			<div class="Card__body">
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+			</div>
+		</div>
+
+		<h2>A card with a thick left border</h2>
+		<div class="Card--leftBorder">
+			<div class="Card__body">
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+			</div>
+		</div>
+
+		<h2>A card with a card header and header text</h2>
+		<div class="Card">
+			<div class="Card__header">
+				<p class="Card__header-text">Lorem Ipsum</p>
+			</div>
+			<div class="Card__body">
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+			</div>
+		</div>
+
+		<h2>A card with a card body and title</h2>
+		<div class="Card">
+			<div class="Card__body">
+				<h2 class="Card__title">Lorem Ipsum</h2>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+			</div>
+		</div>
+
+		<h2>A card with a card body and spaced title</h2>
+		<div class="Card">
+			<div class="Card__body">
+				<h2 class="Card__title--spaced">Lorem Ipsum</h2>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+			</div>
+		</div>
+
+		<h2>A card with a card footer and footer text</h2>
+		<div class="Card">
+			<div class="Card__body">
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+			</div>
+			<div class="Card__footer">
+				<p class="Card__footer-text">Lorem Ipsum</p>
+			</div>
+		</div>
+
+		<h2>A card with a card header, body, title, and footer</h2>
+		<div class="Card">
+			<div class="Card__header">
+				<p class="Card__header-text">Lorem Ipsum</p>
+			</div>
+			<div class="Card__body">
+				<h2 class="Card__title">Lorem Ipsum</h2>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+			</div>
+			<div class="Card__footer">
+				<p class="Card__footer-text">Lorem Ipsum</p>
+			</div>
+		</div>
+
+		<h2>A card deck with multiple small cards</h2>
+		<div class="CardDeck">
+			<div class="Card Card--small">
+				<div class="Card__body">
+					<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+					<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+					<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				</div>
+			</div>
+			<div class="Card Card--small">
+				<div class="Card__body">
+					<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+					<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+					<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				</div>
+			</div>
+			<div class="Card Card--small">
+				<div class="Card__body">
+					<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+					<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+					<p class="Card__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hunc vos beatum; Quamquam te quidem video minime esse deterritum. Ita prorsus, inquam; Non risu potius quam oratione eiciendum?</p>
+				</div>
+			</div>
     </div>
     <h2>ContentWrapper</h2>
     <div class="ContentWrapper">
@@ -259,6 +299,7 @@ This compiles the stylesheets into a single CSS stylesheet in the `dist/` direct
     <h2>ContentWrapper nested in a card</h2>
     <div class="Card">
       <div class="Card__body">
+        <h2 class="Card__title">Lorem Ipsum</h2>
         <div class="ContentWrapper">
           <h1>Title</h1>
           <h2>Subheading Level 2</h2>
@@ -469,6 +510,12 @@ This compiles the stylesheets into a single CSS stylesheet in the `dist/` direct
         <button class="Button--solid-danger">Lorem Ipsum</button>
       </div>
     </div>
+    <h2>A small sized HR</h2>
+    <hr class="u-HorizontalRule--small" />
+    <h2>A medium sized HR</h2>
+    <hr class="u-HorizontalRule--medium" />
+    <h2>A large sized HR</h2>
+    <hr class="u-HorizontalRule--large" />
     <h2>A wrapper around pagination controls to apply styles to child elements</h2>
     <div class="Paginator">
       <a href="#">Prev</a>
@@ -481,9 +528,32 @@ This compiles the stylesheets into a single CSS stylesheet in the `dist/` direct
         <label>Lorem Ipsum</label>
         <input type="text" />
       </div>
+      <div class="Form__group u-Element--long">
+        <label>Lorem Ipsum</label>
+        <input type="text" />
+        <small>This is a form hint</small>
+      </div>
+      <div class="Form__group u-Element--medium">
+        <label>Lorem Ipsum</label>
+        <input type="text" />
+        <small>This is a form hint</small>
+      </div>
+      <div class="Form__group u-Element--short">
+        <label>Lorem Ipsum</label>
+        <input type="text" />
+        <small>This is a form hint</small>
+      </div>
       <div class="Form__group">
         <label>Lorem Ipsum</label>
         <input type="text" />
+      </div>
+      <div class="Form__group">
+        <label>Lorem Ipsum</label>
+        <textarea></textarea>
+      </div>
+      <div class="Form__group">
+        <label class="field_with_errors">Lorem Ipsum</label>
+        <input class="field_with_errors" type="text" />
       </div>
       <div class="Form__action">
         <input type="submit" class="Button--solid-primary" value="Lorem Ipsum" />
@@ -497,9 +567,98 @@ This compiles the stylesheets into a single CSS stylesheet in the `dist/` direct
             <label>Lorem Ipsum</label>
             <input type="text" />
           </div>
-          <div class="Form__group">
+          <div class="Form__group u-Element--long">
             <label>Lorem Ipsum</label>
             <input type="text" />
+            <small>This is a form hint</small>
+          </div>
+          <div class="Form__group u-Element--medium">
+            <label>Lorem Ipsum</label>
+            <input type="text" />
+            <small>This is a form hint</small>
+          </div>
+          <div class="Form__group u-Element--short">
+            <label>Lorem Ipsum</label>
+            <input type="text" />
+            <small>This is a form hint</small>
+          </div>
+          <div class="Form__group">
+            <label>Lorem Ipsum</label>
+            <textarea></textarea>
+          </div>
+          <div class="Form__group">
+            <label class="field_with_errors">Lorem Ipsum</label>
+            <input class="field_with_errors" type="text" />
+          </div>
+          <div class="Form__action">
+            <input type="submit" class="Button--solid-primary" value="Lorem Ipsum" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <h2>A form with boxed form groups enclosing inputs</h2>
+    <form class="Form">
+      <div class="Form__group--boxed">
+        <label>Lorem Ipsum</label>
+        <input type="text" />
+      </div>
+      <div class="Form__group--boxed u-Element--long">
+        <label>Lorem Ipsum</label>
+        <input type="text" />
+        <small>This is a form hint</small>
+      </div>
+      <div class="Form__group--boxed u-Element--medium">
+        <label>Lorem Ipsum</label>
+        <input type="text" />
+        <small>This is a form hint</small>
+      </div>
+      <div class="Form__group--boxed u-Element--short">
+        <label>Lorem Ipsum</label>
+        <input type="text" />
+        <small>This is a form hint</small>
+      </div>
+      <div class="Form__group--boxed">
+        <label>Lorem Ipsum</label>
+        <textarea></textarea>
+      </div>
+      <div class="Form__group--boxed">
+        <label class="field_with_errors">Lorem Ipsum</label>
+        <input class="field_with_errors" type="text" />
+      </div>
+      <div class="Form__action">
+        <input type="submit" class="Button--solid-primary" value="Lorem Ipsum" />
+      </div>
+    </form>
+    <h2>A form on a card with form groups enclosing inputs</h2>
+    <div class="Card">
+      <div class="Card__body">
+        <form class="Form">
+          <div class="Form__group--boxed">
+            <label>Lorem Ipsum</label>
+            <input type="text" />
+          </div>
+          <div class="Form__group--boxed u-Element--long">
+            <label>Lorem Ipsum</label>
+            <input type="text" />
+            <small>This is a form hint</small>
+          </div>
+          <div class="Form__group--boxed u-Element--medium">
+            <label>Lorem Ipsum</label>
+            <input type="text" />
+            <small>This is a form hint</small>
+          </div>
+          <div class="Form__group--boxed u-Element--short">
+            <label>Lorem Ipsum</label>
+            <input type="text" />
+            <small>This is a form hint</small>
+          </div>
+          <div class="Form__group--boxed">
+            <label>Lorem Ipsum</label>
+            <textarea></textarea>
+          </div>
+          <div class="Form__group--boxed">
+            <label class="field_with_errors">Lorem Ipsum</label>
+            <input class="field_with_errors" type="text" />
           </div>
           <div class="Form__action">
             <input type="submit" class="Button--solid-primary" value="Lorem Ipsum" />
@@ -603,31 +762,3 @@ This compiles the stylesheets into a single CSS stylesheet in the `dist/` direct
   </body>
 </html>
 ```
-
-### Releases
-Releases are managed by the code maintainer and require appropriate permissions and access to the NPM package and GitLab repository. To initiate the release process, execute:
-
-```
-yarn release
-```
-
-Given that the release process automatically generates a CHANGELOG based on commit history, you must follow the guidelines for commit messages.
-
-For the first line of your commit, please include the nature of the change that you are introducing in a tag prefix, followed by a concise summary of those changes.
-
-Format: `Tag: Concise summary of the change`
-
-For tags, please use your best judgement to select from the list below in choosing a tag for your commit.
-
-* New - a new feature.
-* Fix - a bug fix.
-* Update - a change that is backwards compatible.
-* Breaking - a change that is not backwards compatible.
-* Docs - a change to the project documentation.
-* Build - a build process change.
-* Upgrade - an upgrade of the project's dependencies.
-* Chore - any change that is not user facing that doesn't fit into the above categories.
-
-Example: `Docs: Update CONTRIBUTING.md to include documentation standards`
-
-Please note that we will reject commits that do not adhere to this standard.
