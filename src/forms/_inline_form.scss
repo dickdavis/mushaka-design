@@ -29,21 +29,25 @@
 
     &--topBorder {
       @extend .InlineForm__input;
+
       @include top-border-accent($black, grayscale-color(30));
     }
 
     &--rightBorder {
       @extend .InlineForm__input;
+
       @include right-border-accent($black, grayscale-color(30));
     }
 
     &--bottomBorder {
       @extend .InlineForm__input;
+
       @include bottom-border-accent($black, grayscale-color(30));
     }
 
     &--leftBorder {
       @extend .InlineForm__input;
+
       @include left-border-accent($black, grayscale-color(30));
     }
   }
