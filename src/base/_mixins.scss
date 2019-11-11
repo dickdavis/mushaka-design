@@ -105,3 +105,43 @@
     @content;
   }
 }
+
+/// Provides a top border accent.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @include top-border-accent($black, grayscale-color(40));
+@mixin top-border-accent($_accent_color, $_border_color) {
+  border-width: 5px 1px 1px 1px;
+  border-color: $_accent_color $_border_color $_border_color $_border_color;
+}
+
+/// Provides a top border accent.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @include right-border-accent($black, grayscale-color(40));
+@mixin right-border-accent($_accent_color, $_border_color) {
+  border-width: 1px 5px 1px 1px;
+  border-color: $_border_color $_accent_color $_border_color $_border_color;
+}
+
+/// Provides a top border accent.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @include bottom-border-accent($black, grayscale-color(40));
+@mixin bottom-border-accent($_accent_color, $_border_color) {
+  border-width: 1px 1px 5px 1px;
+  border-color: $_border_color $_border_color $_accent_color $_border_color;
+}
+
+/// Provides a top border accent.
+/// @group base
+/// @author Richard Davis
+/// @example
+///   @include left-border-accent($black, grayscale-color(40));
+@mixin left-border-accent($_accent_color, $_border_color) {
+  border-width: 1px 1px 1px 5px;
+  border-color: $_border_color $_border_color $_border_color $_accent_color;
+}
