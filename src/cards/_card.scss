@@ -111,30 +111,22 @@
 
   &--topBorder {
     @extend .Card;
-
-    border-width: 5px 1px 1px 1px;
-    border-color: $black grayscale-color(30) grayscale-color(30) grayscale-color(30);
+    @include top-border-accent($black, grayscale-color(30));
   }
 
   &--rightBorder {
     @extend .Card;
-
-    border-width: 1px 5px 1px 1px;
-    border-color: grayscale-color(30) $black grayscale-color(30) grayscale-color(30);
+    @include right-border-accent($black, grayscale-color(30));
   }
 
   &--bottomBorder {
     @extend .Card;
-
-    border-width: 1px 1px 5px 1px;
-    border-color: grayscale-color(30) grayscale-color(30) $black grayscale-color(30);
+    @include bottom-border-accent($black, grayscale-color(30));
   }
 
   &--leftBorder {
     @extend .Card;
-
-    border-width: 1px 1px 1px 5px;
-    border-color: grayscale-color(30) grayscale-color(30) grayscale-color(30) $black;
+    @include left-border-accent($black, grayscale-color(30));
   }
 
   &--medium {
