@@ -1,3 +1,56 @@
+/// Provides styles for form labels and inputs with errors.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   @extend %field-with-errors-styling;
+%field-with-errors-styling {
+  &.field_with_errors {
+    color: darken(semantic-color("danger"), 25%);
+    border-color: darken(semantic-color("danger"), 25%);
+  }
+}
+
+/// Provides styles for form groups.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   @extend %basic-form-group-styling;
+%basic-form-group-styling {
+  padding: spacing-size(1);
+  margin: spacing-size(1);
+
+  [type="checkbox"],
+  [type="radio"],
+  [type="file"],
+  select {
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+/// Provides styles for boxed form groups.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   @extend %boxed-form-group-styling;
+%boxed-form-group-styling {
+  padding: spacing-size(1);
+  margin: spacing-size(4) spacing-size(1);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: $base-border-radius;
+
+  [type="checkbox"],
+  [type="radio"],
+  [type="file"],
+  select {
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
 /// Provides styles for form fields.
 /// @group forms
 /// @author Richard Davis
@@ -20,7 +73,7 @@
   }
 
   &:hover {
-    border-color: theme-color("secondary");
+    border-color: grayscale-color(50);
   }
 
   &:focus {
@@ -48,4 +101,129 @@
   &::placeholder {
     color: lighten($base-font-color, 20%);
   }
+}
+
+/// Provides styles for form labels.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   @extend %basic-label-styling;
+%basic-label-styling {
+  @extend %field-with-errors-styling;
+
+  color: grayscale-color(90);
+}
+
+/// Provides styles for form labels in boxed form groups.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   @extend %boxed-label-styling;
+%boxed-label-styling {
+  @extend %field-with-errors-styling;
+
+  display: block;
+  text-align: center;
+  width: spacing-size(6) * 2;
+  margin-top: (-2 * spacing-size(2));
+}
+
+/// Provides styles for form inputs.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   @extend %basic-input-styling;
+%basic-input-styling {
+  @extend %field-with-errors-styling;
+
+  display: block;
+  margin: spacing-size(3) 0;
+  width: 100%;
+}
+
+/// Provides styles for form inputs in boxed form groups.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   @extend %boxed-input-styling;
+%boxed-input-styling {
+  @extend %field-with-errors-styling;
+
+  display: block;
+  width: 95%;
+  margin: spacing-size(3) auto;
+}
+
+/// Provides styles for textareas.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   @extend %basic-textarea-styling;
+%basic-textarea-styling {
+  @extend %field-with-errors-styling;
+
+  display: block;
+  width: 100%;
+  height: 30vh;
+  margin: spacing-size(3) 0;
+}
+
+/// Provides styles for textareas in boxed form groups.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   @extend %boxed-textarea-styling;
+%boxed-textarea-styling {
+  @extend %field-with-errors-styling;
+
+  display: block;
+  width: 95%;
+  height: 30vh;
+  margin: spacing-size(3) auto;
+}
+
+/// Provides styles for form fieldsets.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   @extend %basic-fieldset-styling;
+%basic-fieldset-styling {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/// Provides styles for form legends.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   @extend %basic-legend-styling;
+%basic-legend-styling {
+  font-weight: 600;
+  padding: 0;
+}
+
+/// Provides styles for form hints.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   @extend %basic-form-hint-styling;
+%basic-form-hint-styling {
+  display: block;
+  text-align: right;
+  color: grayscale-color(70);
+}
+
+/// Provides styles for form hints in boxed form groups.
+/// @group forms
+/// @author Richard Davis
+/// @example
+///   @extend %boxed-form-hint-styling;
+%boxed-form-hint-styling {
+  display: block;
+  margin: auto;
+  text-align: right;
+  color: grayscale-color(70);
+  width: 95%;
 }

@@ -1,0 +1,16 @@
+/// Provides color styles for boxed form group elements.
+/// @group forms
+/// @author Richard Davis
+/// @param {Color} $_border_color - The border color for the form group
+/// @param {Color} $_label_color - The color for the form group's label
+/// @param {Color} $_label_background_color - The background color for the form group's label
+/// @example
+///   @include boxed-form-group-colors($black, $black, $white);
+@mixin boxed-form-group-colors($_border_color, $_label_color, $_label_background_color) {
+  border-color: $_border_color;
+
+  label {
+    color: $_label_color;
+    background-color: $_label_background_color;
+  }
+}

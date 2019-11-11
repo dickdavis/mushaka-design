@@ -16,27 +16,44 @@
     flex-flow: row wrap;
   }
 
-  button,
-  input[type="submit"] {
-    flex: 1;
-    margin: spacing-size(1);
-
-    @include breakpoint-s {
-      flex: 0;
-    }
-  }
-
-  input[type="text"] {
+  &__input {
     @extend %basic-form-field-styling;
 
     flex-grow: 8;
-    border-width: 1px 1px 5px 1px;
-    border-color: grayscale-color(20) grayscale-color(20) $black grayscale-color(20);
     padding: spacing-size(2);
     margin: spacing-size(1);
 
     @include breakpoint-s {
       margin: spacing-size(1);
+    }
+
+    &--topBorder {
+      @extend .InlineForm__input;
+      @include top-border-accent($black, grayscale-color(30));
+    }
+
+    &--rightBorder {
+      @extend .InlineForm__input;
+      @include right-border-accent($black, grayscale-color(30));
+    }
+
+    &--bottomBorder {
+      @extend .InlineForm__input;
+      @include bottom-border-accent($black, grayscale-color(30));
+    }
+
+    &--leftBorder {
+      @extend .InlineForm__input;
+      @include left-border-accent($black, grayscale-color(30));
+    }
+  }
+
+  &__action {
+    flex: 1;
+    margin: spacing-size(1);
+
+    @include breakpoint-s {
+      flex: 0;
     }
   }
 }

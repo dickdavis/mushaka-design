@@ -9,8 +9,33 @@
 ///       <input type="text" />
 ///     </div>
 ///     <div class="Form__group">
+///       <label class="field_with_errors">Lorem Ipsum</label>
+///       <input class="field_with_errors" type="text" />
+///     </div>
+///     <div class="Form__group">
 ///       <label>Lorem Ipsum</label>
 ///       <input type="text" />
+///       <small>This is a form hint</small>
+///     </div>
+///     <div class="Form__group u-Element--long">
+///       <label>Lorem Ipsum</label>
+///       <input type="text" />
+///       <small>This is a form hint</small>
+///     </div>
+///     <div class="Form__group u-Element--medium">
+///       <label>Lorem Ipsum</label>
+///       <input type="text" />
+///       <small>This is a form hint</small>
+///     </div>
+///     <div class="Form__group u-Element--short">
+///       <label>Lorem Ipsum</label>
+///       <input type="text" />
+///       <small>This is a form hint</small>
+///     </div>
+///     <div class="Form__group--boxed">
+///       <label>Lorem Ipsum</label>
+///       <input type="text" />
+///       <small>This is a form hint</small>
 ///     </div>
 ///     <div class="Form__action">
 ///       <input type="submit" class="Button--solid-primary" value="Lorem Ipsum" />
@@ -20,115 +45,66 @@
   width: 100%;
   margin: auto;
 
-  @include breakpoint-m {
-    width: 90%;
-  }
-
-  @include breakpoint-l {
-    width: 80%;
-  }
-
   &__group {
-    padding: spacing-size(1);
-    margin: spacing-size(4) spacing-size(1);
-    border-width: 2px;
-    border-style: solid;
-    border-color: $black;
-    border-radius: $base-border-radius;
+    @extend %basic-form-group-styling;
 
     label {
-      display: block;
-      font-family: $heading-semibold-font-family;
-      text-transform: uppercase;
-      text-align: center;
-      width: spacing-size(6) * 2;
-      background-color: white;
-      margin-top: (-2 * spacing-size(2));
-
-      &.field_with_errors {
-        color: darken(semantic-color("danger"), 25%);
-      }
-    }
-
-    fieldset {
-      background-color: transparent;
-      border: 0;
-      margin: 0;
-      padding: 0;
-    }
-
-    legend {
-      font-weight: 600;
-      padding: 0;
+      @extend %basic-label-styling;
     }
 
     input,
     select {
       @extend %basic-form-field-styling;
-
-      display: block;
-      width: 95%;
-      margin: spacing-size(3) auto;
-
-      @include breakpoint-m {
-        width: 70%;
-      }
-
-      &.field_with_errors {
-        color: darken(semantic-color("danger"), 25%);
-        border-color: darken(semantic-color("danger"), 25%);
-      }
+      @extend %basic-input-styling;
     }
 
     textarea {
       @extend %basic-form-field-styling;
-
-      display: block;
-      width: 95%;
-      height: 30vh;
-      margin: spacing-size(3) auto;
-
-      &.field_with_errors {
-        color: darken(semantic-color("danger"), 40%);
-        border-color: darken(semantic-color("danger"), 40%);
-      }
+      @extend %basic-textarea-styling;
     }
 
-    [type="checkbox"],
-    [type="radio"],
-    [type="file"],
-    select {
-      &:focus {
-        outline: none;
-      }
+    fieldset {
+      @extend %basic-fieldset-styling;
+    }
+
+    legend {
+      @extend %basic-legend-styling;
     }
 
     small {
-      display: block;
-      width: 95%;
-      text-align: right;
-      margin: spacing-size(2);
-    }
-  }
-
-  &__time-field-group {
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-    margin: spacing-size(3) auto;
-
-    @include breakpoint-m {
-      width: 100%;
+      @extend %basic-form-hint-styling;
     }
 
-    select {
-      flex: 100%;
-      margin: spacing-size(2) auto;
+    &--boxed {
+      @extend %boxed-form-group-styling;
 
-      @include breakpoint-s {
-        flex: 30%;
-        margin: auto spacing-size(1);
+      @include boxed-form-group-colors(grayscale-color(40), grayscale-color(90), $white);
+
+      label {
+        @extend %boxed-label-styling;
+      }
+
+      input,
+      select {
+        @extend %basic-form-field-styling;
+        @extend %boxed-input-styling;
+      }
+
+      textarea {
+        @extend %basic-form-field-styling;
+        @extend %boxed-textarea-styling;
+      }
+
+      fieldset {
+        @extend %basic-fieldset-styling;
+      }
+
+      legend {
+        @extend %basic-legend-styling;
+      }
+
+      small {
+        @extend %boxed-form-hint-styling;
       }
     }
   }
