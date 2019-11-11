@@ -1,3 +1,28 @@
+# [1.0.0](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.3.0...v1.0.0) (2019-11-11)
+
+
+### Breaking
+
+* Changed map keys for spacing sizes to integers ([ea0eb186ad824f6bca6fc669d96aab4aa9842b40](https://gitlab.com/d3d1rty/mushaka-design/commit/ea0eb186ad824f6bca6fc669d96aab4aa9842b40))
+* Overhauled form stylings ([8ad45978fe8d7a4d5dc0fa6cc01760a5c5aaa8df](https://gitlab.com/d3d1rty/mushaka-design/commit/8ad45978fe8d7a4d5dc0fa6cc01760a5c5aaa8df))
+
+### Chore
+
+* Fixed style violations ([bfffb056ad4136e639a3278e747145bb308a9419](https://gitlab.com/d3d1rty/mushaka-design/commit/bfffb056ad4136e639a3278e747145bb308a9419))
+* Refactored accent card styles to use new mixins ([97acc5b393ec17ead62c9be4a5c215c8fec0b6a5](https://gitlab.com/d3d1rty/mushaka-design/commit/97acc5b393ec17ead62c9be4a5c215c8fec0b6a5))
+* Refactored media queries to use breakpoint mixins ([d40b0d71001a50e48c61a80284dc552a96512975](https://gitlab.com/d3d1rty/mushaka-design/commit/d40b0d71001a50e48c61a80284dc552a96512975))
+* Refactored spacing tokens to reference new keys ([8646478b75e0710aee5196eedd1928cc7cc4be9e](https://gitlab.com/d3d1rty/mushaka-design/commit/8646478b75e0710aee5196eedd1928cc7cc4be9e))
+
+### Docs
+
+* Updated CONTRIBUTING ([a88941ffa5859ac7ad57d0c52f7f19981e33dc04](https://gitlab.com/d3d1rty/mushaka-design/commit/a88941ffa5859ac7ad57d0c52f7f19981e33dc04))
+
+### New
+
+* Added accent border mixins ([c859c998f8e79a7f05f5c89ce8d149a9890e14c6](https://gitlab.com/d3d1rty/mushaka-design/commit/c859c998f8e79a7f05f5c89ce8d149a9890e14c6))
+* Added element length utility classes ([0c053ad6d7af7d6842944315770f1778da0ace23](https://gitlab.com/d3d1rty/mushaka-design/commit/0c053ad6d7af7d6842944315770f1778da0ace23))
+* Implemented breakpoint mixins ([e63dcfc8746f87aa99ffbf3280aa3439d4aea67b](https://gitlab.com/d3d1rty/mushaka-design/commit/e63dcfc8746f87aa99ffbf3280aa3439d4aea67b))
+
 # [0.3.0](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.2.2...v0.3.0) (2019-09-02)
 
 
