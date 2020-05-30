@@ -74,7 +74,7 @@ $heading-regular-font-family: 'poppinsregular';
 Similarly, you can override any of the variables/maps contained within `src/base/variables.scss` by providing the override values before importing the project's stylesheets.
 
 ## License Notice
-Copyright 2019 Mushaka Solutions, Inc.
+Copyright 2012 Mushaka Solutions, Inc.
 
 mushaka-design is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
