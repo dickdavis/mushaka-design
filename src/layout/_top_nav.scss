@@ -1,0 +1,49 @@
+/// Provides styles for the Hero element to use.
+/// @group layout
+/// @author Richard Davis
+/// @example
+///   // A hero element with headline and lede.
+///   <div class="Hero">
+///     <h1 class="Hero__headline">Lorem Ipsum</h1>
+///     <p class="Hero__lede">An exmaple lede for a hero element.</p>
+///   </div>
+///   // A hero element with an inverted color scheme.
+///   <div class="Hero">
+///     <h1 class="Hero__headline">Lorem Ipsum</h1>
+///     <p class="Hero__lede">An exmaple lede for a hero element.</p>
+///   </div>
+.Hero {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: $black;
+  background-color: $white;
+  padding: spacing-size(4);
+
+  @include breakpoint-m {
+    padding: spacing-size(6);
+  }
+
+  &--inverted {
+    @extend .Hero;
+
+    color: $white;
+    background-color: $black;
+  }
+
+  &__headline {
+    @extend %default-heading-styling;
+
+    @include heading-font-size(3);
+
+    font-family: $heading-bold-font-family;
+    flex: 100%;
+    text-align: center;
+  }
+
+  &__lede {
+    flex: 100%;
+    font-size: 125%;
+    text-align: center;
+  }
+}
