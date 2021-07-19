@@ -3,7 +3,7 @@
     "tagName": "v${version}",
     "commitMessage": "Release v${version}"
   },
-  "gitlab": {
+  "github": {
     "release": true
   },
   "plugins": {
