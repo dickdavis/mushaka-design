@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Design framework used by Mushaka Solutions Inc.",
   "main": "index.js",
-  "repository": "https://gitlab.com/mushaka-solutions/mushaka-design",
+  "repository": "https://github.com/d3d1rty/mushaka-design",
   "author": "Richard Davis",
   "license": "GPL-3.0-or-later",
   "private": false,
