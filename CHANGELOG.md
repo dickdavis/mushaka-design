@@ -1,3 +1,8 @@
+* Fixed import that was causing issues with Rails (3d8341a)
+* Modified released for GitHub releases (af3dae1)
+* Updated to reflect new repo (82da901)
+* Added .tool-versions for dev with asdf-vm (0d4aec9)
+
 * Chore: Upgrade dependencies and transfer project (4708117)
 
 # [1.0.0](https://gitlab.com/d3d1rty/mushaka-design/compare/v0.3.0...v1.0.0) (2019-11-11)

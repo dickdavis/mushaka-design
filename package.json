@@ -1,6 +1,6 @@
 {
   "name": "mushaka-design",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Design framework used by Mushaka Solutions Inc.",
   "main": "index.js",
   "repository": "https://github.com/d3d1rty/mushaka-design",
