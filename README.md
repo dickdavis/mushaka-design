@@ -1,5 +1,7 @@
 # Mushaka Design
 
+**This project will no longer be receiving updates.**
+
 ## Table of Contents
 * About
 * Installation
@@ -7,7 +9,7 @@
 * License Notice
 
 ## About
-This project is a design framework used by Mushaka Solutions. It provides buttons, cards, links, heros, and more.
+This project is a design framework built using SASS. It provides buttons, cards, links, heros, and more.
 
 ## Installation
 To use the design components in your project, install with `yarn add mushaka-design` (or `npm install mushaka-design`).
@@ -74,7 +76,7 @@ $heading-regular-font-family: 'poppinsregular';
 Similarly, you can override any of the variables/maps contained within `src/base/variables.scss` by providing the override values before importing the project's stylesheets.
 
 ## License Notice
-Copyright 2012 Mushaka Solutions, Inc.
+Copyright 2012 Richard Davis.
 
 mushaka-design is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
